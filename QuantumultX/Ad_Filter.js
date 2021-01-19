@@ -1,3 +1,4 @@
+host, sf3-fe-tos.pglstatp-toutiao.com, reject
 host, *.pglstatp-toutiao.com, reject
 host, ios-dc.51y5.net, reject
 host, hmma.baidu.com, reject
