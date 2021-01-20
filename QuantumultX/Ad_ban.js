@@ -2,6 +2,7 @@ hostname = img.alicdn.com, gw.alicdn.com, files.alicdn.com,api-mifit-cn2.huami.c
 
 # > 菜鸟裹裹去除首页广告
 
+^https:\/\/gw\.alicdn\.com\/tfs url reject
 ^https:\/\/img\.alicdn\.com\/imgextra\/i1 url reject
 ^https:\/\/files\.alicdn\.com\/tpsservice url 307 https://images.unsplash.com/photo-1606909684351-dadc944fd0f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80
 ^https:\/\/gw\.alicdn\.com\/imgextra\/i3 url 307 https://images.unsplash.com/photo-1606909684351-dadc944fd0f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80
