@@ -1,4 +1,4 @@
-host, *.sinaimg.cn, reject
+host-suffix, sinaimg.cn, reject
 host, acs.m.taobao.com, reject
 host, sf3-fe-tos.pglstatp-toutiao.com, reject
 host, *.pglstatp-toutiao.com, reject
