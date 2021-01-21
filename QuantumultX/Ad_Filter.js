@@ -1,3 +1,10 @@
+host, mobilegw.alipay.com, reject
+host, msgacs.m.taobao.com, reject
+host-keyword, mobiledispatch, reject
+host, restapi.amap.com, reject
+host, adashx.m.taobao.com, reject
+host, h-adashx.ut.taobao.com, reject
+host, iyes.youku.com, reject
 host, sns.amap.com, reject
 host, optimus-ads.amap.com, reject
 host, wap.barpsi.com, reject
