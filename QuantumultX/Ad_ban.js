@@ -2,8 +2,9 @@ hostname = *.sinaimg.cn, img.ithome.com,img.alicdn.com, gw.alicdn.com, files.ali
 
 # > IT之家去广告
 ^https:\/\/img\.ithome\.com\/newsuploadfiles\/focus\/ url reject
-^https:\/\/wx2\.sinaimg\.cn\/large\/ url reject
-^https:\/\/wx4\.sinaimg\.cn\/large\/ url reject
+^https:\/\/wx2\.sinaimg\.cn\/large\/ url reject-img
+^https:\/\/wx4\.sinaimg\.cn\/large\/ url reject-img
+
 
 # > 菜鸟裹裹去除首页广告
 ^https:\/\/gw\.alicdn\.com\/tfs url reject
