@@ -1,3 +1,11 @@
+host, sns.amap.com, reject
+host, optimus-ads.amap.com, reject
+host, wap.barpsi.com, reject
+host, sldy.whcon.cn, reject
+host, mtop.cainiao.guoguo.nbnetflow.ads.show, reject
+host, dorangesource.alicdn.com, reject
+host, ossgw.alicdn.com, reject
+host, zconfig.alibabausercontent.com, reject
 host, acs.m.taobao.com, reject
 host, sf3-fe-tos.pglstatp-toutiao.com, reject
 host, *.pglstatp-toutiao.com, reject
