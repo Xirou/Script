@@ -1,4 +1,9 @@
-host, msgacs.m.taobao.com, reject
+host, v.didi.cn, reject-img
+host, img-hxy021.didistatic.com, reject-img
+host, pt-starfile.didistatic.com, reject-img
+host, shop-gw.chengxinyouxuan.com, reject-img
+host, img-ys011.didistatic.com, reject-img
+host, msgacs.m.taobao.com, reject-img
 host-keyword, mobiledispatch, reject
 host, restapi.amap.com, reject
 host, adashx.m.taobao.com, reject
