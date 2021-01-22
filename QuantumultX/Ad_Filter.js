@@ -1,4 +1,3 @@
-host, mobilegw.alipay.com, reject
 host, msgacs.m.taobao.com, reject
 host-keyword, mobiledispatch, reject
 host, restapi.amap.com, reject
