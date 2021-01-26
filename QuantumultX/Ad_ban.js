@@ -12,7 +12,6 @@ hostname = m.360buyimg.com, m5.amap.com, *.sinaimg.cn, img.ithome.com,img.alicdn
 ^https:\/\/wx2\.sinaimg\.cn\/large\/ url reject-img
 ^https:\/\/wx4\.sinaimg\.cn\/large\/ url reject-img
 
-
 # > 菜鸟裹裹去除首页广告
 ^https:\/\/gw\.alicdn\.com\/tfs url reject
 ^https:\/\/img\.alicdn\.com\/imgextra\/i1 url reject
