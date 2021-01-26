@@ -2,7 +2,7 @@ hostname = m.360buyimg.com, m5.amap.com, *.sinaimg.cn, img.ithome.com,img.alicdn
 
 
 # > -京东健康去广告
-^https:\/\/m\.360buyimg\.com\/babel\/jfs\/t1
+^https:\/\/m\.360buyimg\.com\/babel\/jfs\/t1 url reject
 
 # > 高德地图去广告
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page url reject
