@@ -1,6 +1,5 @@
 var obj = JSON.parse($response.body);
  obj={
-
 {
   "receipt": {
     "receipt_type": "Production",
