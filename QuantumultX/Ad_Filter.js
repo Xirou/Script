@@ -1,7 +1,6 @@
 host, mmcomm.qpic.cn, reject
 host, v.didi.cn, reject-img
 host, img-hxy021.didistatic.com, reject-img
-host, pt-starfile.didistatic.com, reject-img
 host, shop-gw.chengxinyouxuan.com, reject-img
 host, img-ys011.didistatic.com, rejec-img
 host, msgacs.m.taobao.com, reject-img
