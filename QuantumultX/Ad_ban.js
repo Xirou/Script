@@ -477,7 +477,7 @@ https:\/\/api\.ithome\.com\/json\/newslist\/news url script-response-body https:
 
 # J
 # > JD
-^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start url reject
+//^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start url reject
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts url reject
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ url reject
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture url reject
