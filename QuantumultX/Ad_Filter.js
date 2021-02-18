@@ -20,7 +20,6 @@ host, zconfig.alibabausercontent.com, reject
 host, acs.m.taobao.com, reject
 host, sf3-fe-tos.pglstatp-toutiao.com, reject
 host, *.pglstatp-toutiao.com, reject
-host, ios-dc.51y5.net, reject
 host, hmma.baidu.com, reject
 host, mmap-mobile-lbsapp.cdn.bcebos.com, reject
 host, map-mobile-resource.su.bcebos.com, reject
