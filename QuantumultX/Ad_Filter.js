@@ -30,7 +30,6 @@ host, wn.pos.baidu.com, reject
 host, cpro.baidustatic.com, reject
 host, luimg.baidu.com, reject
 host, ad.adsrvr.org, reject
-#host, ios-dc.51y5.net, reject
 host, v6.onewsvod.com, reject
 host, v1.onewsvod.com, reject
 host, open.toutiao.com, reject
