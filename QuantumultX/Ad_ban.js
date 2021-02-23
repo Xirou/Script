@@ -91,122 +91,6 @@ https://www.nfmovies.com/templets/default/images/logos/06.png url reject-img
 //weixin110
 ^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi url script-response-body https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js
 
-# 无指令: 谷歌
-^https:\/\/duckduckgo.com\/\?q=([^&]+).+ url 302 https://www.google.com/search?q=$1
-
-#gm   (Google图片)
-^https:\/\/duckduckgo.com\/\?q=gm\+([^&]+).+ url 302 https://www.google.com/search?&tbm=isch&q=$1
-# gh   (GitHub)
-^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+ url 302 https://github.com/search?q=$1
-
-# sof  (Stack Overflow)
-^https:\/\/duckduckgo.com\/\?q=sof\+([^&]+).+ url 302 https://stackoverflow.com/search?q=$1
-
-# se  (StackExchange)
-^https:\/\/duckduckgo.com\/\?q=se\+([^&]+).+ url 302 https://stackexchange.com/search?q=$1
-
-# wa  (WolframAlpha)
-^https:\/\/duckduckgo.com\/\?q=wa\+([^&]+).+ url 302 https://www.wolframalpha.com/input/?i=$1
-
-# wiki  (维基百科)
-^https:\/\/duckduckgo.com\/\?q=wiki(\+|%20)([^&]+).+ url 302 http://wikipedia.org/wiki/$2
-
-# wk  (维基中文)
-^https:\/\/duckduckgo.com\/\?q=wk(\+|%20)([^&]+).+ url 302 https://zh.wikipedia.org/wiki/$2
-
-# mg  (Magi)
-^https:\/\/duckduckgo.com\/\?q=mg(\+|%20)([^&]+).+ url 302 https://magi.com/search?q=$2
-
-# tf  (Google 搜索 TestFlight)
-^https:\/\/duckduckgo.com\/\?q=tf(\+|%20)([^&]+).+ url 302 https://www.google.com/search?as_q=$2&as_sitesearch=testflight.apple.com
-
-# > 翻译
-# yd   (有道)
-^https:\/\/duckduckgo.com\/\?q=yd\+([^&]+).+ url 302 http://dict.youdao.com/search?q=$1
-
-# trc  (Google 译至中)
-^https:\/\/duckduckgo.com\/\?q=trc\+([^&]+).+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1
-
-# tre  (Google 译至英)
-^https:\/\/duckduckgo.com\/\?q=tre\+([^&]+).+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$1
-
-# trj  (Google 译至日)
-^https:\/\/duckduckgo.com\/\?q=trj\+([^&]+).+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1
-
-
-# 社区
-# db：豆瓣
-^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ url 302 https://m.douban.com/search/?query=$1
-
-# zh: 知乎
-^https:\/\/duckduckgo.com\/\?q=zh\+([^&]+).+ url 302 https://www.zhihu.com/search?type=content&q=$1
-
-# wb: 微博
-^https:\/\/duckduckgo.com\/\?q=wb\+([^&]+).+ url 302 https://s.weibo.com/weibo/$1
-
-# wx: 微信
-^https:\/\/duckduckgo.com\/\?q=wx\+([^&]+).+ url 302 https://weixin.sogou.com/weixinwap?query=$1
-
-# rd  (Reddit)
-^https:\/\/duckduckgo.com\/\?q=rd\+([^&]+).+ url 302 https://www.reddit.com/search?q=$1
-
-# tw (Twitter)
-^https:\/\/duckduckgo.com\/\?q=tw\+([^&]+).+ url 302 https://twitter.com/search?q=$1
-
-# ssp: 少数派
-^https:\/\/duckduckgo.com\/\?q=ssp\+([^&]+).+ url 302 https://sspai.com/search/post/$1
-
-# csdn: CSDN
-^https:\/\/duckduckgo.com\/\?q=csdn\+([^&]+).+ url 302 https://so.csdn.net/so/search/s.do?q=$1&t=&u=
-
-# > 购物
-# zdm: 什么值得买
-^https:\/\/duckduckgo.com\/\?q=zdm\+([^&]+).+ url 302 https://search.m.smzdm.com/?v=b&s=$1
-
-# amz: 亚马逊
-^https:\/\/duckduckgo.com\/\?q=amz\+([^&]+).+ url 302 https://www.amazon.cn/gp/aw/s/?k=$1
-
-# jd : 京东
-^https:\/\/duckduckgo.com\/\?q=jd\+([^&]+).+ url 302 https://so.m.jd.com/ware/search.action?keyword=$1
-
-# tb: 淘宝
-^https:\/\/duckduckgo.com\/\?q=tb\+([^&]+).+ url 302 https://s.m.taobao.com/h5?q=$1
-
-# tm: 天猫
-^https:\/\/duckduckgo.com\/\?q=tm\+([^&]+).+ url 302 https://s.m.tmall.com/m/search.htm?q=$1
-
-# 视频资源
-
-# ac (Acfun)
-^https:\/\/duckduckgo.com\/\?q=ac\+([^&]+).+ url 302 https://www.acfun.cn/search?keyword==$1
-
-# bli (哔哩哔哩) 
-^https:\/\/duckduckgo.com\/\?q=bli\+([^&]+).+ url 302 https://m.bilibili.com/search?keyword=$1
-
-# ytb  (YouTube)
-^https:\/\/duckduckgo.com\/\?q=ytb\+([^&]+).+ url 302 https://www.youtube.com/results?search_query=$1
-
-# ph  (PornHub) 
-^https:\/\/duckduckgo.com\/\?q=ph\+([^&]+).+ url 302 https://cn.pornhub.com/video/search?search=$1
-
-# gd  (Google Drive)
-^https:\/\/duckduckgo.com\/\?q=gd\+([^&]+).+ url 302 https://www.google.com/search?q=%22Google+Drive%22+$1
-
-# tgd  (t.me/gdurl 搜索 Google Drive 资源)
-^https:\/\/duckduckgo.com\/\?q=tgd\+([^&]+).+ url 302 https://t.me/s/gdurl?q=$1
-
-# 默认搜索
-
-# bi: 必应
-^https:\/\/duckduckgo.com\/\?q=bi\+([^&]+).+ url 302 https://cn.bing.com/search?q=$1
-
-# bd: 百度
-^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ url 302 https://www.baidu.com/s?wd=$1
-
-# ddg: DuckDuckGo 
-^https:\/\/duckduckgo.com\/\?q=ddg\+([^&]+).+ url 302 https://duckduckgo.com/?ia=about&q=$1
-
-
 //UA+Baidu+Zhihu
 # 百度（全站替换为手机百度 Quark 的 User-Agent）
 ^https?:\/\/(?!d\.pcs).*(?<!map)\.baidu\.com url request-header (\r\n)User-Agent:.+iPhone.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/16C50 Quark/604.1 T7/10.3 SearchCraft/2.6.3 (Baidu; P1 8.0.0)$2
@@ -802,15 +686,6 @@ https:?/\/ddrk.me url response-body width: 150px !important; response-body width
 https:?/\/ddrk.me url response-body <script type="text/javascript">(\n.*){1,40}.*?BlackBerry.*?(\n.*){1,10}.*?</script>|<div id.*?img src.*?ddrk.*?\.jpg.*?</div>|document.getElementById\S"\w{6,7}"\S response-body 0
 https:?/\/ddrk.me/.*?\.(jpg|png|gif) url reject
 \bhttps://\b.*yabet1477.\w{2,3} url 302 https://limbopro.xyz
-
-#####nfmovies.com adsblock
-^https:?/\/www.nfmovies.com\b.* url response-body 76px|60px|chanceAd = 1;|timerAdCountdownCount > 5 response-body 000px
-^https://www.nfmovies.com/static/.*\.jpg url 302 https://limbopro.xyz/usr/uploads/2020/10/2091577197.png
-^https\b.*\bbanner.jpg url 302 https://limbopro.xyz/usr/uploads/2020/10/2091577197.png
-^https\b.*\bbanner\b.*\.jpg url reject
-^https://\b.*\bnaifei\b.*/\?sid=\w{1,6} url 302 https://limbopro.xyz
-#%^http.*yabo729.\b.* url 302 https://limbopro.xyz
-#%^http.*yabo.\b.* url 302 https://limbopro.xyz
 
 #####www.pianku.me adsblock
 ^https:?/\/\b..+pianku.\w{2,3}\b.* url response-body var pycount=10 response-body var pycount=0
