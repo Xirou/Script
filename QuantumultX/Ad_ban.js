@@ -2,7 +2,7 @@ hostname = m.360buyimg.com, m5.amap.com, *.sinaimg.cn, img.ithome.com,img.alicdn
 
 # > -京东金融
 ^https:\/\/img10\.360buyimg\.com\/mcmktresadmin\/jfs\/t1$ url reject
-
+^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/newna\/m\/getLoadingPicture$ url reject
 # > -京东去广告
 #^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ url reject
 
