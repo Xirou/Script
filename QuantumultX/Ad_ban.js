@@ -3,6 +3,7 @@ hostname = m.360buyimg.com, m5.amap.com, *.sinaimg.cn, img.ithome.com,img.alicdn
 # > -京东金融
 ^https:\/\/img10\.360buyimg\.com\/mcmktresadmin\/jfs\/t1$ url reject
 ^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/newna\/m\/getLoadingPicture$ url reject
+
 # > -京东去广告
 #^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ url reject
 
@@ -28,6 +29,9 @@ hostname = m.360buyimg.com, m5.amap.com, *.sinaimg.cn, img.ithome.com,img.alicdn
 ^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/homepage_popup url reject
 #开屏跳窗
 ^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/startpage_ad url reject
+# MI Store Ad
+
+^https:\/\/api\.m\.mi\.com\/v1\/app\/start$ url reject
 
 ^https:\/\/app\.10086\.cn\/biz-orange\/DH\/firstPage\/iconBanner$ url reject-img
 
