@@ -2,6 +2,8 @@ hostname = wx3.sinaimg.cn,userlink.alicdn.com, ww2.sinaimg.cn,api.ithome.com,iss
 
 # > 广东移动3/4
 
+^https:\/\/gd\.10086\.cn\/gmccfile\/file\/image\/preloading703$ url reject
+
 # > 某盘去广告3/4
 ^https:\/\/staticsns\.cdn\.bcebos\.com\/amis url reject
 ^https:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/ts_ad\/guanggao url reject
