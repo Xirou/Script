@@ -17,6 +17,8 @@ hostname = wx3.sinaimg.cn,userlink.alicdn.com, ww2.sinaimg.cn,api.ithome.com,iss
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page url reject
 
 # > IT之家去广告
+
+^https:\/\/wx3\.sinaimg\.cn\/large\/7d5a817ely1go5b1802dwj20u01rc1kx\.jpg$ url reject
 ^https:\/\/api\.ithome\.com\/json\/slide\/index$ url reject
 #横幅^https:\/\/img\.ithome\.com\/newsuploadfiles\/focus\/ url reject
 ^https:\/\/wx2\.sinaimg\.cn\/large url reject
