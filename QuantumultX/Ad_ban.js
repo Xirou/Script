@@ -44,7 +44,7 @@ hostname = wx3.sinaimg.cn,userlink.alicdn.com, ww2.sinaimg.cn,api.ithome.com,iss
 ^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/startpage_ad url reject
 
 # > MI Store Ad
-^https:\/\/api\.m\.mi\.com\/v1\/app\/start$ url 
+^https:\/\/api\.m\.mi\.com\/v1\/app\/start$ url reject
 # > 10086
 ^https:\/\/app\.10086\.cn\/biz-orange\/DH\/firstPage\/iconBanner$ url reject-img
 
