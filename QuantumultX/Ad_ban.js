@@ -8,9 +8,8 @@ hostname = issuecdn.baidupcs.com, m.360buyimg.com, m5.amap.com, *.sinaimg.cn, im
 ^https:\/\/img10\.360buyimg\.com\/mcmktresadmin\/jfs\/t1$ url reject
 ^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/newna\/m\/getLoadingPicture$ url reject
 
-# > -京东去广告
+# > 京东去广告
 #^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ url reject
-
 
 # > 高德地图去广告
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page url reject
@@ -33,10 +32,10 @@ hostname = issuecdn.baidupcs.com, m.360buyimg.com, m5.amap.com, *.sinaimg.cn, im
 ^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/homepage_popup url reject
 #开屏跳窗
 ^https:\/\/api-mifit-cn2\.huami\.com\/discovery\/mi\/cards\/startpage_ad url reject
-# MI Store Ad
 
-^https:\/\/api\.m\.mi\.com\/v1\/app\/start$ url reject
-
+# > MI Store Ad
+^https:\/\/api\.m\.mi\.com\/v1\/app\/start$ url 
+# > 10086
 ^https:\/\/app\.10086\.cn\/biz-orange\/DH\/firstPage\/iconBanner$ url reject-img
 
 ^https:\/\/app\.10086\.cn\/biz-orange\/DH\/homeAreaNew\/getAreaList$ url 307 https://raw.githubusercontent.com/Xirou/Script/master/QX_Xirou.jpg
@@ -45,6 +44,7 @@ hostname = issuecdn.baidupcs.com, m.360buyimg.com, m5.amap.com, *.sinaimg.cn, im
 
 ^https:\/\/app\.10086\.cn\/biz-orange\/DN\/homeSale\/getsaleAdver$ - reject
 
+# > 10000
 ^https:\/\/www\.189\.cn\/images\/2021 url reject
 
 ^http:\/\/mobilead\.kuwo\.cn\/EcomResourceServer\/getIOSIsHideAd url reject
