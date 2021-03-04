@@ -8,7 +8,7 @@ hostname = gd.10086.cn, wx3.sinaimg.cn,userlink.alicdn.com, ww2.sinaimg.cn,api.i
 ^https:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/ts_ad\/guanggao url reject
 
 # > 京东金融
-^https:\/\/img10\.360buyimg\.com\/mcmktresadmin\/jfs\/t1$ url reject
+^https:\/\/img10\.360buyimg\.com\/mcmktresadmin\/jfs url reject
 ^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/newna\/m\/getLoadingPicture$ url reject
 
 # > 京东去广告
