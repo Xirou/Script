@@ -18,14 +18,9 @@ hostname = gd.10086.cn, wx3.sinaimg.cn,userlink.alicdn.com, ww2.sinaimg.cn,api.i
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page url reject
 
 # > IT之家去广告
-
-^https:\/\/wx3\.sinaimg\.cn\/large\/7d5a817ely1go5b1802dwj20u01rc1kx\.jpg$ url reject
 ^https:\/\/api\.ithome\.com\/json\/slide\/index$ url reject
 #横幅^https:\/\/img\.ithome\.com\/newsuploadfiles\/focus\/ url reject
-^https:\/\/wx2\.sinaimg\.cn\/large url reject
-^https:\/\/wx3\.sinaimg\.cn\/large url reject
-^http:\/\/ww4\.sinaimg\.cn\/large url reject
-^http:\/\/ww5\.sinaimg\.cn\/large url reject
+^https:\/\/.*\.sinaimg\.cn\/large url reject
 ^https:\/\/img\.ithome\.com\/m\/images\/app\/task-tb-hb\.png$ url reject
 ^https:\/\/api\.ithome\.com\/json\/slide\/index$ url reject
 ^https:\/\/userlink\.alicdn\.com\/matrix_app\/ios\/matrix_app_config\.json$ url reject
