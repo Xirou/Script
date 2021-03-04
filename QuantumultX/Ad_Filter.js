@@ -1,4 +1,4 @@
-
+host, api-access.pangolin-sdk-toutiao-b.com, reject
 host, baichuan-sdk.alicdn.com, reject
 host, kepler.jd.com, reject
 host, mmcomm.qpic.cn, reject
