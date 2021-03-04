@@ -1,3 +1,6 @@
+
+host, baichuan-sdk.alicdn.com, reject
+host, kepler.jd.com, reject
 host, mmcomm.qpic.cn, reject
 host, v.didi.cn, reject-img
 host, img-hxy021.didistatic.com, reject-img
