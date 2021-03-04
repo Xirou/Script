@@ -25,7 +25,7 @@ hostname = wx3.sinaimg.cn,userlink.alicdn.com, ww2.sinaimg.cn,api.ithome.com,iss
 ^https:\/\/wx3\.sinaimg\.cn\/large url reject
 ^http:\/\/ww4\.sinaimg\.cn\/large url reject
 ^http:\/\/ww5\.sinaimg\.cn\/large url reject
-^https:\/\/img\.ithome\.com\/m\/images\/app\/task-tb-hb\.png$ url rejrct
+^https:\/\/img\.ithome\.com\/m\/images\/app\/task-tb-hb\.png$ url reject
 ^https:\/\/api\.ithome\.com\/json\/slide\/index$ url reject
 ^https:\/\/userlink\.alicdn\.com\/matrix_app\/ios\/matrix_app_config\.json$ url reject
 
