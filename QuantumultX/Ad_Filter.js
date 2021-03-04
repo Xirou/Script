@@ -1,3 +1,4 @@
+host, wx3.sinaimg.cn, reject
 host, api-access.pangolin-sdk-toutiao-b.com, reject
 host, kepler.jd.com, reject
 host, mmcomm.qpic.cn, reject
