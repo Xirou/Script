@@ -17,7 +17,7 @@ hostname = issuecdn.baidupcs.com, m.360buyimg.com, m5.amap.com, *.sinaimg.cn, im
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page url reject
 
 # > IT之家去广告
-^https:\/\/img\.ithome\.com\/newsuploadfiles\/focus\/ url reject
+#横幅^https:\/\/img\.ithome\.com\/newsuploadfiles\/focus\/ url reject
 ^https:\/\/wx2\.sinaimg\.cn\/large\/ url reject-img
 ^https:\/\/wx4\.sinaimg\.cn\/large\/ url reject-img
 
