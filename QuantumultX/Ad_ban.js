@@ -18,6 +18,9 @@ hostname = gd.10086.cn, wx3.sinaimg.cn,userlink.alicdn.com, ww2.sinaimg.cn,api.i
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page url reject
 
 # > IT之家去广告
+
+^https:\/\/.*\.sinaimg\.cn\/mw690\/ url reject
+
 ^https:\/\/api\.ithome\.com\/json\/slide\/index$ url reject
 #横幅^https:\/\/img\.ithome\.com\/newsuploadfiles\/focus\/ url reject
 ^https:\/\/.*\.sinaimg\.cn\/large url reject
