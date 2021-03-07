@@ -18,7 +18,6 @@ hostname = gd.10086.cn, wx3.sinaimg.cn,userlink.alicdn.com, ww2.sinaimg.cn,api.i
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page url reject
 
 # > IT之家去广告
-
 ^https:\/\/.*\.sinaimg\.cn\/mw690\/ url reject
 
 ^https:\/\/api\.ithome\.com\/json\/slide\/index$ url reject
@@ -535,9 +534,7 @@ https:\/\/api\.ithome\.com\/json\/newslist\/news url script-response-body https:
 # > SF Express - ccsp-egmas.sf-express.com
 ^https?:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/ url reject
 # > SF HiveConsumer - consumer.fcbox.com
-^https?:\/\/consumer\.fcbox\.com\/v\d\/ad\/ url reject
-# > SuperFriday
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)(:\d+)?\/V\d\/splash\/getSplashV\d\.action$ url reject
+^https?:\/\/consumer\.fcbox\.com\/v\d\/ad\/ url reject$ url reject
 # > StarFans - g.cdn.pengpengla.com
 ^https?:\/\/g\.cdn\.pengpengla\.com\/starfantuan\/boot-screen-info\/ url reject
 # > Snail Sleep - snailsleep.net
