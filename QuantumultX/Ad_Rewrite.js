@@ -219,7 +219,6 @@ https:\/\/api\.ithome\.com\/json\/newslist\/news url script-response-body https:
 ^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ url reject
 ^https?:\/\/[\w-]+\.snssdk\.com\/.+_ad\/ url reject
 ^https?:\/\/[\w-]+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ url reject
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/img\/ad\.union\.api\/ url reject
 ^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/ url reject
 # ---(Baidu)---
 # > Baidu NetDisk - issuecdn.baidupcs.com
@@ -230,7 +229,6 @@ https:\/\/api\.ithome\.com\/json\/newslist\/news url script-response-body https:
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule url reject
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo url reject
 ^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|mlog) url reject
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/\w+\/\w+\/(sync|newRnSync|mlog) url reject
 # > Baidu Map - newclient.map.baidu.com
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads url reject
 # > Baidu InputMethod - mime.baidu.com
@@ -250,8 +248,6 @@ https:\/\/api\.ithome\.com\/json\/newslist\/news url script-response-body https:
 ^https?:\/\/iapi\.bishijie\.com\/actopen\/advertising\/ url reject
 # > Beike - app.api.ke.com
 ^https?:\/\/app\.api\.ke\.com\/config\/config\/bootpage url reject
-# > boohee
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/api\/v\d\/app_square\/start_up_with_ad$ url reject
 # > bodivis - www.bodivis.com.cn
 ^https?:\/\/www\.bodivis\.com\.cn\/app\/splashAdvertise url reject
 # > BabyHealth - yxyapi*.drcuiyutao.com
@@ -268,8 +264,6 @@ https:\/\/api\.ithome\.com\/json\/newslist\/news url script-response-body https:
 # ---(ChinaTelecom)---
 # > Cloud189 - cloud.189.cn
 ^https?:\/\/cloud\.189\.cn\/include\/splash\/ url reject
-# > YueMeTV
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d):\d+/xygj-config-api\/queryData url reject
 # ---
 # > CNTV
 ^https?:\/\/www\.cntv\.cn\/nettv\/adp\/ url reject
@@ -314,8 +308,6 @@ https:\/\/api\.ithome\.com\/json\/newslist\/news url script-response-body https:
 ^https?:\/\/maicai\.api\.ddxq\.mobi\/advert\/ url reject
 
 # E
-# > eLong - mobile-api2011.elong.com,123.59.31.1,119.18.193.135
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/(adgateway|adv)\/ url reject
 ^https?:\/\/mobile-api2011.elong.com\/(adgateway|adv)\/ url reject
 # > eDaijia
 ^https?:\/\/pic\.edaijia\.cn\/adsplash\/ url reject
@@ -402,9 +394,6 @@ https:\/\/api\.ithome\.com\/json\/newslist\/news url script-response-body https:
 ^https?:\/\/api\.gotokeep\.com\/ads url reject
 # > Kuaikan Comics - api.kkmh.com
 ^https?:\/\/api\.kkmh\.com\/v\d+\/(ad|advertisement)\/ url reject
-# > KOOWO - 122.14.246.33,175.102.178.52
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/MobileAdServer\/ url reject
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/EcomResourceServer/AdPlayPage/adinfo url reject
 
 # L
 # > LaiFeng
@@ -634,7 +623,6 @@ https:\/\/api\.ithome\.com\/json\/newslist\/news url script-response-body https:
 ^https?:\/\/www\.zhihu\.com\/api\/v\d\/answers/\d+/recommendations url reject
 # > zhibo8 - a.qiumibao.com
 ^https?:\/\/a\.qiumibao\.com\/activities\/config\.php url reject
-^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d):\d+\/allOne\.php\?ad_name url reject
 # > zhuishushenqi - *.zhuishushenqi.com
 ^https?:\/\/(api|b)\.zhuishushenqi\.com\/advert url reject
 ^https?:\/\/api\.zhuishushenqi\.com\/splashes\/ios url reject
