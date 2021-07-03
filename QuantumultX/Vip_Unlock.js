@@ -7,7 +7,7 @@ https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVe
 ^https:\/\/commerce-i18n-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/ulike.js
 
 # > Note
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$) url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/revenuecat.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$) url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/revenuecat.js
 
 # > 萌猪记账 Pro（20210107）QuantumultX
 https://xrckeji.com/itally/app/user/query url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/mzjz.js
