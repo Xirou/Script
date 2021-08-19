@@ -1,7 +1,7 @@
 host, kwimg3.kuwo.cn, reject
 host, adstats.tencentmusic.com, reject
 host, free-mapdownload.autonavi.com, reject
-host, receiptcheck.quantumult.app, reject
+//host, receiptcheck.quantumult.app, reject
 host, p44-acsegateway.icloud.com.cn, reject
 -host, optimus-ads.amap.com, reject
 host, aos-cdn-image.amap.com, reject
