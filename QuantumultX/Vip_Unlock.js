@@ -194,9 +194,6 @@ https?:\/\/api\.jiaonizuocai\.com url script-response-body https://raw.githubuse
 # > 011 lensa 人像修图解锁（20200902）
 ^https?:\/\/subscription-service\.neuralprisma\.com\/subscription_get url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/lensa.js
 
-# > 010 财新 解锁付费文章（20200901）
-https://mappsv5.caixin.com/articlev5/* url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/caixin.js
-
 # > 009 moo 日记永久会员 (20200831) ⭐️
 https://diary.7english.cn:2433//api/user/userInfo url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/moo.js
 
