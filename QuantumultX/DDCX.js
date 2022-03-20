@@ -1,5 +1,5 @@
 //滴滴出行AD 2022/3/21 By：KYLE
-hostname=guard.sec.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, res.xiaojukeji.com, shop-gw.chengxinyouxuan.com
+hostname=guard.sec.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, res.xiaojukeji.com, shop-gw.chengxinyouxuan.com, img-ys011.didistatic.com 
 
 
 // > 01 安全提示横幅
@@ -23,4 +23,5 @@ hostname=guard.sec.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, res.xia
 // > 07 商城
 ^https:\/\/shop-gw\.chengxinyouxuan\.com\/(route|indexConfig|apolloConfig|getShopTuanInfos) url reject
 
-
+// > 08 开屏广告
+^https:\/\/img-ys011\.didistatic\.com\/static url reject
