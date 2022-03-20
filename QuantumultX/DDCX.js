@@ -5,7 +5,7 @@ hostname= as.xiaojukeji.com, pt-starimg.didistatic.com, security.xiaojukeji.com,
 // > 01 安全提示横幅
 
 //^https:\/\/as\.xiaojukeji\.com\/ep\/as url reject
-https://security.xiaojukeji.com/sec\/risk-gateway\/common\/dd_sdk_slimming_config url reject
+^https:\/\/security.xiaojukeji.com/sec\/risk-gateway\/common\/dd_sdk_slimming_config url reject
 
 ^https:\/\/guard\.sec\.xiaojukeji\.com\/api\/guard\/psg\/v2\/getShieldStatus url reject
 
