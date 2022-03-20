@@ -9,7 +9,7 @@ hostname=guard.sec.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, res.xia
 ^https:\/\/conf\.diditaxi\.com\.cn\/one\/page url reject
 
 // > 03 福利专区-金融服务-公交-骑车-滴滴乐园
-^https:\/\/conf\.diditaxi\.com\.cn\/nav\/widget
+^https:\/\/conf\.diditaxi\.com\.cn\/nav\/widget url reject
 
 // > 04 接送机-优惠商城
 ^https:\/\/api\.udache\.com\/gulfstream\/pre-sale\/v1\/other\/pGetSceneList url reject
