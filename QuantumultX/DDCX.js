@@ -18,7 +18,7 @@ hostname= pt-starimg.didistatic.com, security.xiaojukeji.com, guard.sec.xiaojuke
 ^https:\/\/api\.udache\.com\/gulfstream\/pre-sale\/v1\/other\/pGetSceneList url reject
 
 // > 05 主页领任务
-^https:\/\/conf\.diditaxi\.com\.cn\/(dynamic|fusion|dynamicmodule) url reject
+^https:\/\/conf\.diditaxi\.com\.cn\/api\/(dynamic|fusion|dynamicmodule) url reject
 
 // > 06 主页 非主流式悬浮挂件
 ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget url reject
