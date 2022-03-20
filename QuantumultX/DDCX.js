@@ -1,8 +1,11 @@
 //滴滴出行AD 2022/3/21 By：KYLE
-hostname=guard.sec.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, res.xiaojukeji.com, shop-gw.chengxinyouxuan.com, img-ys011.didistatic.com 
+hostname= pt-starimg.didistatic.com, security.xiaojukeji.com, guard.sec.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, res.xiaojukeji.com, shop-gw.chengxinyouxuan.com, img-ys011.didistatic.com 
 
 
 // > 01 安全提示横幅
+
+^https:\/\/security\.xiaojukeji\.com\/sec\/risk-gateway url reject
+
 ^https:\/\/guard\.sec\.xiaojukeji\.com\/api\/guard\/psg\/v2\/getShieldStatus url reject
 
 // > 02 底部打车&代价推荐
@@ -15,7 +18,7 @@ hostname=guard.sec.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, res.xia
 ^https:\/\/api\.udache\.com\/gulfstream\/pre-sale\/v1\/other\/pGetSceneList url reject
 
 // > 05 主页领任务
-^https:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf url reject
+^https:\/\/conf\.diditaxi\.com\.cn\/(dynamic|fusion|dynamicmodule) url reject
 
 // > 06 主页 非主流式悬浮挂件
 ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget url reject
@@ -25,3 +28,6 @@ hostname=guard.sec.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, res.xia
 
 // > 08 开屏广告
 ^https:\/\/img-ys011\.didistatic\.com\/static url reject
+
+// > 09 骑行
+^https:\/\/pt-starimg\.didistatic\.com\/static url reject
