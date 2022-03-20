@@ -1,9 +1,10 @@
 //滴滴出行AD 2022/3/21 By：KYLE
-hostname= pt-starimg.didistatic.com, security.xiaojukeji.com, guard.sec.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, res.xiaojukeji.com, shop-gw.chengxinyouxuan.com, img-ys011.didistatic.com 
+hostname= as.xiaojukeji.com, pt-starimg.didistatic.com, security.xiaojukeji.com, guard.sec.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, res.xiaojukeji.com, shop-gw.chengxinyouxuan.com, img-ys011.didistatic.com 
 
 
 // > 01 安全提示横幅
 
+^https:\/\/as\.xiaojukeji\.com\/ep\/as url reject
 ^https:\/\/security\.xiaojukeji\.com\/sec\/risk-gateway url reject
 
 ^https:\/\/guard\.sec\.xiaojukeji\.com\/api\/guard\/psg\/v2\/getShieldStatus url reject
