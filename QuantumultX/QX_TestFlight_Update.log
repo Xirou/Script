@@ -2,6 +2,7 @@
 #Update Time: 2022/03/22 04:36
 #Quantumult X  TestFight:更新日志
 #排序方式 从"新"X"旧"
+#欢迎投稿 TG：@mxr1995
 ///////////////////////////////////
 
 
@@ -199,7 +200,7 @@ opts: opts};
 
 1.0.0(33)
 - 增加rewrite 订阅，格式与导入rewrite样并可包含 MitM 主机名，不识别的条目将会自动跳过，参见 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-import-rewrite.txt
--订阅的配置和本地配置同时 （包括 MitM 主机名）生效，，rewrite 匹配按顺序，先本地后订阅、不同订阅按由上自下处理。
+- 订阅的配置和本地配置同时 （包括 MitM 主机名）生效，，rewrite 匹配按顺序，先本地后订阅、不同订阅按由上自下处理。
 
 1.0.0(32)
 - 支持从 URL导入rewrite 条目，不识别的条目将会自动跳过，格式参照 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-import-rewrite.txt
