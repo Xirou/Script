@@ -1,5 +1,5 @@
 ////////////////////////////////////
-#Update Time: 2022/03/22
+#Update Time: 2022/03/22 04:36
 #Quantumult X  TestFight:更新日志
 #排序方式从"新"新到"旧"
 ///////////////////////////////////
@@ -106,8 +106,7 @@ url: url,
 opts: opts};
 注意：
 使用该参数后的 HTTPS 连接将失去重用机制，即每个使用了该参数的 HTTPS 请求将会有完整的 TCP 握手以及TLS握手，建议在特殊场合使用。
-具体参见：https://raw.githubusercontent.com/
-crossutility/Quantumult-X/master/sample-fetch-opts-policy.js
+具体参见：https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-fetch-opts-policy.js
 
 1.0.25(597) 
 - Quantumult X Tunnel 环境下运行的脚本增加以下参数：senvironment.version 应用及系统版本相关信息Senvironment.sourcePath 脚本路径；如为临时脚本，该参数为空。如为 HTTP 或 HTTPS链接，符号＃以及后续内容均会被视为完整路径传入。senvironment.ssid 当前网络 SSID（如有）。
@@ -122,11 +121,8 @@ crossutility/Quantumult-X/master/sample-fetch-opts-policy.js
 
 1.0.23(565)
 - Adds DoH support, see sample configuraiton in app for details.
-# When DoH server is set, all other regular(has no
-specific domain related to it) DNS server settings will
-be ignored.
-# When multiple DoH servers are set, only the first
-one will be used.
+# When DoH server is set, all other regular(has no specific domain related to it) DNS server settings will be ignored.
+# When multiple DoH servers are set, only the first one will be used.
 # When the DoH server in use is NOT based on HTTP/2, the DoH will be temporarily disabled.
 * Not recommended for use in firewall related network environments, it is uncertain whether the DoH server can always be reached or not.
 * Not recommended for use if the server is none popular DNS server in your country or region, it may lose the CDN optimized results returned by the ISP DNS server.
@@ -142,8 +138,7 @@ one will be used.
 
 
 1.0.21(534)
-- 脚本记录中rewrite 相关条目增加显示所属资
-源的标签
+- 脚本记录中rewrite 相关条目增加显示所属资源的标签
 
 1.0.21(526)
 - 修复网络活动搜索界面滑块误触的问题
@@ -192,8 +187,7 @@ one will be used.
 - 允许为自定义策略设置图标。要求：图标文件名为策略名，后缀名为大写 PNG，存储路径为本地 mages 文件夹。尺寸见示例https://raw.githubusercontent.com/crossutility/Quantumult-X/master/icon-sample.PNG
 
 1.0.0(50)
-- 增加 rewrite 类型 script-response-body，具体参见 https://github.com/crossutility/Quantumult-
-X/blob/master/rewrite.md
+- 增加 rewrite 类型 script-response-body，具体参见 https://github.com/crossutility/Quantumult-X/blob/master/rewrite.md
 
 1.0.0(17)
 - Supports SSR (You can scan the SSR QRCode to find the configuration format).
