@@ -42,14 +42,10 @@
 - 修复当移动设备通过有线网络连接时的部分
 
 1.0.28(634)
-- $configuration.sendMessage 增加接口get_traffic_statistics 以获取当前节点流量使用情况，可参见示例 https://github.com/crossutility/Quantumult-X/blob/master/sample-get-traffic-statistics.js
-- 配置文件 [general] 增加 server_check_timeout 参数，具体说明请参见应用内示例配置
 
 1.0.28(633)
-- 修复对使用 TLS 类型的代理进行 URL latency benchmark 超时时，有可能出现的未立即返回测试结果的问题。
 
 1.0.28(632)
-- 修复对使用 TLS 类型的代理进行 URL latency benchmark 超时时，有可能出现的未立即返回测试结果的问题。
 
 1.0.28(631)
 - $configuration.sendMessage 增加接口 get_traffic_statistics 以获取当前节点流量使用情况，可参见示例 https://github.com/crossutility/Quantumult-X/blob/master/sample-get-traffic-statistics.js
@@ -297,7 +293,7 @@ geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubuserc
 - 引用（订阅）的远程资源采用异步更新，分流规则资源的更新增加额外选项（强制单策略替换，开启后将不会自动创建策略）。
 - 节点订阅列表向右滑动可一键生成 static 类型策路 （包含该订阅下所有节点)。
 
-1.0.0(41)）
+1.0.0(41)
 
 1.0.0(40)
 - 引用（订阅）的远程资源采用异步更新。
