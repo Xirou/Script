@@ -19,7 +19,7 @@
 注：
 仅变更资源标签并不会触发配置重载，因此仅变更资源标签时，请求记录中分流规则所属标签不会更新
 
-1.0.28 (641)
+1.0.28(641)
 - 分流规则增加参数 multi-interface-balance （对应全局出口负载均衡设置），例如： geoip, cn, direct, multi-interface-balance
 
 1.0.28(640)
@@ -189,15 +189,50 @@ opts: opts};
 - 自动为引用分流规则创建所需策略时，通知内容将同时显示该策略对应的资源 URL
 - 允许为自定义策略设置图标。要求：图标文件名为策略名，后缀名为大写 PNG，存储路径为本地 mages 文件夹。尺寸见示例https://raw.githubusercontent.com/crossutility/Quantumult-X/master/icon-sample.PNG
 
+
+
+
+
+1.0.0(63)
+- 增加一键更新所有引用的远程资源。
+
+1.0.0(62)
+- 修复一处拼写错误，如有使用负载均衡（轮询）策略，请参照示例更改对应参数名称。
+- 修复使用多个负载均衡（轮询）策略会崩溃的问题。
+- 修复保存不符合格式的 DNS 设蛋导致崩溃的问题。
+
+1.0.0(60)
+- 增加自定义主页显示节点落地信息的数据获取方式 (geo_location_checker)。
+- 增加长按节点获取节点落地信息的功能（需有配置 geo_location_checker)。
+- 范例中脚本各返回值为必须，否则显示查询失败。如不在意某个值，脚本返回任意固定值即可。
+- 为提高查询效率节点信息查询接口的请求仅支持http，范例如下：
+[general]
+geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-location-with-script.is
+
+1.0.0(59)
+- 调整 force_sni_domain name 为 false 时的处理机制。
+- 移除导入功能，减少无法区分功能模块的用户反馈。
+
+1.0.0(55)
+- 增加 Content-Encoding 为br 的HTTP body 解析与修改。
+- 更新 $notify 增加副标题。
+
 1.0.0(50)
 - 增加 rewrite 类型 script-response-body，具体参见 https://github.com/crossutility/Quantumult-X/blob/master/rewrite.md
-
 - Fixes issues when modifing response bodywith chucked transfer encoding.
 
+1.0.0(49)
+- 增加通知功能
+- 针对订阅节点的变更，增加策略自动调整功能。进行节点远程资源同步时如有节点减少，包含该节点的策路会自动移除该节点（必要条件：1、移除该节点后，策略至少还有一个其他节点或策略可以引用。2、直接引用该节点的策略不能为 ssid 类型策略。 ）
+- 进行节点远程资源同步时如有节点名称变更，会有通知提示（如启用了通知）
+- 类型为 available 策略的可用性指向如果有变动，会有通知提示（如启用了通知）
 
+1.0.0(47)
+- 增加 MitM 配置界面及开关。
 
-
-
+1.0.0(45)
+- 当引用的分流规则启用了个性化策略且在该策略名不存在的情况下 （文本编辑时会发生），同步该资源会自动为其创建一个简单的静态策略，之后可长按策略面板进行策略调整。
+- HTTP 请求体与响应体文本浏览编码方式可自行选择。
 
 1.0.0(44)
 - 修复在 iOS 13 iPad 上的显示问题（请删除重新安装）。
@@ -277,8 +312,8 @@ SSR protocol plugin with SS obfs plugin(obfs-http, obfs-tls).
 SR with AEAD ciphers.
 SR protocol plugin with V2Ray websocket.
 
-Notice: Since the v2ray-plugin for shadowsocks enabled the multiplex( V2RayMux.Cool) by default, even when mux is 1 itstill has Mux.Cool meta.
-You may want to change the source file (main.go of v2ray-plugin) by removing the MultiplexingConfig settings if you want it work with current version of Quantumult X.
+Notice: Since the v2ray-plugin for shadowsocks enabled the multiplex( V2RayMux.Cool) by default, even when mux is 1 itstill has Mux.Cool meta。
+You may want to change the source file (main.go of v2ray-plugin) by removing the MultiplexingConfig settings if you want it work with current version of Quantumult X。
 
 Issues:
 The SSR-URI generator may not work.
@@ -294,9 +329,9 @@ The SSR-URI generator may not work.
 - 修复初始添加节点订阅失败及重名节点品示为无节点的问题。
 
 ￼1.0.0(8)
--分离订阅节点与本地配置节点。如通过订阅更新节点时提示节点名重复，请删除本地配置中同名节点再更新。
--增加 UDP 端口白名单。
--节点可单独设置自身的 server_check_url 参数；如未设置，则使用全局server check ur 参数。server check uri 记员增加 web 服务器返回的 HTTP response header 部分。当用户使用自己的web 服务器作为 server_check_url时，可自行设置相应的 response header 返回更多信息。
+- 分离订阅节点与本地配置节点。如通过订阅更新节点时提示节点名重复，请删除本地配置中同名节点再更新。
+- 增加 UDP 端口白名单。
+- 节点可单独设置自身的 server_check_url 参数；如未设置，则使用全局server check ur 参数。server check uri 记员增加 web 服务器返回的 HTTP response header 部分。当用户使用自己的web 服务器作为 server_check_url时，可自行设置相应的 response header 返回更多信息。
 
 ￼1.0.0(4)
 更新进度异常缓慢，还未到公开测试程度，望悉知。
