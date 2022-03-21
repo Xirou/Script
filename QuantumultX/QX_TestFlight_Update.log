@@ -151,6 +151,9 @@ opts: opts};
 1.0.21(519)
 - 修复某些情况下写入脚本记录导致崩溃的问题。
 
+1.0.0(20)
+- Updated sample configuration
+
 1.0.17(449)
 - Beta test
 - Fixes some issues on Apple M1 chip Mac
