@@ -1,6 +1,6 @@
 ////////////////////////////////////
-#Update Time: 2022/03/21
-#Quantumult X  Testfight:更新日志
+#Update Time: 2022/03/22
+#Quantumult X  TestFight:更新日志
 #排序方式从"新"新到"旧"
 ///////////////////////////////////
 
@@ -117,6 +117,10 @@ opts: opts};
 crossutility/Quantumult-X/master/sample-fetch-
 opts-policy.js
 
+1.0.25(597) 
+- Quantumult X Tunnel 环境下运行的脚本增加以下参数：senvironment.version 应用及系统版本相关信息Senvironment.sourcePath 脚本路径；如为临
+时脚本，该参数为空。如为 HTTP 或 HTTPS链接，符号＃以及后续内容均会被视为完整路径传入。senvironment.ssid 当前网络 SSID（如有）。
+
 1.0.24(574)
 允许重置设备验证状态（其它设置-隐私权政策-在上
 角按钮，周期 30 日）。由于验证过程并非实时触发，
@@ -154,6 +158,31 @@ anti-ads related server (Quantumult X filter module
 has better perfomance for rejected domains, it can
 avoid the client's endless requests).
 
+
+
+
+
+
+
+
+
+
+1.0.21(534)
+- 脚本记录中rewrite 相关条目增加显示所属资
+源的标签
+
+1.0.21(526)
+- 修复网络活动搜索界面滑块误触的问题
+
+1.0.21(524)
+- 支持查询 JS 持久化存储的所有键值对个数
+(包括长度为 0的字符串）、总占用空间
+- 增加可视化自定义策略排序
+- 部分希望保留默认返回动画效果的用户，可通过滑动顶部功能面板切换（一轮变换一次）
+
+1.0.21(519)
+- 修复某些情况下写入脚本记录导致崩溃的问题。
+
 1.0.17(449)
 - Beta test
 - Fixes some issues on Apple M1 chip Mac
@@ -174,12 +203,87 @@ X的 VPN连接
 来显示结果。
 5、Intents Extension 内存独立
 
+1.0.13(347）
+- 日志中将记录是否为越狱系统。
+
+1.0.10(283)
+- 显示细节调整
+
 1.0.8(259)
 - 增加 running_ mode_ trigger 在网络环境切换时触发运
 行模式变更，具体可参见示例配置。
 
+1.0.1(125)
+- 增加 Always On 功能。当该功能启用时
+response-body 及 script-response-body 类型的
+rewrite 将会放宽响应体大小限制。
 
+1.0.1(124)
+- 增加仅 VMess over TLS 的支持，配置格式参考
+示例配置文件 (vmess,
+mess + tIs, mess + wS, vmess + ws + ts 均己支持）。
 
+1.0.0(94)
+- 兼容某些局域网设备的访问
+- 策略列表颜色一致性（策略状态，请求记录，
+运行模式）调整。
+
+1.0.0(88)
+- 自动为引用分流规则创建所需策略时，通知
+内容将同时显示该策略对应的资源 URL
+- 允许为自定义策略设置图标。要求：图标文
+件名为策略名，后缀名为大写 PNG，存储路
+径为本地 mages 文件夹。尺寸见示例
+https://raw.githubusercontent.com/
+crossutility/Quantumult-X/master/icon-
+sample.PNG
+
+1.0.0(50)
+- 增加 rewrite 类型 script-response-body，具体
+参见 https://github.com/crossutility/Quantumult-
+X/blob/master/rewrite.md
+
+1.0.0(17)
+- Supports SSR (You can scan the SSR
+QRCode to find the configuration format).
+Extra for SSR:
+SSR protocol plugin with SS obfs
+plugin(obfs-http, obfs-tls).
+SR with AEAD ciphers.
+SR protocol plugin with V2Ray websocket.
+
+Notice: Since the v2ray-plugin for
+shadowsocks enabled the multiplex( V2RayMux.Cool) by default, even when mux is 1 itstill has Mux.Cool meta. You may want to change the source file (main.go of v2ray-
+plugin) by removing the MultiplexingConfig settings if you want it work with current version of Quantumult X.
+
+Issues:
+The SSR-URI generator may not work.
+
+1.0.0 (18)
+- 修复 SSR 二维码扫描。请测试以下 Ⅰ+Ⅱ+Ⅲ组合（无需兼容模式）
+Ⅰ:AEAD 系列算法(aes-128-gcm, aes-192-gem, aes-256- gcm, chacha20-ietf-poly1305, xchacha20-ietfpoly1305), 非AEAD 系列亦支持，也可进行测试。
+ⅡSSR 协议插件(auth_sha1,sha1_v2,sha1_v4.auth_es128 _md5,auth_aes128_sha1, auth_chaina, auth_chain_b)
+Ⅲ:SSR 混淆插件或 SS 混淆插件(http_simple,http _post, tls1.2 _ticket _fastauth,
+tls1.2_ticket_auth, obfs-http, obfs-tls)
+
+1.0.0(16)
+*支持SS超过V2Rav WebSocket (TLS)．读取样本配置的细节，*为自签署的证书,你应该手动信任你自己的CA在设置应用程序或其他的握手会失败。
+要测试这个应用程序，打开试飞在iPhone或iPod Touch上使用10S 10.0或更晚安装更新。
+
+1.0.0(14)
+* SS-URI 相关功能增加识别以 SSR-URI描述的sS
+配置(origin, plain, simple_obfs http,
+simple_obfs_http_compatible, simple_obfs_tls,
+simple _obfs_tls_compatible)
+* SS-URI related functions can get SS
+configuration from SSR-URI if it contains the SS
+compatible info(origin, plain, simple _obfs_http,
+simple_obfs_http_compatible, simple _obfs_tls,
+simple_obfs_tls_compatible)
+
+￼1.0.0(9)
+- 修复初始添加节点订阅失败及重名节点品示为无
+节点的问题。
 
 ￼1.0.0(8)
 -分离订阅节点与本地配置节点。如通过订阅更新节点时提示节点名重复，请删除本地配置中同名节点再更新，
@@ -187,9 +291,7 @@ X的 VPN连接
 -节点可单独设置自身的 server_ check_url 参数；如未设置，则使用全局server check ur 参数。
 server check uri 记员增加 web 服务器返回的 HTTP response header 部分。当用户使用自己的web 服务器作为 server_ check_ur 时，可自行设置相应的 response header 返回更多信息。
 
-
 ￼1.0.0(4)
-
 更新进度异常缓慢，还未到公开测试程度，望悉知。
 - Completely rebuilt from scratch.
 - Only in the middle of SS.
