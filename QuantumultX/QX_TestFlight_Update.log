@@ -192,6 +192,18 @@ opts: opts};
 1.0.0(50)
 - 增加 rewrite 类型 script-response-body，具体参见 https://github.com/crossutility/Quantumult-X/blob/master/rewrite.md
 
+- Fixes issues when modifing response body
+with chucked transfer encoding.
+
+1.0.0(25)
+- Fixes issues when modifing response body with chucked transfer encoding.
+
+1.0.0(24)
+- Updated sample configuration
+
+1.0.0(21)
+- Fixes filter issue for IP-CIDR
+
 1.0.0(17)
 - Supports SSR (You can scan the SSR QRCode to find the configuration format).
 Extra for SSR:
