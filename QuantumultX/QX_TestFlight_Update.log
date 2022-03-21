@@ -20,7 +20,7 @@
 仅变更资源标签并不会触发配置重载，因此仅变更资源标签时，请求记录中分流规则所属标签不会更新
 
 1.0.28(641)
-- 分流规则增加参数 multi-interface-balance （对应全局出口负载均衡设置），例如： geoip, cn, direct, multi-interface-balance
+- 分流规则增加参数 multi-interface-balance （对应全局出口负载均衡设置），例如： geoip, cn, direct,multi-interface-balance
 
 1.0.28(640)
 - 出口接口选项（设置 - 其他设置 - 模式 - 出站接口）新增 ”负载均衡“ 以提供更大的出入口带宽（多连接应用），可类比交换机的链路聚合（layer3+4）功能。
@@ -29,7 +29,7 @@
 - 细节修正
 
 1.0.28(638)
-- 支持通过热点连接 Quantumult X 创建的 HTTP 及 SOCKS5 代理（先开启热点，再打开 VPN 开关）
+- 支持通过热点连接 Quantumult X 创建的 HTTP 及SOCKS5 代理（先开启热点，再打开 VPN 开关）
 
 1.0.28(637)
 - 延迟测试结果详情面板中增加记录总的时间开销
@@ -42,7 +42,7 @@
 - 修复当移动设备通过有线网络连接时的部分
 
 1.0.28(634)
-- $configuration.sendMessage 增加接口 get_traffic_statistics 以获取当前节点流量使用情况，可参见示例 https://github.com/crossutility/Quantumult-X/blob/master/sample-get-traffic-statistics.js
+- $configuration.sendMessage 增加接口get_traffic_statistics 以获取当前节点流量使用情况，可参见示例 https://github.com/crossutility/Quantumult-X/blob/master/sample-get-traffic-statistics.js
 - 配置文件 [general] 增加 server_check_timeout 参数，具体说明请参见应用内示例配置
 
 1.0.28(633)
