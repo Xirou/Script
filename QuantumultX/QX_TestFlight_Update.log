@@ -198,6 +198,19 @@ opts: opts};
 
 - Fixes issues when modifing response bodywith chucked transfer encoding.
 
+
+
+
+
+
+
+
+1.0.0（36）
+- ios 13 兼容性更新 （如使用 iOS 13 请更新）
+
+1.0.0（34）
+- 修复在 ios 13上MitM 根证书信任状态的检测。
+
 1.0.0(33)
 - 增加rewrite 订阅，格式与导入rewrite样并可包含 MitM 主机名，不识别的条目将会自动跳过，参见 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-import-rewrite.txt
 - 订阅的配置和本地配置同时 （包括 MitM 主机名）生效，，rewrite 匹配按顺序，先本地后订阅、不同订阅按由上自下处理。
