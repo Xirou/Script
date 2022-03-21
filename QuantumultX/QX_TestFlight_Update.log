@@ -96,7 +96,7 @@ vmess=example.com:80, method=none, password=4e58f4e8-2173-41e0-976c-bef89ec62204
 - 网络活动页面对应 UDP 记录的流量将显示为 0，对应的 TCP 记录会显示 UDP-over-TCP
 - 该协议节点流量统计会计算到 TCP 协议类型栏
 
-1.0.25 (598)
+1.0.25(598)
 - Quantumult X Tunnel 环境 $task.fetch 增加选项policy 指定所使用的出站策略，网络活动中命中的分流规则品示为 FETCH, POLICY NAME
 - 增加任务类型 event-interaction 以支持自定义HTTPS API 的 geo_location_ checker （内置的geo_ location_checker 模块依然仅支持 HTTP API)仅在 Quantumuit x Tunnel 运行时有效。
 var opts = {
@@ -152,11 +152,7 @@ opts: opts};
 1.0.21(519)
 - 修复某些情况下写入脚本记录导致崩溃的问题。
 
-1.0.0(30)
-- SSR 二维码识别修复
 
-1.0.0(20)
-- Updated sample configuration
 
 1.0.17(449)
 - Beta test
@@ -200,15 +196,14 @@ opts: opts};
 
 
 
+1.0.0(37)
+- 远程规则资源同步时将自动创建不存在的策
+略。
 
-
-
-
-
-1.0.0（36）
+1.0.0(36)
 - ios 13 兼容性更新 （如使用 iOS 13 请更新）
 
-1.0.0（34）
+1.0.0(34)
 - 修复在 ios 13上MitM 根证书信任状态的检测。
 
 1.0.0(33)
@@ -220,6 +215,9 @@ opts: opts};
 
 1.0.0(31)
 - Rewrite 302 307 将会自动跳过无变化 URL
+
+1.0.0(30)
+- SSR 二维码识别修复
 
 1.0.0(29)
 - 增加部分配置的凵操作
@@ -236,6 +234,15 @@ opts: opts};
 1.0.0(21)
 - Fixes filter issue for IP-CIDR
 
+1.0.0(20)
+- Updated sample configuration
+
+1.0.0(18)
+- 修复 SSR 二维码扫描。请测试以下 Ⅰ+Ⅱ+Ⅲ组合（无需兼容模式）
+Ⅰ:AEAD 系列算法(aes-128-gcm, aes-192-gem, aes-256- gcm, chacha20-ietf-poly1305, xchacha20-ietfpoly1305), 非AEAD 系列亦支持，也可进行测试。
+Ⅱ:SSR 协议插件(auth_sha1,sha1_v2,sha1_v4.auth_es128_md5,auth_aes128_sha1, auth_chaina, auth_chain_b)
+Ⅲ:SSR 混淆插件或 SS 混淆插件(http_simple,http_post, tls1.2_ticket_fastauth, tls1.2_ticket_auth, obfs-http, obfs-tls)
+
 1.0.0(17)
 - Supports SSR (You can scan the SSR QRCode to find the configuration format).
 Extra for SSR:
@@ -248,12 +255,6 @@ You may want to change the source file (main.go of v2ray-plugin) by removing the
 
 Issues:
 The SSR-URI generator may not work.
-
-1.0.0 (18)
-- 修复 SSR 二维码扫描。请测试以下 Ⅰ+Ⅱ+Ⅲ组合（无需兼容模式）
-Ⅰ:AEAD 系列算法(aes-128-gcm, aes-192-gem, aes-256- gcm, chacha20-ietf-poly1305, xchacha20-ietfpoly1305), 非AEAD 系列亦支持，也可进行测试。
-Ⅱ:SSR 协议插件(auth_sha1,sha1_v2,sha1_v4.auth_es128_md5,auth_aes128_sha1, auth_chaina, auth_chain_b)
-Ⅲ:SSR 混淆插件或 SS 混淆插件(http_simple,http_post, tls1.2_ticket_fastauth, tls1.2_ticket_auth, obfs-http, obfs-tls)
 
 1.0.0(16)
 *支持SS超过V2Rav WebSocket (TLS)．读取样本配置的细节，*为自签署的证书,你应该手动信任你自己的CA在设置应用程序或其他的握手会失败。要测试这个应用程序，打开试飞在iPhone或iPod Touch上使用10S 10.0或更晚安装更新。
