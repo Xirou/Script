@@ -308,10 +308,10 @@ geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubuserc
 - 远程规则资源同步时将自动创建不存在的策略。
 
 1.0.0(36)
-- ios 13 兼容性更新 （如使用 iOS 13 请更新）
+- IOS 13 兼容性更新 （如使用 iOS 13 请更新）
 
 1.0.0(34)
-- 修复在 ios 13上MitM 根证书信任状态的检测。
+- 修复在 IOS 13上MitM 根证书信任状态的检测。
 
 1.0.0(33)
 - 增加rewrite 订阅，格式与导入rewrite样并可包含 MitM 主机名，不识别的条目将会自动跳过，参见 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-import-rewrite.txt
@@ -327,7 +327,7 @@ geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubuserc
 - SSR 二维码识别修复
 
 1.0.0(29)
-- 增加部分配置的凵操作
+- 增加部分配置UI操作
 
 1.0.0(27)
 - Record the whole request and response(including body) by enabling HTTP Analyzer.
