@@ -136,15 +136,15 @@ opts: opts};
 
 
 1.0.21(534)
-- 脚本记录中rewrite 相关条目增加显示所属资源的标签
+- 脚本记录中rewrite 相关条目增加显示所属资源的标签。
 
 1.0.21(526)
-- 修复网络活动搜索界面滑块误触的问题
+- 修复网络活动搜索界面滑块误触的问题。
 
 1.0.21(524)
-- 支持查询 JS 持久化存储的所有键值对个数(包括长度为 0的字符串）、总占用空间
-- 增加可视化自定义策略排序
-- 部分希望保留默认返回动画效果的用户，可通过滑动顶部功能面板切换（一轮变换一次）
+- 支持查询 JS 持久化存储的所有键值对个数(包括长度为 0的字符串）、总占用空间。
+- 增加可视化自定义策略排序。
+- 部分希望保留默认返回动画效果的用户，可通过滑动顶部功能面板切换（一轮变换一次）。
 
 1.0.21(519)
 - 修复某些情况下写入脚本记录导致崩溃的问题。
@@ -197,11 +197,8 @@ tips:
 
 1.0.0(103)
 - 策略图标可附带在配置条目中，下载后的图标文件会缓存在Images 文件夹下。符合要求的图标才会显示，缓存的图标没有后缀名无需手动添加后缀。
-。如网络图标有更新，请手动清理对应缓存，之后会重新下载。如无img-url 参数，则按之前的设定载入策略图
-标。
-static=policy-name-1, Sample-A, Sample-B,
-Sample-C,img-url=http://example.com/icon.png
-
+。如网络图标有更新，请手动清理对应缓存，之后会重新下载。如无img-url 参数，则按之前的设定载入策略图标。
+static=policy-name-1, Sample-A, Sample-B,Sample-C,img-url=http://example.com/icon.png 
 1.0.0(102)
 
 1.0.0(101)
@@ -220,11 +217,11 @@ address=/example.com/force-timeout-v6
 - 双排简洁模式仅对 +12h 用户开放。
 
 1.0.0(95)
-- 简洁模式下的U 调整，请多策略用户自行使用含义清晰的图案。
+- 简洁模式下的UI调整，请多策略用户自行使用含义清晰的图案。
 - 引用的分流规则资源列表会显示策略偏好。
 
 1.0.0(94)
-- 兼容某些局域网设备的访问
+- 兼容某些局域网设备的访问。
 - 策略列表颜色一致性（策略状态，请求记录，运行模式）调整。
 
 1.0.0(93)
@@ -237,12 +234,12 @@ address=/example.com/force-timeout-v6
 Rewrite 类型，能用 response-body(regx) 解决，就不要使用 script-response-body(js).如果您不在乎内存超出系统限制进而中断连接，请随意。
 
 1.0.0(90)
-- Policy list supports customized policy image.
-- Supports lowercase extension (png) of policy image file.
-- Fixes an issue (UI) on iOS 13 Beta when loading QR code image from album.
+- Policy list supports customized policy image。
+- Supports lowercase extension (png) of policy image file。
+- Fixes an issue (UI) on iOS 13 Beta when loading QR code image from album。
 Tips:
-Quantumult: VMess + WebSocket + TLS (Service deployed by V2Ray).
-Quantumult X: Shadowsocks + WebSocket +TLS (Service deployed by V2Ray. Not compatible with v2ray-plugin that is Shadowsocks + Mux.Cool + WebSocket + TLS).
+Quantumult: VMess + WebSocket + TLS (Service deployed by V2Ray)。
+Quantumult X: Shadowsocks + WebSocket +TLS (Service deployed by V2Ray. Not compatible with v2ray-plugin that is Shadowsocks + Mux.Cool + WebSocket + TLS)。
 
 1.0.0(89)
 - 优化策略图像显示，忽略尺寸不符的图像。
@@ -275,7 +272,7 @@ Quantumult X: Shadowsocks + WebSocket +TLS (Service deployed by V2Ray. Not compa
 - 调整为远程资源自动创建策路的时机，不再出现对远程资源所使用的策略（或force-policy）提示未知第路。如文本编辑删除对应策略，Quantumult 会再次自动生成远程资源所需的策略。
 
 1.0.0(75)
-- 大幅提升 MitM 处理性能
+- 大幅提升 MitM 处理性能。
 - 修复某些环境下响应缓慢的问题。
 
 1.0.0(74)
@@ -332,10 +329,10 @@ geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubuserc
 - Fixes issues when modifing response bodywith chucked transfer encoding.
 
 1.0.0(49)
-- 增加通知功能
+- 增加通知功能。
 - 针对订阅节点的变更，增加策略自动调整功能。进行节点远程资源同步时如有节点减少，包含该节点的策路会自动移除该节点（必要条件：1、移除该节点后，策略至少还有一个其他节点或策略可以引用。2、直接引用该节点的策略不能为 ssid 类型策略。 ）
-- 进行节点远程资源同步时如有节点名称变更，会有通知提示（如启用了通知）
-- 类型为 available 策略的可用性指向如果有变动，会有通知提示（如启用了通知）
+- 进行节点远程资源同步时如有节点名称变更，会有通知提示（如启用了通知。）
+- 类型为 available 策略的可用性指向如果有变动，会有通知提示（如启用了通知。）
 
 1.0.0(47)
 - 增加 MitM 配置界面及开关。
