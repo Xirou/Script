@@ -181,6 +181,17 @@ opts: opts};
 - 兼容某些局域网设备的访问
 - 策略列表颜色一致性（策略状态，请求记录，运行模式）调整。
 
+1.0.0(90)
+- Policy list supports customized policy image.
+- Supports lowercase extension (png) of policy image file.
+- Fixes an issue (UI) on iOS 13 Beta when loading QR code image from album.
+Tips:
+Quantumult: VMess + WebSocket + TLS (Service deployed by V2Ray).
+Quantumult X: Shadowsocks + WebSocket +TLS (Service deployed by V2Ray. Not compatible with v2ray-plugin that is Shadowsocks + Mux.Cool + WebSocket + TLS).
+
+1.0.0(89)
+- 优化策略图像显示，忽略尺寸不符的图像。
+
 1.0.0(88)
 - 自动为引用分流规则创建所需策略时，通知内容将同时显示该策略对应的资源 URL
 - 允许为自定义策略设置图标。要求：图标文件名为策略名，后缀名为大写 PNG，存储路径为本地 mages 文件夹。尺寸见示例https://raw.githubusercontent.com/crossutility/Quantumult-X/master/icon-sample.PNG
