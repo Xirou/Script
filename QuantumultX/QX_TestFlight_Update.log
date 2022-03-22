@@ -143,7 +143,6 @@ No change log
 1.0.26(607)
 No change log
 
-
 1.0.26(606)
 - event-interaction 返回值增加 htmlMessage 字段，允许自定义消息显示样式，样例可参见注释代码部分: https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-fetch-opts-policy.js
 
