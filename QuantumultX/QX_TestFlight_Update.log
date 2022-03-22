@@ -3,6 +3,8 @@
 #Quantumult X  TestFight:更新日志
 #排序方式 从"新"X"旧"
 #欢迎投稿 TG：@mxr1995
+#开发者没版本或撤包，无法获得更新日志以 No changelog 代替。
+
 ///////////////////////////////////
 
 
@@ -42,9 +44,12 @@
 - 修复当移动设备通过有线网络连接时的部分
 
 1.0.28(634)
+No change log
 
 1.0.28(633)
+No change log
 
+No change log
 1.0.28(632)
 
 1.0.28(631)
@@ -92,6 +97,78 @@ vmess=example.com:80, method=none, password=4e58f4e8-2173-41e0-976c-bef89ec62204
 - 网络活动页面对应 UDP 记录的流量将显示为 0，对应的 TCP 记录会显示 UDP-over-TCP
 - 该协议节点流量统计会计算到 TCP 协议类型栏
 
+1.0.27(619)
+- 允许在 M1 系列的设备上进行 TestFlight 测试
+- 部分问题修正
+
+1.0.27(618)
+- 分流规则 via-interface 字段增加关键字 %TUN% 代表当前 Quantumult X Tunnel 自身的虚拟接口，有特殊需求的用户可自行通过该关键字实现链式代理的功能（需仔细配置相关规则以免造成无限环流）。
+
+例如：
+ip-cidr, ServerA's IP Range, ServerB
+host-suffix, example.com, ServerA, via-interface=%TUN%
+
+1.0.27(617)
+- 允许 [general] 下参数 network_check_url 生效。如配置该项，请务必设定为直接连接可达的 URL
+
+1.0.27(616)
+- 网络活动记录可以在更多设置中完全关闭。关闭后 Quuantumult X 不再记录新的网络相关活动，“网络活动” 面板也不再显示新的网络请求记录以及拒绝的相关域名记录（不影响脚本运行记录及日志）。需重新开启 VPN 后生效。
+- 分流规则 filter 支持以网络接口名来指定网络出口（部分 M1 设备用户特殊需求），例如 host-suffix, example.com, direct, via-interface=en0
+
+1.0.27(615)
+No change log
+
+1.0.27(614)
+- The profile resource parser adds "$resource.type" field to let users to distinguish the resource type (rewrite, server, filter or the uri) to customize the parsing logic.
+
+1.0.26(613)
+- Beta Test
+
+1.0.26(612)
+- 修复在 iPad 上打开应用可能会崩溃的问题
+
+1.0.26(611)
+- 修复 UIAction 可能会导致 UI 崩溃的问题
+
+1.0.26(610)
+- Decrease the maximum system resource usage when user deployed a lot of large configuraiton snippets with parser enabled.
+
+1.0.26(609)
+- Beta Test
+
+1.0.26(608)
+
+- Beta Test
+
+1.0.26(607)
+No change log
+
+
+1.0.26(606)
+- event-interaction 返回值增加 htmlMessage 字段，允许自定义消息显示样式，样例可参见注释代码部分: https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-fetch-opts-policy.js
+
+1.0.26(605)
+- 修复在 iOS 15 下 NE 发出的（配置文件错误等）警告窗不显示的问题
+
+1.0.26(604)
+- event-interaction 关联的 UIAction 图标支持普通的自定义图片
+
+1.0.26(603)
+No change log
+
+1.0.26(602)
+- 修复在 iOS 15 某些情况下 UI 崩溃的问题
+
+1.0.26(601)
+- 自定义策略列表 UIAction 可触发 event-interaction，传入参数为 UIAction 对应的策略名或节点标签。
+- 修复在 Quantumult X Tunnel 环境下 “opts: { redirection: false }” 不生效的问题。
+
+1.0.26(600)
+No changelog
+
+1.0.25(599)
+- 修复在部分设备上打开应用时可能会崩溃的问题
+
 1.0.25(598)
 - Quantumult X Tunnel 环境 $task.fetch 增加选项policy 指定所使用的出站策略，网络活动中命中的分流规则品示为 FETCH, POLICY NAME
 - 增加任务类型 event-interaction 以支持自定义HTTPS API 的 geo_location_ 
@@ -109,31 +186,79 @@ opts: opts};
 1.0.25(597) 
 - Quantumult X Tunnel 环境下运行的脚本增加以下参数：senvironment.version 应用及系统版本相关信息Senvironment.sourcePath 脚本路径；如为临时脚本，该参数为空。如为 HTTP 或 HTTPS链接，符号＃以及后续内容均会被视为完整路径传入。senvironment.ssid 当前网络 SSID（如有）。
 
-1.0.24(574)
-允许重置设备验证状态（其它设置-隐私权政策-在右上角按钮，周期 30 日）。由于验证过程并非实时触发，
-已为验证通过状态的其它设备可能稍晚才会变更为验证未知状态，再次验证可能需要重新获取 App Store 收据。
-注：
-1、末防止恶意分享，Build 574 之前在完全不使用icloud 辅助的情况 下从 App Store 第一次下载后每半年会增加 5 台设备名额。如进行以上重置，名额会重置为初始的8 台设备，且额外名额会从重置日开始计
-2、恶意分享的用户可能会在不同状态间切换。
-3、特殊情况请邮件联系反馈邮箱 (App Store 或TestFlight 应用介绍内有注明）。
+1.0.24(590)
+No changelog
 
 1.0.24(589)
-1.0.24(588)
-1.0.24(587)
-1.0.24(586)
-1.0.24(585)
-1.0.24(584)
-1.0.24(583)
-1.0.24(582)
-1.0.24(581)
-1.0.24(580)
-1.0.24(579)
-1.0.24(578)
-1.0.24(577)
-1.0.24(576)
-1.0.24(575)
-1.0.24(574)
+- Beta Test
 
+1.0.24(588)
+- 部分界面显示修正
+
+1.0.24(587)
+No changelog
+
+1.0.24(586)
+- 网络活动详情页面增加记录所命中 MitM hostname 对应的字符模型
+
+1.0.24(585)
+- 允许保存（使用） HTTP 混淆与 VMess 协议组合的配置，格式见应用内示例。
+
+1.0.24(584)
+- 修复某些 gallery（非 gallery） 链接在 build 583 上的崩溃问题
+- Gallery 搜索不再区分大小写
+
+1.0.24(583)
+- 增加 Gallery 工具栏
+- Gallery 更新机制由进入界面自动更新调整为用户手动点击进行更新
+
+
+1.0.24(582)
+- 节点资源增加图库入口
+
+1.0.24(581)
+- 增加 Icon Gallery 参见 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/icon-gallery.json
+- 修复 obfs=http_simple (ssr) 在某些组合配置中可能出现的握手失败的问题
+
+1.0.24(580)
+- 脚本记录页面增加脚本所运行的 JS 环境标识符（便于与 tunnel debug 等级日志对照），以及创建该环境时 Network Extension 的可用内存（os_proc_available_memory）
+
+注：
+1、由于延迟加载及缓存机制，Network Extension 可用内存在使用初期可能会明显的逐渐减少，然后趋于稳定。
+2、当使用 console.log 方法时，如果传入的字符串长度超过 32 x 1024 个字符，仅会输出前 32 x 1024 个字符到日志中。如需打印大于该长度字符串，可自行分割字符串后依次调用 console.log 方法。
+3、以下 “重构版本” 特指 “iOS/iPadOS 13 Quantumult X v1.0.21+ （2021-04-19）”、 “iOS/iPadOS 14+ Quantumult X v1.0.17+ （2020-12-07）” 运行的版本，其余运行环境的版本均为 “传统版本”。
+* $task.fetch 可选项 filter 仅作用于 “传统版本”
+* 动态内存压力跳过脚本执行的机制仅存在于 “传统版本”
+* 我们建议仅在 “重构版本” 上使用脚本相关功能
+
+1.0.24(579)
+- 编辑脚本路径或引用资源等路径时，可直接浏览并选取对应目录下的本地文件；资源片段仅显示后缀名为 snippet 的文件。
+
+1.0.24(578)
+- HTTP 抓取记录搜索页面增加一系列常用备选关键字以及对应记录的域名列表以供选择。
+
+1.0.24(577)
+- 网络活动搜索页面增加常用关键字搜索
+
+1.0.24(576)
+- 支持自定义 DoH 请求所使用的 User-Agent 字段，默认值为 Quantumult%20X/版本号
+
+例：
+[general]
+doh_user_agent= Agent/1.0
+
+1.0.24(575)
+- DoH 配置项支持 excluded_ssids 参数（如使用了 no-system 项，请确保在该 SSID 下有其它可用的传统 DNS 配置项）
+doh-server=https://dns.alidns.com/dns-query, excluded_ssids=SSID1, SSID2
+server=119.29.29.29
+
+1.0.24(574)
+- 允许重置设备验证状态（其它设置-隐私权政策-右上角按钮，周期 30 日）。由于验证过程并非实时触发，已为验证通过状态的其它设备可能稍晚才会变更为验证未知状态，再次验证可能需要重新获取 App Store 收据。
+
+注：
+1、未防止恶意分享，Build 574 之前在完全不使用 iCloud 辅助的情况下从 App Store 第一次下载后每半年会增加 5 台设备名额。如进行以上重置，名额会重置为初始的 8 台设备，且额外名额会从重置日开始计算。
+2、恶意分享的用户可能会在不同状态间切换。
+3、特殊情况请邮件联系反馈邮箱（App Store 或 TestFlight 应用介绍内有注明）。
 
 1.0.23(572)
 - Beta Test
