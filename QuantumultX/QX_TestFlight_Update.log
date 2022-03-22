@@ -137,7 +137,6 @@ No change log
 - Beta Test
 
 1.0.26(608)
-
 - Beta Test
 
 1.0.26(607)
@@ -752,7 +751,6 @@ Quantumult X (v1.0.17) 在 iOS 14 系列系统上 NE 环境下 $task.fetch 响�
 4、请务必调用 $done(来结束，1og 会自动作为结果返回。如需查看 log 可使用 Shortcuts 的 Show Result来显示结果。
 5、Intents Extension 内存独立
 
-
 1.0.13(347）
 - 日志中将记录是否为越狱系统。
 
@@ -762,16 +760,189 @@ Quantumult X (v1.0.17) 在 iOS 14 系列系统上 NE 环境下 $task.fetch 响�
 1.0.8(259)
 - 增加 running_mode_trigger 在网络环境切换时触发运行模式变更，具体可参见示例配置。
 
+1.0.5(193)
+- Supports single URL test.
+
+1.0.5(192)
+- Beta test
+
+1.0.5(191)
+- Beta test
+
+1.0.5(190)
+- 类型为 script-response-body 及 script-response-header 的rewrite 传入参数不再包含request header 以减少内存使用。
+如需获得request header, 可使用 script-request-header类型 rewrite.
+
+1.0.5(189)
+- 修正一处内存错误
+- 在ios [13.0- 13.2)环境下，SSID 相关功能不可用提示除了之前版本在开启 VPN 时会提示并断开连接，增加在已连接状态时更改配置文件也会提示并断开连接。
+那些绕过提示非要在 IOS [13.0-13.2）下使用SSID 策略，又来反馈 SSID 策略不生效或显示不
+一致是bug用户，请自行安装支持开启定位权限的历史版本 Quantumult X [1.0.0-1.0.2] 即可。
+其它  IOS 环境无该限制，也无需开启定位权限。
+
+1.0.5(188)
+- Supports rewrite script-request-header. 
+Check sample at https://github.com/crossutility/Quantumult-X/blob/master/sample-rewrite-request-header.js
+
+1.0.5(187)
+- 支持一键清空历史日志或 HTTP 调试记录。
+1.0.5(186)
+- 支持使用自定义 MaxMind License Key 更新GeoLite2 Country.
+
+1.0.5(185)
+No changelog
+
+1.0.5(184)
+- 修复build 165引入的 IPv6 查询结果缓存丢失问题。
+
+1.0.5(183)
+Supports import GeoLite2 Country database.
+- Supports rewrite script-response-header. This is convenience and consumes less memory if you don't care about the response body or the body is not text related, the original body will be automatically appended to the modified headers. Check sample at https://github.com/crossutility/Quantumult-X/blob/master/sample-rewrite-response-header.js
+
+1.0.5(182)
+- 在运行状态下，可在应用内手动执行请求任务以便调试。
+- console.log（）不再要求日志为 debua 等级，在其它等级下 console.log（亦会输出到日志文件，请合理使用 console.log()以保持运行效率及内存控制。
+
+1.0.5(181)
+- 修复build 180 请求文本编辑问题。
+
+1.0.5(180)
+- 增加请求任务的 UI配置，可点击编辑，向右滑
+动设置运行时间。
+
+1.0.5(179)
+- 修复部分设备配置文件编辑以及导入的一点问题。
+
+1.0.5(178)
+No changelog
+
+1.0.5(177)
+- 修复build 176 中调用 setTimeout 导致崩溃的问题。
+- 同一个task每一次的执行都会是全新的JSContext
+- 同一 URL可同时匹配两项rewrite 规则，rewrite 类型需属于请求修改与响应修改（重定向及构造响应的类型均不属于修改）
+- 响应内Rewrite 传入参数及需匹配的 URL均为修改前的数据，即使请求头或请求路径被修改过。
+例1:
+^https?://example\.com/api/2/ url request-header "GET/api/2/HTTP/1\.1(r\n) request-header GET /api/1/HTTP/1.1$1
+^https?://example\.com/api/2/ url response-body "info":\L.+I ,"appid" response-body "info":[],"appid"
+
+例2:
+^https?://example\.com/resource4/ url request-header (r\n)User-Agent:.+(r\n) request-header$1 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36$2
+^https?://example\.com/resource4/ url script-response-body example.js
+注：Rewrite 中 request-header 匹配的内容包括请求行 （请求行参见 https://tools.ietf.org/html/rfc7230#section-3.1.1 与 https://tools.ietf.org/html/rfc7230#section-5.3） 与所有请求头以及所有换行符 CRLF，可开启调试模式检测是否编写正确。
+注：Available 类型的策略如果触发了该策略下所有节点 URL测试，该测试是并发的，如果你节点供应商或者你目前接入的网络运营商限制过多请不要使用该策略，也不要在主页面进行 URL测试）。
+
+1.0.5(176)
+No changelog
+
+1.0.5(175)
+No changelog
+
+1.0.5(174)
+- HTTP调试历史记录支持查看与搜索。
+- 未进行 MitM 的HTTPS 请求及非 HTTP 类请求不会在记录中展示
+- 如响应内容为图片类型，图片亦会显示在请求列表中。如被 rewrite reject-img 命中，则为透明图片。
+
+1.0.5(173)
+-新增Settimeout 方法（适用于HTTP sewrite及task),例setTimeout(function()
+{console.log("abc");}1000)；
+
+1.0.5(172)
+HTTP rewrite and task improvements.
+$prefs.valueForKey(key),
+$prefs.setValueForKey(value, key),
+$prefs.removeValueForKey(key),
+Sprefs.removeAllValues(), value and key should be string. The data of $prefs will be cleared only when Quantumult X is deleted.
+
+1.0.5(171)
+- $task.fetch() works for HTTP rewrite now.
+
+1.0.5(170)
+No changelog
+
+1.0.5(169)
+- Time in [task local] will be local time not the
+UTC time for convenience and less feedback
+(UTC time in build 166, 167).
+
+1.0.5(168)
+No changelog
+
+1.0.5(167)
+- Fixes SNI name parsing issue for MitM
+
+1.0.5(166)
+- Add module task, check sample configurationfor details. No Ul right now.
+
+1.0.5(165)
+- Improvements related to DNS query
+
+1.0.4(164)
+No changelog
+
+1.0.4(163)
+- Bug fixes.
+
+1.0.4(162)
+- 修复部分设备配置文件编辑的一点问题。
+
+1.0.4(161)
+- 添加 icloud 支持。当开启 icloud后Quantumult X 会从icloud 云盘中读取相关类型的文件，否则读取本机文件。
+可自行使用应用“Files”查看及同步对应资源策略图标：
+本机："On My iPhone - Quantumult X - Images"
+iCloud: "iCloud Drive - Quantumult X - Images"
+
+1.0.4(160)
+No changelog
+
+1.0.4(159)
+- Fixes an issue that some domains skipped placeholder IP even thev are not in the dns_exclusion_list.
+
+1.0.4(158)
+You can always opt out of beta test by tapping "Stop Testing" in TestFlight app.
+- Script 类型rewrite 如未载入对应脚本文件（或非本地路径文件），会发出通知（需开启显示脚本错误通知）
+
+1.0.4(157)
+- Improvements.
+注：
+测试版版本信息如显示绿色问号，请先删除TestFlight 测试版。安装 App Store 最新1.0.3版并运行一次，待得版本信息显示为绿色对号后再安装 TestFlight 测试版。
+测试版版本信息如显示红色问号 (rewrite 功能不可用，其它功能包括多策略、MitM 及抓包功能均不受影响），请支持正版。
+
+1.0.4(156)
+- Fixes "Open with" issue when export configuration from other apps or AirDrop.请先运行一次 1.0.3 App Store 版本。
 
 1.0.3(155)
+- MitM 模块配置增加 empty_sni_enabled 字段（见示例配置文件），默认emptv sni enabled = false；请仅在单独调试某应用网络请求时开启(看不懂请务必false）。
+解释如下，关键后半段：
+当 empty_sni_enabled = false 时，MitM 获取 TLS握手 Client Hello 中的域名，对 MitM 配置中的hostname 字段进行匹配、匹配命中后才进行MitM;如果 Client Hello 中不包含域名信息，则该请求不会被进行 MitM.
+当 empty_sni_enabled = true 时， MitM 获取TLS握手 Client Hello 中的域名，对MitM配置中的hostname 字段进行几配，匹配命中后才进行MitM;如果 Client Hello 中不包含域名信息，同样会进行 MitM（该 MitM 在获取服务端证书重签后才正式开始）。
+
 1.0.3(154)
+- MitM 模块配置增加 empty_sni_enabled 字段（见示例配置文件），默认 empty_sni_enabled=false；请仅在单独调试某应用网络请求时开启（看不懂请务必false）。
+解释如下：
+一般MitM 是获取TLS握手Client Hello 中的域名，对 MitM 配置中的hostname 字段进行匹配，匹配命中后才进行 MitM;设置 empty_sni_enabled = true 时， MitM 会作用于所有Client Hello 中不包含域名信息的TLS请求（该MitM 在获取服务端证书重签后才正式开始）。
+
 1.0.3(153)
+- 为配置了over TLS选项(wss、over-tls 以及http 类型代理设置了over-tls=true）的代理协议增加参数 tis-verification；末配置该选项以及配置 ts-verification=true 进行证书验证，配置ts-verification=false 则跳过证书验证。
+
 1.0.3(152)
+- 为配置了over TLS选项(wss、over-tls 以及http 类型代理设置了over-tls=true）的代理协议增加参数 tis-verification；末配置该选项以及配置 ts-verification=true 进行证书验证，配置ts-verification=false 则跳过证书验证。
+
 1.0.3(151)
+- Beta Test
+
 1.0.3(150)
+- 远程节点资源增加字段 as-policy （需同时包含tag宇段），支持类型 static、available、round-robin，如tag 与已有策略名相同则跳过 as-policy特性。
+
 1.0.3(149)
+- Bug fixes for as-policy.
+
 1.0.3(148)
+- 远程节点资源增加字段 as-policy（需同时包含tag字段），支持类型 static、 available、round-robin，如tag 与已有策略名相同则跳过 as-policy特性。
+[server remote]
+https://raw.githubusercontent.com/crossutility/Quantumult-X/master/server-complete.txt,tag=Policy Name, as-policy=static, img-url=http://example.com/icon.png, enabled=true
+
 1.0.3(147)
+No changelog
 
 1.0.3(146)
 - Test
