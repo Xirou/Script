@@ -756,6 +756,7 @@ Quantumult X (v1.0.17) 在 iOS 14 系列系统上 NE 环境下 $task.fetch 响�
 4、请务必调用 $done(来结束，1og 会自动作为结果返回。如需查看 log 可使用 Shortcuts 的 Show Result来显示结果。
 5、Intents Extension 内存独立
 
+
 1.0.13(347）
 - 日志中将记录是否为越狱系统。
 
@@ -765,17 +766,130 @@ Quantumult X (v1.0.17) 在 iOS 14 系列系统上 NE 环境下 $task.fetch 响�
 1.0.8(259)
 - 增加 running_mode_trigger 在网络环境切换时触发运行模式变更，具体可参见示例配置。
 
+1.0.1(137)
+No changelog
+
+1.0.2(136)
+- 对HTTP 代理协议远程引用的 Quantumult x 配
+置片段的支持。
+
+1.0.1(135)
+No changelog
+
+1.0.1(134)
+No changelog
+
+1.0.2(133)
+- 节点页面 URL Test 记录增加 TCP握手数据
+- 因rewrite HTTP response body 类型不再支持引用远程资源，故而rewrite 引用中所包含的response body 类型不再生效（其它rewrite 类型依然生效）。
+
+1.0.2(132)>@Cuttlefish
+- 内置策略可自定义图标 (“On My iPhone Quantumult X”对应资源目录中命名为proxy.png、direct.png、reject.png 的图片）
+- Rewrite HTTP response body 类型不再支持引用远程资源，仅支持读取本地(“On My iPhone
+- Quantumult X”对应资源目录） 相关资源
+
+1.0.1(131)
+No changelog
+
+1.0.1(130)>@Cuttlefish
+- 修复开启了 Alwavs On 的情况下弹窗的问题。
+- 恢复配置文本行数显示。
+
+1.0.1(129)
+No changelog
+
+1.0.1(128)>@Cuttlefish
+- Rewrite script-response-body 将自动跳过包含以下关键字的脚本，防止相关功能滥用：renew、vip、paid、premium 等
+- 临时取消配置文本的行数显示。
+
+1.0.1(127)>@Cuttlefish
+- 开启了Force policy 的分流资源将会在列表中显
+示对应的 policy
+
+1.0.1(126)>@Cuttlefish
+- 增加 Always On 功能。当该功能启用时response-body 及 script-response-body 类型的rewrite 将会放宽响应体大小限制
+
 1.0.1(125)
-- 增加 Always On 功能。当该功能启用时response-body 及 script-response-body 类型的rewrite 将会放宽响应体大小限制。
+No changelog
 
 1.0.1(124)
 - 增加仅 VMess over TLS 的支持，配置格式参考示例配置文件 (vmess,mess + tIs, mess + wS, vmess + ws + ts 均己支持）。
+
+1.0.1(123)>@Cuttlefish
+- 节点列表不再显示节点地址，改为显示协议类型。目前仅显示两种 vmess 及 shadowsocks （使用了 ssr 混淆插件和协议插件的节点亦统一显示 shadowsocks)
+- 对 VMess 远程引用的 Quantumult X 配置片段的支持。
+- wss 暂不支持自签名证书，
+
+1.0.1(122)>@Cuttlefish
+- 允许配置不带 ws 或 wss 的VMess (TCP)配置格式参考示例配置文件 (vmess + ws + ts上个测试版build 121已支持）
+- Link 方式添加 VMess 暂未支持。
+注：不支持 VMess UDP 转发。
+
+1.0.1(121)>@Cuttlefish
+- VMess 协议(vmess+ws+tis）支持（终于不用再回复如何搭建 ss+ws+tis的问题了），配置格式参考示例配置文件。
+已知bug：节点列表界面点击生成 VMess 节点：维码或 URI 会闪退。
+
+1.0.0(120)>@Cuttlefish
+- 修复一处解析配置导致开启连接时崩溃的问题。
+
+1.0.0(119)>@Cuttlefish
+当配置了自定义 DNS时（例server=223.5.5.5） ，如需强制某域名（例example.com）仅使用系统 DNS 而不额外使用自定义的 DNS（例 223.5.5.5） 进行查询，可以配置为 server=lexample.com/system
+
+1.0.0(118)>@Cuttlefish
+- SSID 类策略如仅配置了 Wi-Fi与蜂窝网子策略，未配置具体 SSID 下的子策略时，该SSID 策略将无须开启定位权限 (iOS 13)
+- ss+ws及ss+ws+tls配置生成的二维码遵循"SIP002 URI Scheme"
+
+1.0.0(117)>@Cuttlefish
+- 二维码增加 obts-uri 参数。
+- 修复当 ws 配置末设置 obfs-host 参数时连接失败的问题。
+Tips for ws:
+服务端如使用 v2ray-plugin 仅支持最新commit(非release） 版自行编译(mux=0)。
+
+1.0.0(116)>@Cuttlefish
+- 除下拉外，额外增加长按节点进行网页响应测试；下拉测试所有展开节点，长按仅测试该节点所属资源的所有节点。
+
+1.0.0(115)>@Cuttlefish
+- 修复在 ios 10上点击下载配置文件时，界面崩溃的问题
+-修复当从不同尺寸 ihone 设备备份中恢复时，部分元素尺寸不正确的问题．
+- DHCP lease time 到期的事件不会再进行网络变动通知。
+
+1.0.0(114)
+- 当本机开启热点连接时，主应用节点界面下拉时不再进行 URL test.
+关于 Quantumult X 不支持 vmess 协议的说明：Quantumult 最初打算支持 vmess 协议并不是因为 wss 完整的tls握手过程或者 vmess 本身，而是因为 vmess + ws 可以通过 CDN；现在Quantumult X 已支持 ss + ws (v2ray-core or v2ray-plugin） 亦可通过 CDN，故而不再支持vmess 协议。
+
+1.0.0(113)>@Cuttlefish
+- Fixes color issue on iOS 11 or earlier.
+
+1.0.0(112)>@Cuttlefish
+- 增加 shortcut
+
+1.0.0(111)
+No changelog
+
+1.0.0(110)>@Cuttlefish
+- 额外增加策略选择方式：运行时，可在策略（路径）状态中选择所需策略。
+
+1.0.0(109)>@Cuttlefish
+- SSR 二维码包含混淆参数形如"'example.com#key: Value" 会仅保留example.com 为 Quantumult X 配置中 obfs-host参数，而非直接抛出错误提示。
+- 配置文件中 obfs-host 参数如含有＃之类的特殊符号将会提示错误。
+- 其它优化。
+以下看不懂可略过，鉴于好些人问，统一回答
+(下文所述“Quantumult 中 HTTP(S) 模块”特指“HTTP(S)本地（回环）代理服务器”)
+1、Quantumult x 中所有的 HTTP(S)解析全部都是 TUN 口的原始 TCP 数据。
+2、Quantumult X 对TUN 口的解析及对应功能在Quantumult 上做了大幅升级，支持所有在Quantumult 中 HTTP(S)模块已经实现的功能，并增加更多相关功能（完整的请求及响应解析，改写请求头，改写响应体）；也意味着对强制只走 TUN 口的应用所进行的 HTTP(S) 请求也能进行修改(Body rewrite)。
+3、由于 Quantumult X 中的 HTTP(S)解析及相关功能已无须开启一个HTTP(S） 本地（回环）代理服务器来实现（TUN 口的原始 TCP数据的HTTP(S) 解析及修改功能已全部支持），故而Quantumult X 移除了在Quantumult 中的HTTP(S) 模块。移除以上模块后将兼容更多检测系统代理环境应用（如：浦发手机银行 app 开启即提示代理环境等）；移除以上模块后在 ios 12上不会再产生偶发的 siri 失灵问题；意味着Quantumult X 有着更强的兼容性，并同时具有更多的HTTP(S) 数据的解析与修改功能。
 
 1.0.0(108)
 - 修复使用 SSR 协议插件的UDP转发导致崩溃的问题。
 
 1.0.0(107)
 - 由手上个版本(build 106） 未对脚本rewrite 的响应体尺寸进行限制，导致运行不稳定，故而恢复尺寸限制。感谢使用微博用户的反馈。
+
+1.0.0(106)
+No changelog
+
+1.0.0(105)>@Cuttlefish
+- 修复无法识别节点地址为IPv6 格式的节点二维码（SSR-URl，订阅）的问题。
 
 1.0.0(104)
 - 进一步支持 static=policy-name-1, Sample-A, Sample-B, Sample-C, img-url=icon.png
@@ -787,7 +901,9 @@ tips:
 - 策略图标可附带在配置条目中，下载后的图标文件会缓存在Images 文件夹下。符合要求的图标才会显示，缓存的图标没有后缀名无需手动添加后缀。
 。如网络图标有更新，请手动清理对应缓存，之后会重新下载。如无img-url 参数，则按之前的设定载入策略图标。
 static=policy-name-1, Sample-A, Sample-B,Sample-C,img-url=http://example.com/icon.png 
+
 1.0.0(102)
+No changelog
 
 1.0.0(101)
 - 为某些 IPv6 用户的特殊需求增加新的 DNS 设置项。
@@ -803,6 +919,15 @@ address=/example.com/force-timeout-v6
 - 修复合法的 DNS 格式却提示格式错误的问题。
 - 允许 IPv4 与 IPV6 双环境下无 IPv4 DNS 情况下进行 IPv4 域名查询与访问。
 - 双排简洁模式仅对 +12h 用户开放。
+
+1.0.0(98)
+No changelog
+
+1.0.0(97)
+No changelog
+
+1.0.0(96)
+No changelog
 
 1.0.0(95)
 - 简洁模式下的UI调整，请多策略用户自行使用含义清晰的图案。
@@ -820,6 +945,9 @@ address=/example.com/force-timeout-v6
 - 优化非透明背景自定义图标在策略列表中的显示效果。
 提示：
 Rewrite 类型，能用 response-body(regx) 解决，就不要使用 script-response-body(js).如果您不在乎内存超出系统限制进而中断连接，请随意。
+
+1.0.0(91)>@Cuttlefish
+- Fixes an issue related to response-body rewrite.
 
 1.0.0(90)
 - Policy list supports customized policy image。
@@ -846,8 +974,11 @@ Quantumult X: Shadowsocks + WebSocket +TLS (Service deployed by V2Ray. Not compa
 - 如某策略所有候选节点与某节点订阅包含的节点数量与名称均相同，则该策略与该订阅视为相互关联，被关联的策略候选节点会随着所关联的订阅同步更新。
 
 1.0.0(85)
-- UI 修复引用资源列表排序（iOs 13 以下）。
-- UI 修复暗色与亮色模式变换 (ios 13)。
+- UI 修复引用资源列表排序（iOS 13 以下）。
+- UI 修复暗色与亮色模式变换 (IOS 13)。
+
+1.0.0(84)>@Cuttlefish
+- UI修复节点折叠列表过多时的卡顿。
 
 1.0.0(83)
 - 必要时，在下次开启应用时会自动保持节点(订阅）列表展开与收起状态。
@@ -855,6 +986,9 @@ Quantumult X: Shadowsocks + WebSocket +TLS (Service deployed by V2Ray. Not compa
 
 1.0.0(82)
 - 调整节点列表显示。
+
+1.0.0(81)>@Cuttlefish
+- geo_location_checker 支持对响应数据的处理(chunked, zip等）
 
 1.0.0(79)
 - 调整为远程资源自动创建策路的时机，不再出现对远程资源所使用的策略（或force-policy）提示未知第路。如文本编辑删除对应策略，Quantumult 会再次自动生成远程资源所需的策略。
