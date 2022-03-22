@@ -177,8 +177,25 @@ opts: opts};
 1.0.1(124)
 - 增加仅 VMess over TLS 的支持，配置格式参考示例配置文件 (vmess,mess + tIs, mess + wS, vmess + ws + ts 均己支持）。
 
-1.0.0(101)
 
+
+
+
+
+
+
+
+
+1.0.0(103)
+- 策略图标可附带在配置条目中，下载后的图标文件会缓存在Images 文件夹下。符合要求的图标才会显示，缓存的图标没有后缀名无需手动添加后缀。
+。如网络图标有更新，请手动清理对应缓存，之后会重新下载。如无img-url 参数，则按之前的设定载入策略图
+标。
+static=policy-name-1, Sample-A, Sample-B,
+Sample-C,img-ur|=http://example.com/icon.png
+
+1.0.0(102)
+
+1.0.0(101)
 - 为某些 IPv6 用户的特殊需求增加新的 DNS 设置项。
 address=/example.com/force-timeout-v4
 address=/example.com/force-timeout-v6
