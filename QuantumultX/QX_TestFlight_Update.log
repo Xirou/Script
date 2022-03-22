@@ -117,73 +117,151 @@ opts: opts};
 2、恶意分享的用户可能会在不同状态间切换。
 3、特殊情况请邮件联系反馈邮箱 (App Store 或TestFlight 应用介绍内有注明）。
 
+1.0.24(589)
+1.0.24(588)
+1.0.24(587)
+1.0.24(586)
+1.0.24(585)
+1.0.24(584)
+1.0.24(583)
+1.0.24(582)
+1.0.24(581)
+1.0.24(580)
+1.0.24(579)
+1.0.24(578)
+1.0.24(577)
+1.0.24(576)
+1.0.24(575)
+1.0.24(574)
+
+
+1.0.23(572)
+- Beta Test
+
+1.0.23(570)
+- 修复 NE 环境下执行某些强混淆脚本导致的 JS 环境异常。
+
+1.0.23(569)
+- 修复请求记录页面重用的连接未显示对应标识等问题。
+
+iOS 15 DB 1
+- 当用户启用了 MitM 功能但未正确配置 MitM 证书的情况下，尝试开启 VPN （自动关闭）时未出现弹窗（用户配置错误的原因）的问题。
+
+1.0.23(568)
+- 调整
+
+1.0.23(567)
+- 修复 build 566 某些页面无法滑动的问题
+- MitM 本地失败（不包含 Quantumult X 校验远端证书主动断开不受信连接）将明确显示，不再显示为 n/a
+
+1.0.23(566)
+- 当使用自定义回退效果时，支持从页面中间滑动返回，无需再从屏幕边缘触发（编辑与保存相关页面仍仅允许边缘滑动返回，以免误操作）。
+
 1.0.23(565)
 - Adds DoH support, see sample configuraiton in app for details.
+
 # When DoH server is set, all other regular(has no specific domain related to it) DNS server settings will be ignored.
 # When multiple DoH servers are set, only the first one will be used.
 # When the DoH server in use is NOT based on HTTP/2, the DoH will be temporarily disabled.
+
 * Not recommended for use in firewall related network environments, it is uncertain whether the DoH server can always be reached or not.
 * Not recommended for use if the server is none popular DNS server in your country or region, it may lose the CDN optimized results returned by the ISP DNS server.
 * Not recommended for use if the DoH server is an anti-ads related server (Quantumult X filter module has better perfomance for rejected domains, it can avoid the client's endless requests).
 
-
-
-
-
-
-1.0.22(568)
-
-1.0.22(567)
-
-1.0.22(566)
-
-1.0.22(565)
-
 1.0.22(564)
+- Beta Test
 
 1.0.22(563)
+- 优化内存使用
 
 1.0.22(562)
+- $configuration.sendMessage 增加 dns_clear_cache 以清除全部 DNS 缓存。
 
 1.0.22(561)
+- 调整对有严重性能问题的 rewrite URL 正则的处理方式。
+当 rewrite URL 正则有严重性能问题时，正则评估将会在超过阈值时间后放弃，进行下一条目 rewrite 继续评估。
+例如，当一个 rewrite URL 正则评估一条请求 URL 结束（命中或未命中）需要 60+ 秒（最近一次收到的相关反馈），rewrite 模块将会提前结束匹配并输出错误等级日志，不会等待 60 秒结束。
 
 1.0.22(560)
+- 脚本记录页面可直接用力按对应记录再次运行脚本，VPN 需处于已连接状态。
 
 1.0.22(559)
+- Fixes an issue that might delay the starting proccess of the tunnel in build 557.
 
 1.0.22(558)
+- Fixes an issue that might delay the starting proccess of the tunnel in build 557
 
 1.0.22(557)
+- 增加部分 debug 等级日志
 
 1.0.22(556)
+- 优化 HTTP Backend 内存使用 (iOS 13.0 +)
 
 1.0.22(555)
+- API $task.fetch 兼容某些非法格式的 HTTP 请求头
+- 修复当保存某些格式错误的配置文件条目时造成的一处崩溃
+- $configuration.sendMessage 增加 DNS 相关接口 dns_get_placeholder_ip 与 dns_update_cache。可用于重写第三方应用的 HTTPDNS 请求或更新 DNS 缓存。参数可参见  https://github.com/crossutility/Quantumult-X/blob/master/sample-dns-api.js
 
 1.0.22(554)
 
 1.0.22(553)
 
 1.0.22(552)
+- 解析模块兼容某些不规范的 HTTP 响应
 
 1.0.22(551)
+- 优化 MitM 模块内存使用，以及提升并发效率
 
 1.0.22(550)
+- $notify 增加选项 "update-pasteboard"，点击通知时更新剪切板
 
 1.0.22(549)
+- HTTP backend 请求与响应会记录在网络活动中，完整的请求及响应可被数据抓取功能记录，以方便调试
 
 1.0.22(548)
+- MitM 模块增加对 TLS 1.3 only 请求的支持
+- HTTP backend 增加对 HTTPS 协议请求的支持。HTTPS 请求需以域名形式访问，如以 IP 形式访问，backend 会拒绝接受该请求
+- HTTP backend 在同一端口接收 HTTPS 与 HTTP 请求，backend 会自动识别是否为 TLS 连接
+- HTTP backend 与 MitM 模块共用同一根证书，如需以 HTTPS 形式访问，请先配置好 MitM 模块下的证书
 
 1.0.22(547)
+- DNS 配置增加可选关键字 excluded_ssids 以在特定的网络环境下忽略该项配置，例：
+[dns]
+server=114.114.114.114, excluded_ssids=SSID1, SSID2
+server=8.8.8.8, excluded_ssids=SSID3, SSID4
+
+注意：如配置了 no-system，则请务必确保在忽略了部分自定义 DNS 的配置下至少有一个可用的自定义 DNS 配置。
+
+另：
+1、如需更改 URL 测试 HEAD 请求的 User-Agent 可自行配置（v1.0.21 及以上），例如：
+[general]
+server_check_user_agent= Mozilla/5.0
+
+2、部分用户请求开放 iOS 14+ NE 配置新增的几个布尔属性，目前我们并不打算提供修改相关配置的接口（与外接设备兼容性较差，例如导致 CarPlay 无法连接等问题）。
+相关 API 及说明：
+https://developer.apple.com/documentation/networkextension/nevpnprotocol/3131931-includeallnetworks
+https://developer.apple.com/documentation/networkextension/nevpnprotocol/3689459-enforceroutes
+https://developer.apple.com/documentation/networkextension/nevpnprotocol/3143658-excludelocalnetworks
 
 1.0.22(546)
 
 1.0.22(545)
+- HTTP backend 增加可选参数 host（该参数会与请求头中的 host 字段进行匹配，暂不支持通配符与正则）来区分不同作用的后端。配置 host 参数后可通过 http://host:port/ 来访问
+- 增加 get_customized_policy，相关内容参见 build 543 示例链接
 
-1.0.22(544)
+1.0.22(544) 
+- 修复通过 set_policy_state 无法识别大写内置策略的问题（DIRECT,REJECT）
+
+注意：如需通过 body script 类型 rewrite 中断当前 HTTP 连接且需客户端重新发起连接，可尝试返回类似以下响应（由于内部实现的某种原因 headers 与 body 不能为空）
+$done({status:"HTTP/1.1 408 Request Timeout", headers:{"Connection":"close"},body:"  "});
 
 1.0.22(543)
+- 部分代码重构
+- 新增配置相关脚本 API 参见 https://github.com/crossutility/Quantumult-X/blob/master/sample-configuration-api.js
 
 1.0.22(542)
+- 修复某些 chunked encoding 响应体解析错误的问题。
+
 
 1.0.22(541)
 - 修复某些设备上输入资源链接多行显示问题
