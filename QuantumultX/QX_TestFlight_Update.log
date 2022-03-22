@@ -182,16 +182,24 @@ opts: opts};
 
 
 
+1.0.0(108)
+- 修复使用 SSR 协议插件的UDP转发导致崩溃的问题。
 
+1.0.0(107)
+- 由手上个版本(build 106） 未对脚本rewrite 的响应体尺寸进行限制，导致运行不稳定，故而恢复尺寸限制。感谢使用微博用户的反馈。
 
-
+1.0.0(104)
+- 进一步支持 static=policy-name-1, Sample-A, Sample-B, Sample-C, img-url=icon.png
+tips:
+1、希望使用 ss+v2ray-plugin 的用户，自行把 v2ray-plugin main.go 中的 case"websocket": 下的connectionReuse = true注释掉后即可禁用 mux.cool,禁用 mux.cool后自行编译即可与 Quantumult X 兼容。
+2、Quantumult X 是以并发吞吐量为前提的，后续不会支持mux.cool（即多个网络请求通过同一个TCP连接来传输数据）；特别的，TCP 连接吞吐量易受网络波动影响（相同的原地址端口与目标地址端口的两个 TCP 连接，由于网络波动及拥塞算法的关系，可能吞吐量差别巨大），当多个请求封装在一个TCP 连接中时，受影响的效果将会被放大（虽然mux.cool 因连接复用的关系会减少子连接的网络请求握手延迟，但这个特性不在Quantumult X 考虑内，因己有下FO支持）。另外运营商也可能会对每个 TCP 连接做蒂宽限制。
 
 1.0.0(103)
 - 策略图标可附带在配置条目中，下载后的图标文件会缓存在Images 文件夹下。符合要求的图标才会显示，缓存的图标没有后缀名无需手动添加后缀。
 。如网络图标有更新，请手动清理对应缓存，之后会重新下载。如无img-url 参数，则按之前的设定载入策略图
 标。
 static=policy-name-1, Sample-A, Sample-B,
-Sample-C,img-ur|=http://example.com/icon.png
+Sample-C,img-url=http://example.com/icon.png
 
 1.0.0(102)
 
