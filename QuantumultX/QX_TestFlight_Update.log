@@ -260,6 +260,9 @@ server=119.29.29.29
 2、恶意分享的用户可能会在不同状态间切换。
 3、特殊情况请邮件联系反馈邮箱（App Store 或 TestFlight 应用介绍内有注明）。
 
+1.0.23(573)
+No changelog
+
 1.0.23(572)
 - Beta Test
 
@@ -328,8 +331,10 @@ iOS 15 DB 1
 - $configuration.sendMessage 增加 DNS 相关接口 dns_get_placeholder_ip 与 dns_update_cache。可用于重写第三方应用的 HTTPDNS 请求或更新 DNS 缓存。参数可参见  https://github.com/crossutility/Quantumult-X/blob/master/sample-dns-api.js
 
 1.0.22(554)
+No changelog
 
 1.0.22(553)
+No changelog
 
 1.0.22(552)
 - 解析模块兼容某些不规范的 HTTP 响应
@@ -393,6 +398,7 @@ $done({status:"HTTP/1.1 408 Request Timeout", headers:{"Connection":"close"},bod
 - 优化在 M1 系列设备上的部分参数
 
 1.0.21(540)
+No changelog
 
 1.0.21(539)
 - Beta Test
@@ -438,7 +444,7 @@ $done({status:"HTTP/1.1 408 Request Timeout", headers:{"Connection":"close"},bod
 1.0.21(526)
 - 修复网络活动搜索界面滑块误触的问题。
 
-1.0.21(524)
+1.0.21(525)
 - 修复部分设备上的显示问题
 
 1.0.21(524)
@@ -519,6 +525,7 @@ $done({status:"HTTP/1.1 408 Request Timeout", headers:{"Connection":"close"},bod
 
 1.0.20(504)
 - 优化开启、关闭暗黑模式的过渡效果
+
 1.0.20(503)
 - 调试抓包记录支持组合搜索（URL、请求头、请求体、响应头、响应体）
 
@@ -614,6 +621,9 @@ $done({status:"HTTP/1.1 408 Request Timeout", headers:{"Connection":"close"},bod
 1.0.19(477)
 - 细节调整
 
+1.0.0(476)
+No changelog
+
 1.0.18(475)
 - Beta Test
 
@@ -659,7 +669,6 @@ $done({status:"HTTP/1.1 408 Request Timeout", headers:{"Connection":"close"},bod
 1.0.18(463)
 - 处理部分用户选择日志可能会卡住的问题。
 
-
 1.0.18(462)
 - 调整部分设备上显示效果
 
@@ -698,8 +707,8 @@ Quantumult X (v1.0.17) 在 iOS 14 系列系统上 NE 环境下 $task.fetch 响�
 
 1.0.18(453)
 - Improves network throughput significantly when Quantumult X working as a gateway (M1 chip Mac) for other devices on the same LAN.
-1.0.17(452)
 
+1.0.17(452)
 - Beta test
 
 1.0.17(451)
@@ -762,8 +771,6 @@ Quantumult X (v1.0.17) 在 iOS 14 系列系统上 NE 环境下 $task.fetch 响�
 
 1.0.1(124)
 - 增加仅 VMess over TLS 的支持，配置格式参考示例配置文件 (vmess,mess + tIs, mess + wS, vmess + ws + ts 均己支持）。
-
-
 
 1.0.0(108)
 - 修复使用 SSR 协议插件的UDP转发导致崩溃的问题。
