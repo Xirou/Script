@@ -683,12 +683,13 @@ Quantumult X (v1.0.17) 在 iOS 14 系列系统上 NE 环境下 $task.fetch 响�
 - 部分显示细节调整。
 
 1.0.18(458)
-- 配置文件支持快速跳转
+- 配置文件支持快速跳转。
 
 1.0.18(457)
+No changelog
 
 1.0.18(456)
-- 配置文件支持快速跳转
+- 配置文件支持快速跳转。
 
 1.0.18(455）
 - 增加额外主页功能键，默认关闭。
@@ -698,8 +699,8 @@ Quantumult X (v1.0.17) 在 iOS 14 系列系统上 NE 环境下 $task.fetch 响�
 鉴于某位用户对同一个问题发了好几个版本的 TestFlight Feedback，我们只好通过此次测试信息给予你回复。你在 Quantumult X 配置文件中对应节点开启节点的 UDP 转发即可（udp-relay=true），可参见应用内示例配置。
 
 1.0.18(454)
-- 从 gallery 添加的 task 顺序与选中顺序保持一致
-。
+- 从 gallery 添加的 task 顺序与选中顺序保持一致。
+
 1.0.18(453)
 - Improves network throughput significantly when Quantumult X working as a gateway (M1 chip Mac) for other devices on the same LAN.
 
@@ -729,34 +730,34 @@ Quantumult X (v1.0.17) 在 iOS 14 系列系统上 NE 环境下 $task.fetch 响�
 - 完善脚本记录页面，可点击展开对应日志，并长按进行复制
 
 1.0.17(445)
-- Cron task gallery 支持多选添加
+- Cron task gallery 支持多选添加。
 
 1.0.17(444)
-- Cron task gallery 添加搜索功能
+- Cron task gallery 添加搜索功能。
 
 1.0.17(443)
-- 脚本日志页面增加显示触发运行脚本的 rewrite URL 以及 rewrite 类型等更多信息
-- 网络活动搜索框可直接输入 fetch 来搜索 NE 内通过 $task.fetch 发送的网络请求
+- 脚本日志页面增加显示触发运行脚本的 rewrite URL 以及 rewrite 类型等更多信息。
+- 网络活动搜索框可直接输入 fetch 来搜索 NE 内通过 $task.fetch 发送的网络请求。
 
 1.0.17(442)
-- 新增 NE 脚本运行状态相关页面
+- 新增 NE 脚本运行状态相关页面。
 
 1.0.17(441)
-- 修复 gallery 中包含较多内容时，上下滑动严重掉帧的问题
+- 修复 gallery 中包含较多内容时，上下滑动严重掉帧的问题。
 
 1.0.15(397)
 - 增加 Intents Extension，可使用 Shortcuts 应用创建Automation 来运行脚本 (Path 输入 Quantumult x 应用中所使用的脚本路径即可，例如：https://example.com/file.js = path/file.js)
-1、在iOs 14下可取消勾选 Automation 中的 AskBefore Running 选项来实现特定时间自动运行
-2、通过 Automation 运行的脚本无需开启 Quantumuit X的 VPN连接
-3、Automation 时间设定及设备唤醒机制更接近系统原生
+1、在iOs 14下可取消勾选 Automation 中的 AskBefore Running 选项来实现特定时间自动运行。
+2、通过 Automation 运行的脚本无需开启 Quantumuit X的 VPN连接。
+3、Automation 时间设定及设备唤醒机制更接近系统原生。
 4、请务必调用 $done(来结束，1og 会自动作为结果返回。如需查看 log 可使用 Shortcuts 的 Show Result来显示结果。
-5、Intents Extension 内存独立
+5、Intents Extension 内存独立。
 
 1.0.13(347）
 - 日志中将记录是否为越狱系统。
 
 1.0.10(283)
-- 显示细节调整
+- 显示细节调整。
 
 1.0.8(259)
 - 增加 running_mode_trigger 在网络环境切换时触发运行模式变更，具体可参见示例配置。
@@ -844,7 +845,7 @@ No changelog
 - 请求重放导出记录时，会附带原始响应。
 
 1.0.6(211)
-Beta build 211
+- Beta build 211
 -修复测试版 build 210 在某些环境下验证信息被清的问题。如验证信息被 build 210 清除，请重新安装 App Store 版待得验证通过，再安装测试版build 211。用来验证的 App Store 账号可与参与测试的不同，并不影响测试版使用，
 -配置文件中缺少模块标识将会提示并禁止保存。
 - $task.fetch 支持禁止自动重定向。
@@ -853,11 +854,11 @@ Beta build 211
 No changelog
 
 1.0.6(209)
-移除关键字 empty_snienabled
+- 移除关键字 empty_snienabled
 - 当 SNI 为空时，是否进行 MitM 将改由请求的目标地址(IP或域名）与配置文件中 hostname 字段的匹配结果决定。
 
 1.0.6(208)
-修复某些情况下更新资源的问题。
+- 修复某些情况下更新资源的问题。
 
 - 1.0.6(207)
 - 便于测试与反馈，外部资源开启去除时间限制（外部资源功能无计划更新到 App Store 版本）。
@@ -890,8 +891,7 @@ No changelog
 
 1.0.6(199)
 - Task 增加另外一种调试模式方便测试，该模式下 task 请求将遵循规则，亦会被支持 TCP 抓包的应用捕获。
-- 为了防止请求被 Quantumult X 本身的rewrite功能命中及修改，该模式仅在 Quantumult x
-rewrite 功能关闭的情况下，或 Quantumult X VPN 关闭的情况下可用。
+- 为了防止请求被 Quantumult X 本身的rewrite功能命中及修改，该模式仅在 Quantumult X rewrite 功能关闭的情况下，或 Quantumult X VPN 关闭的情况下可用。
 
 1.0.6(198)
 - External resources can be enabled for rewrite and task, You still need to check if you are eligible to unlock this feature.
@@ -903,9 +903,9 @@ rewrite 功能关闭的情况下，或 Quantumult X VPN 关闭的情况下可用
 1.0.6(196)
 - 手动执行 task 会刷新对应资源缓存，以便调试。
 MitM 说明:
-TLS握手按其 SNI 可分为有 SNI （我们假设为 A类型） 和无 SNI （假设为 B 类型配置文件中 hostname 字段控制的是 A 类型中需要进行 MitM 的主机名，如设置 hostname = example.com，将会对 A类型中的 example.comTLS 连接进行 MitM.
-配置文件中 empty_sni_enabled 控制的是 B类型，如设置 empty_sni_enabled = true,将会对 B类型所有的TLS连接进行 MitM。未避免不必要的误伤（很多应用为避免被嗅探故意让 SNI 为空)，empty_sni_enabled 请仅在网络测试时使用。
-因此“关闭MitM”与“开启 MitM 且hostname 字段为空但 empty_sni_enabled = true”并不相同。
+- TLS握手按其 SNI 可分为有 SNI （我们假设为 A类型） 和无 SNI （假设为 B 类型配置文件中 hostname 字段控制的是 A 类型中需要进行 MitM 的主机名，如设置 hostname = example.com，将会对 A类型中的 example.comTLS 连接进行 MitM.
+- 配置文件中 empty_sni_enabled 控制的是 B类型，如设置 empty_sni_enabled = true,将会对 B类型所有的TLS连接进行 MitM。未避免不必要的误伤（很多应用为避免被嗅探故意让 SNI 为空)，empty_sni_enabled 请仅在网络测试时使用。
+- 因此“关闭MitM”与“开启 MitM 且hostname 字段为空但 empty_sni_enabled = true”并不相同。
 
 1.0.6(195)
 - Supports rewrite script-request-body.
@@ -924,18 +924,17 @@ TLS握手按其 SNI 可分为有 SNI （我们假设为 A类型） 和无 SNI �
 
 1.0.5(190)
 - 类型为 script-response-body 及 script-response-header 的rewrite 传入参数不再包含request header 以减少内存使用。
-如需获得request header, 可使用 script-request-header类型 rewrite.
+- 如需获得request header, 可使用 script-request-header类型 rewrite.
 
 1.0.5(189)
 - 修正一处内存错误
 - 在ios [13.0- 13.2)环境下，SSID 相关功能不可用提示除了之前版本在开启 VPN 时会提示并断开连接，增加在已连接状态时更改配置文件也会提示并断开连接。
-那些绕过提示非要在 IOS [13.0-13.2）下使用SSID 策略，又来反馈 SSID 策略不生效或显示不
-一致是bug用户，请自行安装支持开启定位权限的历史版本 Quantumult X [1.0.0-1.0.2] 即可。
-其它  IOS 环境无该限制，也无需开启定位权限。
+- 那些绕过提示非要在 IOS [13.0-13.2）下使用SSID 策略，又来反馈 SSID 策略不生效或显示不一致是bug用户，请自行安装支持开启定位权限的历史版本 Quantumult X [1.0.0-1.0.2] 即可。
+- 其它 IOS 环境无该限制，也无需开启定位权限。
 
 1.0.5(188)
 - Supports rewrite script-request-header. 
-Check sample at https://github.com/crossutility/Quantumult-X/blob/master/sample-rewrite-request-header.js
+- Check sample at https://github.com/crossutility/Quantumult-X/blob/master/sample-rewrite-request-header.js
 
 1.0.5(187)
 - 支持一键清空历史日志或 HTTP 调试记录。
@@ -950,7 +949,7 @@ No changelog
 - 修复build 165引入的 IPv6 查询结果缓存丢失问题。
 
 1.0.5(183)
-Supports import GeoLite2 Country database.
+- Supports import GeoLite2 Country database.
 - Supports rewrite script-response-header. This is convenience and consumes less memory if you don't care about the response body or the body is not text related, the original body will be automatically appended to the modified headers. Check sample at https://github.com/crossutility/Quantumult-X/blob/master/sample-rewrite-response-header.js
 
 1.0.5(182)
@@ -961,8 +960,7 @@ Supports import GeoLite2 Country database.
 - 修复build 180 请求文本编辑问题。
 
 1.0.5(180)
-- 增加请求任务的 UI配置，可点击编辑，向右滑
-动设置运行时间。
+- 增加请求任务的 UI配置，可点击编辑，向右滑动设置运行时间。
 
 1.0.5(179)
 - 修复部分设备配置文件编辑以及导入的一点问题。
@@ -1001,11 +999,10 @@ No changelog
 {console.log("abc");}1000)；
 
 1.0.5(172)
-HTTP rewrite and task improvements.
-$prefs.valueForKey(key),
-$prefs.setValueForKey(value, key),
-$prefs.removeValueForKey(key),
-Sprefs.removeAllValues(), value and key should be string. The data of $prefs will be cleared only when Quantumult X is deleted.
+- HTTP rewrite and task improvements.
+- $prefs.valueForKey(key),$prefs.setValueForKey(value, key),$prefs.
+- removeValueForKey(key),Sprefs.removeAllValues(), value and key should be string. 
+- The data of $prefs will be cleared only when Quantumult X is deleted.
 
 1.0.5(171)
 - $task.fetch() works for HTTP rewrite now.
@@ -1039,9 +1036,9 @@ No changelog
 
 1.0.4(161)
 - 添加 icloud 支持。当开启 icloud后Quantumult X 会从icloud 云盘中读取相关类型的文件，否则读取本机文件。
-可自行使用应用“Files”查看及同步对应资源策略图标：
-本机："On My iPhone - Quantumult X - Images"
-iCloud: "iCloud Drive - Quantumult X - Images"
+- 可自行使用应用“Files”查看及同步对应资源策略图标：
+- 本机："On My iPhone - Quantumult X - Images"
+- iCloud: "iCloud Drive - Quantumult X - Images"
 
 1.0.4(160)
 No changelog
@@ -1050,7 +1047,7 @@ No changelog
 - Fixes an issue that some domains skipped placeholder IP even thev are not in the dns_exclusion_list.
 
 1.0.4(158)
-You can always opt out of beta test by tapping "Stop Testing" in TestFlight app.
+- You can always opt out of beta test by tapping "Stop Testing" in TestFlight app.
 - Script 类型rewrite 如未载入对应脚本文件（或非本地路径文件），会发出通知（需开启显示脚本错误通知）。
 
 1.0.4(157)
@@ -1192,7 +1189,7 @@ No changelog
 
 1.0.1(121)>@Cuttlefish
 - VMess 协议(vmess+ws+tis）支持（终于不用再回复如何搭建 ss+ws+tis的问题了），配置格式参考示例配置文件。
-已知bug：节点列表界面点击生成 VMess 节点：维码或 URI 会闪退。
+- 已知bug：节点列表界面点击生成 VMess 节点：维码或 URI 会闪退。
 
 1.0.0(120)>@Cuttlefish
 - 修复一处解析配置导致开启连接时崩溃的问题。
@@ -1238,7 +1235,7 @@ No changelog
 - SSR 二维码包含混淆参数形如"'example.com#key: Value" 会仅保留example.com 为 Quantumult X 配置中 obfs-host参数，而非直接抛出错误提示。
 - 配置文件中 obfs-host 参数如含有＃之类的特殊符号将会提示错误。
 - 其它优化。
-以下看不懂可略过，鉴于好些人问，统一回答
+以下看不懂可略过，鉴于好些人问，统一回答：
 (下文所述“Quantumult 中 HTTP(S) 模块”特指“HTTP(S)本地（回环）代理服务器”)
 1、Quantumult x 中所有的 HTTP(S)解析全部都是 TUN 口的原始 TCP 数据。
 2、Quantumult X 对TUN 口的解析及对应功能在Quantumult 上做了大幅升级，支持所有在Quantumult 中 HTTP(S)模块已经实现的功能，并增加更多相关功能（完整的请求及响应解析，改写请求头，改写响应体）；也意味着对强制只走 TUN 口的应用所进行的 HTTP(S) 请求也能进行修改(Body rewrite)。
@@ -1533,3 +1530,5 @@ The SSR-URI generator may not work.
 - Completely rebuilt from scratch.
 - Only in the middle of SS.
 - Stability test.
+
+//End
