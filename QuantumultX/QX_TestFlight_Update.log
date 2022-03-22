@@ -49,8 +49,8 @@ No change log
 1.0.28(633)
 No change log
 
-No change log
 1.0.28(632)
+No change log
 
 1.0.28(631)
 - $configuration.sendMessage 增加接口 get_traffic_statistics 以获取当前节点流量使用情况，可参见示例 https://github.com/crossutility/Quantumult-X/blob/master/sample-get-traffic-statistics.js
