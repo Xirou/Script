@@ -177,15 +177,21 @@ opts: opts};
 1.0.1(124)
 - 增加仅 VMess over TLS 的支持，配置格式参考示例配置文件 (vmess,mess + tIs, mess + wS, vmess + ws + ts 均己支持）。
 
-1.0.0 (99)
-打开
-- 修复合法的 DNS 格式却提示格式错误的问题
-- 允许 IPv4 与 IPV6 双环境下无 IPv4 DNS 情况
-下进行 IPv4 域名查询与访问。
+1.0.0(101)
+
+- 为某些 IPv6 用户的特殊需求增加新的 DNS 设置项。
+address=/example.com/force-timeout-v4
+address=/example.com/force-timeout-v6
+
+1.0.0(100)
+- 临时使用位置服务（始终）开启 iOS 13 Beta 上的SSID 策略支持。
+- 允许某指定域名 A记录查询强制使用 IPv6 地址的 DNS 服务器。
+- 允许某指定域名 AAAA 记录查询强制使用 IPv4地址的 DNS 服务器。
 
 1.0.0(99)
 - 修复合法的 DNS 格式却提示格式错误的问题。
 - 允许 IPv4 与 IPV6 双环境下无 IPv4 DNS 情况下进行 IPv4 域名查询与访问。
+- 双排简洁模式仅对 +12h 用户开放。
 
 1.0.0(95)
 - 简洁模式下的U 调整，请多策略用户自行使用含义清晰的图案。
