@@ -94,7 +94,8 @@ vmess=example.com:80, method=none, password=4e58f4e8-2173-41e0-976c-bef89ec62204
 
 1.0.25(598)
 - Quantumult X Tunnel 环境 $task.fetch 增加选项policy 指定所使用的出站策略，网络活动中命中的分流规则品示为 FETCH, POLICY NAME
-- 增加任务类型 event-interaction 以支持自定义HTTPS API 的 geo_location_ checker （内置的geo_ location_checker 模块依然仅支持 HTTP API)仅在 Quantumuit x Tunnel 运行时有效。
+- 增加任务类型 event-interaction 以支持自定义HTTPS API 的 geo_location_ 
+checker （内置的geo_location_checker 模块依然仅支持 HTTP API)仅在 Quantumuit x Tunnel 运行时有效。
 var opts = {
 policy: "direct"
 };
@@ -169,7 +170,7 @@ opts: opts};
 - 显示细节调整
 
 1.0.8(259)
-- 增加 running_ mode_ trigger 在网络环境切换时触发运行模式变更，具体可参见示例配置。
+- 增加 running_mode_trigger 在网络环境切换时触发运行模式变更，具体可参见示例配置。
 
 1.0.1(125)
 - 增加 Always On 功能。当该功能启用时response-body 及 script-response-body 类型的rewrite 将会放宽响应体大小限制。
