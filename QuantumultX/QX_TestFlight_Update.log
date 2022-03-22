@@ -698,7 +698,7 @@ Quantumult X (v1.0.17) 在 iOS 14 系列系统上 NE 环境下 $task.fetch 响�
 
 1.0.18(454)
 - 从 gallery 添加的 task 顺序与选中顺序保持一致
-
+。
 1.0.18(453)
 - Improves network throughput significantly when Quantumult X working as a gateway (M1 chip Mac) for other devices on the same LAN.
 
@@ -706,8 +706,8 @@ Quantumult X (v1.0.17) 在 iOS 14 系列系统上 NE 环境下 $task.fetch 响�
 - Beta test
 
 1.0.17(451)
-- 兼容在 Apple M1 chip Mac 上以网关模式运行
-- 暂无计划针对网关模式进行特别优化
+- 兼容在 Apple M1 chip Mac 上以网关模式运行。
+- 暂无计划针对网关模式进行特别优化。
 
 1.0.17(450)
 - Beta test.
@@ -786,6 +786,7 @@ Check sample at https://github.com/crossutility/Quantumult-X/blob/master/sample-
 
 1.0.5(187)
 - 支持一键清空历史日志或 HTTP 调试记录。
+
 1.0.5(186)
 - 支持使用自定义 MaxMind License Key 更新GeoLite2 Country.
 
@@ -839,7 +840,7 @@ No changelog
 
 1.0.5(174)
 - HTTP调试历史记录支持查看与搜索。
-- 未进行 MitM 的HTTPS 请求及非 HTTP 类请求不会在记录中展示
+- 未进行 MitM 的HTTPS 请求及非 HTTP 类请求不会在记录中展示。
 - 如响应内容为图片类型，图片亦会显示在请求列表中。如被 rewrite reject-img 命中，则为透明图片。
 
 1.0.5(173)
@@ -860,21 +861,19 @@ Sprefs.removeAllValues(), value and key should be string. The data of $prefs wil
 No changelog
 
 1.0.5(169)
-- Time in [task local] will be local time not the
-UTC time for convenience and less feedback
-(UTC time in build 166, 167).
-
+- Time in [task local] will be local time not the UTC time for convenience and less feedback (UTC time in build 166, 167).
+ 
 1.0.5(168)
 No changelog
 
 1.0.5(167)
-- Fixes SNI name parsing issue for MitM
+- Fixes SNI name parsing issue for MitM.
 
 1.0.5(166)
 - Add module task, check sample configurationfor details. No Ul right now.
 
 1.0.5(165)
-- Improvements related to DNS query
+- Improvements related to DNS query.
 
 1.0.4(164)
 No changelog
@@ -899,7 +898,7 @@ No changelog
 
 1.0.4(158)
 You can always opt out of beta test by tapping "Stop Testing" in TestFlight app.
-- Script 类型rewrite 如未载入对应脚本文件（或非本地路径文件），会发出通知（需开启显示脚本错误通知）
+- Script 类型rewrite 如未载入对应脚本文件（或非本地路径文件），会发出通知（需开启显示脚本错误通知）。
 
 1.0.4(157)
 - Improvements.
@@ -994,13 +993,13 @@ No changelog
 No changelog
 
 1.0.2(133)
-- 节点页面 URL Test 记录增加 TCP握手数据
-- 因rewrite HTTP response body 类型不再支持引用远程资源，故而rewrite 引用中所包含的response body 类型不再生效（其它rewrite 类型依然生效）。
+- 节点页面 URL Test 记录增加TCP握手数据。
+- 因rewrite HTTP response body 类型不再支持引用远程资源，故而rewrite 引用中所包含的response body 类型不再生效（其它rewrite类型依然生效）。
 
 1.0.2(132)>@Cuttlefish
 - 内置策略可自定义图标 (“On My iPhone Quantumult X”对应资源目录中命名为proxy.png、direct.png、reject.png 的图片）
-- Rewrite HTTP response body 类型不再支持引用远程资源，仅支持读取本地(“On My iPhone
-- Quantumult X”对应资源目录） 相关资源
+- Rewrite HTTP response body 类型不再支持引用远程资源，仅支持读取本地(“On My iPhone").
+- Quantumult X”对应资源目录） 相关资源。
 
 1.0.1(131)
 No changelog
@@ -1013,14 +1012,14 @@ No changelog
 No changelog
 
 1.0.1(128)>@Cuttlefish
-- Rewrite script-response-body 将自动跳过包含以下关键字的脚本，防止相关功能滥用：renew、vip、paid、premium 等
+- Rewrite script-response-body 将自动跳过包含以下关键字的脚本，防止相关功能滥用：renew、vip、paid、premium 等。
 - 临时取消配置文本的行数显示。
 
 1.0.1(127)>@Cuttlefish
 - 开启了Force policy 的分流资源将会在列表中显示对应的 policy
 
 1.0.1(126)>@Cuttlefish
-- 增加 Always On 功能。当该功能启用时response-body 及 script-response-body 类型的rewrite 将会放宽响应体大小限制
+- 增加 Always On 功能。当该功能启用时response-body 及 script-response-body 类型的rewrite 将会放宽响应体大小限制。
 
 1.0.1(125)
 No changelog
@@ -1031,7 +1030,7 @@ No changelog
 1.0.1(123)>@Cuttlefish
 - 节点列表不再显示节点地址，改为显示协议类型。目前仅显示两种 vmess 及 shadowsocks （使用了 ssr 混淆插件和协议插件的节点亦统一显示 shadowsocks)
 - 对 VMess 远程引用的 Quantumult X 配置片段的支持。
-- wss 暂不支持自签名证书，
+- wss 暂不支持自签名证书。
 
 1.0.1(122)>@Cuttlefish
 - 允许配置不带 ws 或 wss 的VMess (TCP)配置格式参考示例配置文件 (vmess + ws + ts上个测试版build 121已支持）
@@ -1192,7 +1191,7 @@ Quantumult X: Shadowsocks + WebSocket +TLS (Service deployed by V2Ray. Not compa
 1.0.0(83)
 - 必要时，在下次开启应用时会自动保持节点(订阅）列表展开与收起状态。
 - 降低触发 available 策略测试所需的失败连接个数（5 减为 1）
-
+。
 1.0.0(82)
 - 调整节点列表显示。
 
@@ -1217,7 +1216,7 @@ No changelog
 - 点击主页红色小圆点可直接跳转到所对应的更新失败的资源列表。
 
 1.0.0(72)
-- 支持引用本地脚本 (^http://examplel.com/resource6/ script-response-body script-response-body sample.js) ，脚本需存在于 Scripts 目录下，可使用 Files app 查看。
+- 支持引用本地脚本 (^http://examplel.com/resource6/ script-response-body script-response-body sample.js),脚本需存在于 Scripts 目录下，可使用 Files app 查看。
 - 支持 iTunes 文件共享（包含Scripts 目录）。
 - 支持UI更改 final 策略
 
@@ -1236,7 +1235,7 @@ No changelog
 - 修复build 58引入的一处bug
 - 网络不稳定的通知加入通知最短间隔时间（5秒)
 - 修复配置文件的一处误报
-
+。
 1.0.0(63)
 - 增加一键更新所有引用的远程资源。
 
@@ -1251,7 +1250,7 @@ No changelog
 - 范例中脚本各返回值为必须，否则显示查询失败。如不在意某个值，脚本返回任意固定值即可。
 - 为提高查询效率节点信息查询接口的请求仅支持http，范例如下：
 [general]
-geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-location-with-script.is
+geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-location-with-script.js
 
 1.0.0(59)
 - 调整 force_sni_domain name 为 false 时的处理机制。
@@ -1296,8 +1295,8 @@ geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubuserc
 
 1.0.0(40)
 - 引用（订阅）的远程资源采用异步更新。
-- 分流规则资源的更新增加额外选项（强制单一策略替换，开启后将不会自动创建策略)
-- 节点订阅列表向右滑动可一键生成 static 类型策略(包含该订阅下所有节点)
+- 分流规则资源的更新增加额外选项（强制单一策略替换，开启后将不会自动创建策略)。
+- 节点订阅列表向右滑动可一键生成 static 类型策略(包含该订阅下所有节点)。
 
 1.0.0(39)
 - 支持 iOS 13 暗黑模式。
@@ -1307,7 +1306,7 @@ geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubuserc
 - 远程规则资源同步时将自动创建不存在的策略。
 
 1.0.0(36)
-- IOS 13 兼容性更新 （如使用 iOS 13 请更新）
+- IOS 13 兼容性更新 （如使用 iOS 13 请更新）。
 
 1.0.0(34)
 - 修复在 IOS 13上MitM 根证书信任状态的检测。
@@ -1320,13 +1319,13 @@ geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubuserc
 - 支持从 URL导入rewrite 条目，不识别的条目将会自动跳过，格式参照 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-import-rewrite.txt
 
 1.0.0(31)
-- Rewrite 302 307 将会自动跳过无变化 URL
+- Rewrite 302 307 将会自动跳过无变化 URL.
 
 1.0.0(30)
-- SSR 二维码识别修复
+- SSR 二维码识别修复。
 
 1.0.0(29)
-- 增加部分配置UI操作
+- 增加部分配置UI操作。
 
 1.0.0(27)
 - Record the whole request and response(including body) by enabling HTTP Analyzer.
@@ -1335,13 +1334,13 @@ geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubuserc
 - Fixes issues when modifing response body with chucked transfer encoding.
 
 1.0.0(24)
-- Updated sample configuration
+- Updated sample configuration.
 
 1.0.0(21)
-- Fixes filter issue for IP-CIDR
+- Fixes filter issue for IP-CIDR.
 
 1.0.0(20)
-- Updated sample configuration
+- Updated sample configuration.
 
 1.0.0(18)
 - 修复 SSR 二维码扫描。请测试以下 Ⅰ+Ⅱ+Ⅲ组合（无需兼容模式）
@@ -1356,9 +1355,8 @@ SSR protocol plugin with SS obfs plugin(obfs-http, obfs-tls).
 SR with AEAD ciphers.
 SR protocol plugin with V2Ray websocket.
 
-Notice: Since the v2ray-plugin for shadowsocks enabled the multiplex( V2RayMux.Cool) by default, even when mux is 1 itstill has Mux.Cool meta。
-You may want to change the source file (main.go of v2ray-plugin) by removing the MultiplexingConfig settings if you want it work with current version of Quantumult X。
-
+Notice: Since the v2ray-plugin for shadowsocks enabled the multiplex( V2RayMux.Cool) by default, even when mux is 1 itstill has Mux.Cool meta.
+You may want to change the source file (main.go of v2ray-plugin) by removing the MultiplexingConfig settings if you want it work with current version of Quantumult X.
 Issues:
 The SSR-URI generator may not work.
 
