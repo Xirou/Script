@@ -756,6 +756,11 @@ No changelog
 1.0.13(347）
 - 日志中将记录是否为越狱系统。
 
+1.0.10(291)
+- 策略类型 static，available 及round-robin 增加参数 (resource-tag-regex， server-tag-regex以针对所有带标签的引用资源（节点)
+-配置了以上参数的策略允许成为空备选节点策略，当备选节点为空时将回退为 direct 策略
+-配置了以上参数的策略不再允许品示的指定某节点，即只能配置成形如 static=policy-name,resource-tag-regex=^sample, server-tag-regex=^example,img-url=http://example.com/icon.png 或 static=policy-name, resource-tag-regex="sample, img-url=http://example.com/icon.png
+
 1.0.10(283)
 - 显示细节调整。
 
