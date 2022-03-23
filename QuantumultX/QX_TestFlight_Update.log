@@ -44,7 +44,7 @@
 - 修复当移动设备通过有线网络连接时的部分
 
 1.0.28(634)
-
+No change log
 
 1.0.28(633)
 No change log
@@ -82,7 +82,6 @@ No change log
 
 1.0.27(623)
 - VMess 配置格式增加 aead=false 选项（默认 true），以强制关闭 AEAD Header 特性（如果 V2Ray 服务端小于 4.28 或者其他不支持 AEAD Header 的服务端，请务必设置为 false）
-
 例：
 vmess=example.com:80, method=none, password=4e58f4e8-2173-41e0-976c-bef89ec62204, aead=false, tag=vmess-aead-header-off
 
@@ -169,8 +168,7 @@ No changelog
 
 1.0.25(598)
 - Quantumult X Tunnel 环境 $task.fetch 增加选项policy 指定所使用的出站策略，网络活动中命中的分流规则品示为 FETCH, POLICY NAME
-- 增加任务类型 event-interaction 以支持自定义HTTPS API 的 geo_location_ 
-checker （内置的geo_location_checker 模块依然仅支持 HTTP API)仅在 Quantumuit x Tunnel 运行时有效。
+- 增加任务类型 event-interaction 以支持自定义HTTPS API 的 geo_location_checker （内置的geo_location_checker 模块依然仅支持 HTTP API)仅在 Quantumuit x Tunnel 运行时有效。
 var opts = {
 policy: "direct"
 };
@@ -246,8 +244,7 @@ doh_user_agent= Agent/1.0
 
 1.0.24(575)
 - DoH 配置项支持 excluded_ssids 参数（如使用了 no-system 项，请确保在该 SSID 下有其它可用的传统 DNS 配置项）
-doh-server=https://dns.alidns.com/dns-query, excluded_ssids=SSID1, SSID2
-server=119.29.29.29
+doh-server=https://dns.alidns.com/dns-query, excluded_ssids=SSID1, SSID2 server=119.29.29.29
 
 1.0.24(574)
 - 允许重置设备验证状态（其它设置-隐私权政策-右上角按钮，周期 30 日）。由于验证过程并非实时触发，已为验证通过状态的其它设备可能稍晚才会变更为验证未知状态，再次验证可能需要重新获取 App Store 收据。
@@ -379,8 +376,7 @@ No changelog
 1.0.22(544) 
 - 修复通过 set_policy_state 无法识别大写内置策略的问题（DIRECT,REJECT）
 
-注意：如需通过 body script 类型 rewrite 中断当前 HTTP 连接且需客户端重新发起连接，可尝试返回类似以下响应（由于内部实现的某种原因 headers 与 body 不能为空）
-$done({status:"HTTP/1.1 408 Request Timeout", headers:{"Connection":"close"},body:"  "});
+注意：如需通过 body script 类型 rewrite 中断当前 HTTP 连接且需客户端重新发起连接，可尝试返回类似以下响应（由于内部实现的某种原因 headers 与 body 不能为空）$done({status:"HTTP/1.1 408 Request Timeout", headers:{"Connection":"close"},body:"  "});
 
 1.0.22(543)
 - 部分代码重构
@@ -534,7 +530,6 @@ No changelog
 
 1.0.19(500)
 - 部分界面搜索框及布局调整
-
 注：如对 task 图标显示效果不满意，可尝试使用内置的 SF Symbols 图标
 
 1.0.19(499)
@@ -758,8 +753,8 @@ No changelog
 
 1.0.10(291)
 - 策略类型 static，available 及round-robin 增加参数 (resource-tag-regex， server-tag-regex以针对所有带标签的引用资源（节点)
--配置了以上参数的策略允许成为空备选节点策略，当备选节点为空时将回退为 direct 策略
--配置了以上参数的策略不再允许品示的指定某节点，即只能配置成形如 static=policy-name,resource-tag-regex=^sample, server-tag-regex=^example,img-url=http://example.com/icon.png 或 static=policy-name, resource-tag-regex="sample, img-url=http://example.com/icon.png
+- 配置了以上参数的策略允许成为空备选节点策略，当备选节点为空时将回退为 direct 策略
+- 配置了以上参数的策略不再允许品示的指定某节点，即只能配置成形如 static=policy-name,resource-tag-regex=^sample, server-tag-regex=^example,img-url=http://example.com/icon.png 或 static=policy-name, resource-tag-regex="sample, img-url=http://example.com/icon.png
 
 1.0.10(283)
 - 显示细节调整。
@@ -863,8 +858,8 @@ No changelog
 
 1.0.6(211)
 - Beta build 211
--修复测试版 build 210 在某些环境下验证信息被清的问题。如验证信息被 build 210 清除，请重新安装 App Store 版待得验证通过，再安装测试版build 211。用来验证的 App Store 账号可与参与测试的不同，并不影响测试版使用，
--配置文件中缺少模块标识将会提示并禁止保存。
+- 修复测试版 build 210 在某些环境下验证信息被清的问题。如验证信息被 build 210 清除，请重新安装 App Store 版待得验证通过，再安装测试版build 211。用来验证的 App Store 账号可与参与测试的不同，并不影响测试版使用，
+- 配置文件中缺少模块标识将会提示并禁止保存。
 - $task.fetch 支持禁止自动重定向。
 
 1.0.6(210)
