@@ -1,13 +1,13 @@
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 QUANTUMULT(X) TESTFIGHT LOG 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
-𓏴 𓏴 𓏴 🎯BUILD ▲1.0.28 1.0.0▼ 𓏴 𓏴 𓏴
+𓏴 𓏴 𓏴🎯SEARCH ▲1.0.28 ▼1.0.0 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 ⏰TIME 03-23-22 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 KYLE 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
                
-                                                                                      
+▲1.0.28                                                                                    
 1.0.28(643)
 - 为避免某些用户误解，DNS 记录页面（TTL）已过期的 DNS 结果将会以中划线标注（某些情况下 Quantumult X 会主动打上过期标识，例如网络环境变化）
 
@@ -1531,5 +1531,6 @@ The SSR-URI generator may not work.
 - Only in the middle of SS.
 - Stability test.
 
+▼1.0.0
 ⚠️
 The developer has no version or withdrawn the package, and cannot get the change log "No changelog"
