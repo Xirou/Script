@@ -1843,8 +1843,11 @@ The SSR-URI generator may not work.
 * SS-URI related functions can get SS configuration from SSR-URI if it contains the SS compatible info(origin, plain, simple_obfs_http,simple_obfs_http_compatible, simple_obfs_tls, simple_obfs_tls_compatible)
 
 1.0.0(13)
+
 1.0.0(12)
+
 1.0.0(11)
+
 1.0.0(10)
 
 ￼1.0.0(9)
@@ -1856,7 +1859,9 @@ The SSR-URI generator may not work.
 - 节点可单独设置自身的 server_check_url 参数；如未设置，则使用全局server check ur 参数。server check uri 记员增加 web 服务器返回的 HTTP response header 部分。当用户使用自己的web 服务器作为 server_check_url时，可自行设置相应的 response header 返回更多信息。
 
 1.0.0(7)
+
 1.0.0(6)
+
 1.0.0(5)
 
 ￼1.0.0(4)
@@ -1865,6 +1870,14 @@ The SSR-URI generator may not work.
 - Only in the middle of SS.
 - Stability test.
 
+1.0.0(3)
+
+1.0.0(2)
+
+1.0.0(1)
+
 ▼1.0.0
+
   🎉Thanks："@Mutu888" "@Nubida" "@Ddgksf"
+ 
   ⚠️ "No changelog" The developer has no version or withdrawn the package, and cannot get the change log
