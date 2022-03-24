@@ -149,7 +149,7 @@ No change log
 - event-interaction 返回值增加 htmlMessage 字段，允许自定义消息显示样式，样例可参见注释代码部分: https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-fetch-opts-policy.js
 
 1.0.26(605)
-- 修复在 iOS 15 下 NE 发出的（配置文件错误等）警告窗不显示的问题
+- 修复在 IOS 15 下 NE 发出的（配置文件错误等）警告窗不显示的问题
 
 1.0.26(604)
 - event-interaction 关联的 UIAction 图标支持普通的自定义图片
@@ -1618,11 +1618,11 @@ geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubuserc
 - HTTP 请求体与响应体文本浏览编码方式可自行选择。
 
 1.0.0(44)
-- 修复在 iOS 13 iPad 上的显示问题（请删除重新安装）。
-- 其它 i0S 13 兼容。
+- 修复在 IOS 13 iPad 上的显示问题（请删除重新安装）。
+- 其它 IOS 13 兼容。
 
 1.0.0(43)
-- 支持 iOS 13 暗黑模式。
+- 支持 IOS 13 暗黑模式。
 - 支持 iPad 设备。
 
 1.0.0(42)
@@ -1639,14 +1639,14 @@ geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubuserc
 - 节点订阅列表向右滑动可一键生成 static 类型策略(包含该订阅下所有节点)。
 
 1.0.0(39)
-- 支持 iOS 13 暗黑模式。
-- 在ios 13 上SSID 策略暂不支持。
+- 支持 IOS 13 暗黑模式。
+- 在 IOS 13 上SSID 策略暂不支持。
 
 1.0.0(37)
 - 远程规则资源同步时将自动创建不存在的策略。
 
 1.0.0(36)
-- IOS 13 兼容性更新 （如使用 iOS 13 请更新）。
+- IOS 13 兼容性更新 （如使用 IOS 13 请更新）。
 
 1.0.0(34)
 - 修复在 IOS 13上MitM 根证书信任状态的检测。
