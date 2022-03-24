@@ -745,6 +745,8 @@ No changelog
 - 修复 gallery 中包含较多内容时，上下滑动严重掉帧的问题。
 
 1.0.16(429)
+No changelog
+
 1.0.16(428)
 - 修复一处请求头解析错误的问题。
 
@@ -763,7 +765,6 @@ No changelog
 - 当开启抓包时 NE 自身通过 $task.fetch 发起的请求详情会被记录（保留 build 418 特性：完全绕过 rewrite 模块）
 
 1.0.16(423)
-
 - NE 环境下手动执行脚本增加实时日志显示
 - Quantumult X VPN 处于连接状态时，手动执行脚本默认处于 NE 环境
 
@@ -771,16 +772,20 @@ No changelog
 - 请求记录支持搜索 HTTP 请求方法。需输入完整方法，例如 POST
 
 1.0.16(421)
+No changelog
 
 1.0.16(420)
+No changelog
 
 1.0.16(419)
+No changelog
 
 1.0.16(418)
 - NE 自身通过 $task.fetch 发起的请求将完全绕过 rewrite、 MitM 以及抓包模块（无论请求头中是否存在 X-Requested-With: Quantumult X 字段）
 - 优化 $task.fetch 在 NE 环境下的性能
 
 1.0.16(417)
+No changelog
 
 1.0.16(416)
 - 主应用及 Intents 扩展使用 $task.fetch 发起的请求均改为支持连接重用机制
@@ -793,9 +798,14 @@ No changelog
 - 优化 response-body 正则类型 rewrite 内存使用，支持大体积 UTF-8 文本匹配及替换。该类型 rewrite 默认支持最大响应体尺寸调整为 8MB
 
 1.0.16(413)
+No changelog
 
 1.0.16(412)
+No changelog
+
 1.0.16(411)
+No changelog
+
 1.0.16(410)
 - 支持 SF Symbols 图标 (task)
 
@@ -839,16 +849,22 @@ No changelog
 * 当进行 A 记录查询时，增加向配置的所有 IPv6 DNS 服务器发起 A 记录查询
 
 1.0.14(379)
+No changelog
 
 1.0.14(378)
+No changelog
 
 1.0.14(377)
+No changelog
 
 1.0.14(376)
+No changelog
 
 1.0.14(375)
+No changelog
 
 1.0.14(374)
+No changelog
 
 1.0.14(373)
 - 完善在 IPv4 + IPv6 环境下的 DNS 查询机制
@@ -859,10 +875,13 @@ No changelog
 - 修复命中了 optimized IP（TCP 优化机制） 的域名未触发 ttl 检测的问题。
 
 1.0.14(371)
+No changelog
 
 1.0.14(370)
+No changelog
 
 1.0.14(369)
+No changelog
 
 1.0.14(368)
 - 修复部分网络下 IPv6 环境识别的问题。
@@ -871,21 +890,28 @@ No changelog
 - 修复当节点域名同时拥有 A 及 AAAA 记录且未配置 no-ipv6 时 AAAA 记录被忽略的问题。
 
 1.0.14(366)
+No changelog
 
 1.0.14(365)
+No changelog
 
 1.0.14(364)
+No changelog
 
 1.0.14(363)
+No changelog
 
 1.0.14(362)
 - 增加本地 HTTP 代理服务器，为同一网络下其它设备提供HTTP 代理服务
 
 1.0.14(362)
+No changelog
 
 1.0.14(361)
+No changelog
 
 1.0.14(360)
+No changelog
 
 1.0.14(359)
 -对 HTTP 请求命中的echo 类型的rewrite不再尝试对外
@@ -1310,7 +1336,7 @@ No changelog
 - 节点页面 URL Test 记录增加TCP握手数据。
 - 因rewrite HTTP response body 类型不再支持引用远程资源，故而rewrite 引用中所包含的response body 类型不再生效（其它rewrite类型依然生效）。
 
-1.0.2(132)>@Cuttlefish
+1.0.2(132)
 - 内置策略可自定义图标 (“On My iPhone Quantumult X”对应资源目录中命名为proxy.png、direct.png、reject.png 的图片）
 - Rewrite HTTP response body 类型不再支持引用远程资源，仅支持读取本地(“On My iPhone").
 - Quantumult X”对应资源目录） 相关资源。
@@ -1318,21 +1344,21 @@ No changelog
 1.0.1(131)
 No changelog
 
-1.0.1(130)>@Cuttlefish
+1.0.1(130)
 - 修复开启了 Alwavs On 的情况下弹窗的问题。
 - 恢复配置文本行数显示。
 
 1.0.1(129)
 No changelog
 
-1.0.1(128)>@Cuttlefish
+1.0.1(128)
 - Rewrite script-response-body 将自动跳过包含以下关键字的脚本，防止相关功能滥用：renew、vip、paid、premium 等。
 - 临时取消配置文本的行数显示。
 
-1.0.1(127)>@Cuttlefish
+1.0.1(127)
 - 开启了Force policy 的分流资源将会在列表中显示对应的 policy
 
-1.0.1(126)>@Cuttlefish
+1.0.1(126)
 - 增加 Always On 功能。当该功能启用时response-body 及 script-response-body 类型的rewrite 将会放宽响应体大小限制。
 
 1.0.1(125)
@@ -1341,40 +1367,40 @@ No changelog
 1.0.1(124)
 - 增加仅 VMess over TLS 的支持，配置格式参考示例配置文件 (vmess,mess + tIs, mess + wS, vmess + ws + ts 均己支持）。
 
-1.0.1(123)>@Cuttlefish
+1.0.1(123)
 - 节点列表不再显示节点地址，改为显示协议类型。目前仅显示两种 vmess 及 shadowsocks （使用了 ssr 混淆插件和协议插件的节点亦统一显示 shadowsocks)
 - 对 VMess 远程引用的 Quantumult X 配置片段的支持。
 - wss 暂不支持自签名证书。
 
-1.0.1(122)>@Cuttlefish
+1.0.1(122)
 - 允许配置不带 ws 或 wss 的VMess (TCP)配置格式参考示例配置文件 (vmess + ws + ts上个测试版build 121已支持）
 - Link 方式添加 VMess 暂未支持。
 注：不支持 VMess UDP 转发。
 
-1.0.1(121)>@Cuttlefish
+1.0.1(121)
 - VMess 协议(vmess+ws+tis）支持（终于不用再回复如何搭建 ss+ws+tis的问题了），配置格式参考示例配置文件。
 - 已知bug：节点列表界面点击生成 VMess 节点：维码或 URI 会闪退。
 
-1.0.0(120)>@Cuttlefish
+1.0.0(120)
 - 修复一处解析配置导致开启连接时崩溃的问题。
 
-1.0.0(119)>@Cuttlefish
+1.0.0(119)
 - 当配置了自定义 DNS时（例server=223.5.5.5） ，如需强制某域名（例example.com）仅使用系统 DNS 而不额外使用自定义的 DNS（例 223.5.5.5） 进行查询，可以配置为 server=lexample.com/system
 
-1.0.0(118)>@Cuttlefish
+1.0.0(118)
 - SSID 类策略如仅配置了 Wi-Fi与蜂窝网子策略，未配置具体 SSID 下的子策略时，该SSID 策略将无须开启定位权限 (iOS 13)
 - ss+ws及ss+ws+tls配置生成的二维码遵循"SIP002 URI Scheme"
 
-1.0.0(117)>@Cuttlefish
+1.0.0(117)
 - 二维码增加 obts-uri 参数。
 - 修复当 ws 配置末设置 obfs-host 参数时连接失败的问题。
 Tips for ws:
 服务端如使用 v2ray-plugin 仅支持最新commit(非release） 版自行编译(mux=0)。
 
-1.0.0(116)>@Cuttlefish
+1.0.0(116)
 - 除下拉外，额外增加长按节点进行网页响应测试；下拉测试所有展开节点，长按仅测试该节点所属资源的所有节点。
 
-1.0.0(115)>@Cuttlefish
+1.0.0(115)
 - 修复在 ios 10上点击下载配置文件时，界面崩溃的问题
 - 修复当从不同尺寸 ihone 设备备份中恢复时，部分元素尺寸不正确的问题．
 - DHCP lease time 到期的事件不会再进行网络变动通知。
@@ -1383,19 +1409,19 @@ Tips for ws:
 - 当本机开启热点连接时，主应用节点界面下拉时不再进行 URL test.
 关于 Quantumult X 不支持 vmess 协议的说明：Quantumult 最初打算支持 vmess 协议并不是因为 wss 完整的tls握手过程或者 vmess 本身，而是因为 vmess + ws 可以通过 CDN；现在Quantumult X 已支持 ss + ws (v2ray-core or v2ray-plugin） 亦可通过 CDN，故而不再支持vmess 协议。
 
-1.0.0(113)>@Cuttlefish
+1.0.0(113)
 - Fixes color issue on iOS 11 or earlier.
 
-1.0.0(112)>@Cuttlefish
+1.0.0(112)
 - 增加 shortcut
 
 1.0.0(111)
 No changelog
 
-1.0.0(110)>@Cuttlefish
+1.0.0(110)
 - 额外增加策略选择方式：运行时，可在策略（路径）状态中选择所需策略。
 
-1.0.0(109)>@Cuttlefish
+1.0.0(109)
 - SSR 二维码包含混淆参数形如"'example.com#key: Value" 会仅保留example.com 为 Quantumult X 配置中 obfs-host参数，而非直接抛出错误提示。
 - 配置文件中 obfs-host 参数如含有＃之类的特殊符号将会提示错误。
 - 其它优化。
@@ -1414,7 +1440,7 @@ No changelog
 1.0.0(106)
 No changelog
 
-1.0.0(105)>@Cuttlefish
+1.0.0(105)
 - 修复无法识别节点地址为IPv6 格式的节点二维码（SSR-URl，订阅）的问题。
 
 1.0.0(104)
