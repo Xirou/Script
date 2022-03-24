@@ -744,31 +744,58 @@ No changelog
 1.0.17(441)
 - 修复 gallery 中包含较多内容时，上下滑动严重掉帧的问题。
 
-
-
-
 1.0.16(429)
 1.0.16(428)
 - 修复一处请求头解析错误的问题。
 
 1.0.16(427)
+- 手动 NE 环境执行 task 增加非实时日志模式，以便同时执行多个不同 task
+- 优化 NE 环境下 task 并发执行内存占用
+
 1.0.16(426)
+- 修复 build 417 引入的一处解析 HTTP 响应头错误的问题
+
 1.0.16(425)
+- 请求记录中 NE 自身通过 $task.fetch 发出的请求会显示额外图案
+
 1.0.16(424)
+- $task.fetch 发出的请求不再附带 X-Requested-With: Quantumult X 请求头标识
+- 当开启抓包时 NE 自身通过 $task.fetch 发起的请求详情会被记录（保留 build 418 特性：完全绕过 rewrite 模块）
+
 1.0.16(423)
+
+- NE 环境下手动执行脚本增加实时日志显示
+- Quantumult X VPN 处于连接状态时，手动执行脚本默认处于 NE 环境
+
 1.0.16(422)
+- 请求记录支持搜索 HTTP 请求方法。需输入完整方法，例如 POST
+
 1.0.16(421)
+
 1.0.16(420)
+
 1.0.16(419)
+
 1.0.16(418)
+- NE 自身通过 $task.fetch 发起的请求将完全绕过 rewrite、 MitM 以及抓包模块（无论请求头中是否存在 X-Requested-With: Quantumult X 字段）
+- 优化 $task.fetch 在 NE 环境下的性能
+
 1.0.16(417)
+
 1.0.16(416)
+- 主应用及 Intents 扩展使用 $task.fetch 发起的请求均改为支持连接重用机制
+
 1.0.16(415)
+- NE 自身通过 $task.fetch 发起的请求支持同域名 HTTPS 连接重用机制
+- Task 列表页增加通过 NE 手动执行任务的选项
+
 1.0.16(414)
+- 优化 response-body 正则类型 rewrite 内存使用，支持大体积 UTF-8 文本匹配及替换。该类型 rewrite 默认支持最大响应体尺寸调整为 8MB
+
 1.0.16(413)
+
 1.0.16(412)
 1.0.16(411)
-
 1.0.16(410)
 - 支持 SF Symbols 图标 (task)
 
@@ -784,36 +811,86 @@ No changelog
 - 修复t$1.3引起的系列问题；
 - 配置文件更新的 HTTP 请求，移出此前默认的请求头 X-Requested-With 字段
 - MitM 模块增加参数 simple_cert_hostname，详情参见 APP 内示范配置文件；
+
+1.0.14(387)
+- Beta test
+
+1.0.14(386)
+- Beta test
+
+1.0.14(385)
+- Beta test
+
+1.0.14(384)
+- Beta test
+
+1.0.14(383)
+- Beta test
+
+1.0.14(382)
+- Beta test
+
+1.0.14(381)
+- Beta test
+
 1.0.14(380)
+- 完善在 IPv4 + IPv6 环境下的 DNS 查询机制
+* 当进行 AAAA 记录查询时，增加向配置的所有 IPv4 DNS 服务器发起 AAAA 记录查询
+* 当进行 A 记录查询时，增加向配置的所有 IPv6 DNS 服务器发起 A 记录查询
+
 1.0.14(379)
+
 1.0.14(378)
+
 1.0.14(377)
+
 1.0.14(376)
+
 1.0.14(375)
+
 1.0.14(374)
+
 1.0.14(373)
+- 完善在 IPv4 + IPv6 环境下的 DNS 查询机制
+* 当进行 AAAA 记录查询时，增加向配置的所有 IPv4 DNS 服务器发起 AAAA 记录查询
+* 当进行 A 记录查询时，增加向配置的所有 IPv6 DNS 服务器发起 A 记录查询
+
 1.0.14(372)
+- 修复命中了 optimized IP（TCP 优化机制） 的域名未触发 ttl 检测的问题。
+
 1.0.14(371)
+
 1.0.14(370)
+
 1.0.14(369)
+
 1.0.14(368)
+- 修复部分网络下 IPv6 环境识别的问题。
+
 1.0.14(367)
+- 修复当节点域名同时拥有 A 及 AAAA 记录且未配置 no-ipv6 时 AAAA 记录被忽略的问题。
+
 1.0.14(366)
+
 1.0.14(365)
+
 1.0.14(364)
+
 1.0.14(363)
+
 1.0.14(362)
 - 增加本地 HTTP 代理服务器，为同一网络下其它设备提供HTTP 代理服务
+
 1.0.14(362)
+
 1.0.14(361)
+
 1.0.14(360)
 
 1.0.14(359)
 -对 HTTP 请求命中的echo 类型的rewrite不再尝试对外
 建立 TCP 连接
 - 新增 rewrite 类型 script-analyze-echo-response;与script-echo-response 不同的是，该类型rewrite 会等待请求体接收完毕后再调用JS 处理，同时也会占用更多的资源。
-
-
 
 1.0.13(355)
 1.0.13(354)
@@ -824,9 +901,6 @@ No changelog
 - 日志中将记录是否为越狱系统。
 
 1.0.12(335)
-
-
-
 
 1.0.10(313)
 1.0.10(291)
@@ -1622,6 +1696,5 @@ The SSR-URI generator may not work.
 - Stability test.
 
 ▼1.0.0
-
-⚠️
-The developer has no version or withdrawn the package, and cannot get the change log "No changelog"
+🎉Thanks：@MuTu888 @nubida @ddgksf
+⚠️The developer has no version or withdrawn the package, and cannot get the change log "No changelog"
