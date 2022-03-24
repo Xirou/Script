@@ -63,6 +63,7 @@
 
 1.0.28(629)
 - 支持 Trojan + WebSocket，配置样例可参见应用内示例配置。
+
 1.0.28(628)
 - 不再校验 GEO IP 类型规则的参数是否为有效的 ISO 国家或区域码，以兼容某些自定义区域码的 GEO IP 库。
 
@@ -90,7 +91,7 @@
 - 代理协议 VMess 的实现调整为使用 AEAD Header.
 
 1.0.27(621)
-- Bug fixes for build 620 .
+- Bug fixes for build 620.
 
 1.0.27(620)
 - 增加对 trojan 协议的 UDP 支持 (UDP over TCP)，需配置 udp-relay=true
@@ -205,7 +206,7 @@
 - Gallery 搜索不再区分大小写。
 
 1.0.24(583)。
-- 增加 Gallery 工具栏
+- 增加 Gallery 工具栏。
 - Gallery 更新机制由进入界面自动更新调整为用户手动点击进行更新。
 
 1.0.24(582)
@@ -214,16 +215,17 @@
 1.0.24(581)
 - 增加 Icon Gallery 参见 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/icon-gallery.json
 - 修复 obfs=http_simple (ssr) 在某些组合配置中可能出现的握手失败的问题。
+
 1.0.24(580)
 - 脚本记录页面增加脚本所运行的 JS 环境标识符（便于与 tunnel debug 等级日志对照），以及创建该环境时 Network Extension 的可用内存（os_proc_available_memory）.
   注：
 1、由于延迟加载及缓存机制，Network Extension 可用内存在使用初期可能会明显的逐渐减少，然后趋于稳定。
 2、当使用 console.log 方法时，如果传入的字符串长度超过 32 x 1024 个字符，仅会输出前 32 x 1024 个字符到日志中。如需打印大于该长度字符串，可自行分割字符串后依次调用 console.log 方法。
 3、以下 “重构版本” 特指 “iOS/iPadOS 13 Quantumult X v1.0.21+ （2021-04-19）”、 “iOS/iPadOS 14+ Quantumult X v1.0.17+ （2020-12-07）” 运行的版本，其余运行环境的版本均为 “传统版本”。
-* $task.fetch 可选项 filter 仅作用于 “传统版本”
-* 动态内存压力跳过脚本执行的机制仅存在于 “传统版本”
-* 我们建议仅在 “重构版本” 上使用脚本相关功能
-
+* $task.fetch 可选项 filter 仅作用于 “传统版本”。
+* 动态内存压力跳过脚本执行的机制仅存在于 “传统版本”。
+* 我们建议仅在 “重构版本” 上使用脚本相关功能。
+。
 1.0.24(579)
 - 编辑脚本路径或引用资源等路径时，可直接浏览并选取对应目录下的本地文件；资源片段仅显示后缀名为 snippet 的文件。
 
@@ -231,7 +233,7 @@
 - HTTP 抓取记录搜索页面增加一系列常用备选关键字以及对应记录的域名列表以供选择。
 
 1.0.24(577)
-- 网络活动搜索页面增加常用关键字搜索
+- 网络活动搜索页面增加常用关键字搜索。
 
 1.0.24(576)
 - 支持自定义 DoH 请求所使用的 User-Agent 字段，默认值为 Quantumult%20X/版本号
@@ -1160,8 +1162,8 @@ iOS 15 DB 1
 - No changelog.
 
 1.0.6(201)
-- 橙色task 调试功能在rewrite 开启时也能执行。
-- 不再需要手动关闭rewrite 功能。
+- 橙色task 调试功能在rewrite开启时也能执行。
+- 不再需要手动关闭rewrite功能。
 - 橙色 task 调试发起的请求将自动附带请求头"X-Requested-With: Quantumult".Quantumult X rewrite 模块会直接忽略携带该请求头的请求，如果您希望您在其它应用发起的网络请求不被 Quantumult X rewrite 模块命中，亦可手动添加该请求头。
 
 1.0.6(200)
@@ -1196,17 +1198,17 @@ iOS 15 DB 1
 - Supports single URL test.
 
 1.0.5(192)
-- Beta test
+- Beta test.
 
 1.0.5(191)
-- Beta test
+- Beta test.
 
 1.0.5(190)
 - 类型为 script-response-body 及 script-response-header 的rewrite 传入参数不再包含request header 以减少内存使用。
 - 如需获得request header, 可使用 script-request-header类型 rewrite.
 
 1.0.5(189)
-- 修正一处内存错误
+- 修正一处内存错误。
 - 在ios [13.0- 13.2)环境下，SSID 相关功能不可用提示除了之前版本在开启 VPN 时会提示并断开连接，增加在已连接状态时更改配置文件也会提示并断开连接。
 - 那些绕过提示非要在 IOS [13.0-13.2）下使用SSID 策略，又来反馈 SSID 策略不生效或显示不一致是bug用户，请自行安装支持开启定位权限的历史版本 Quantumult X [1.0.0-1.0.2] 即可。
 - 其它 IOS 环境无该限制，也无需开启定位权限。
@@ -1502,10 +1504,10 @@ iOS 15 DB 1
 - Fixes color issue on iOS 11 or earlier.
 
 1.0.0(112)
-- 增加 shortcut
+- 增加 shortcut.
 
 1.0.0(111)
-No changelog
+No changelog.
 
 1.0.0(110)
 - 额外增加策略选择方式：运行时，可在策略（路径）状态中选择所需策略。
