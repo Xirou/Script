@@ -72,7 +72,7 @@
 
 1.0.27(626)
 - 解析器可获取当前应用版本相关信息 $environment.version .
-- Beta .
+- Beta.
 
 1.0.27(625)
 - Rewrite 响应类脚本执行时可获取对应的请求头 $request.headers . R
