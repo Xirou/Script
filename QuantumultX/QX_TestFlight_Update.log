@@ -24,7 +24,7 @@
 - 仅变更资源标签并不会触发配置重载，因此仅变更资源标签时，请求记录中分流规则所属标签不会更新。
 
 1.0.28(641)
-- 分流规则增加参数 multi-interface-balance （对应全局出口负载均衡设置），例如： geoip, cn, direct,multi-interface-balance .
+- 分流规则增加参数 multi-interface-balance （对应全局出口负载均衡设置），例如： geoip, cn, direct,multi-interface-balance.
 
 1.0.28(640)
 - 出口接口选项（设置 - 其他设置 - 模式 - 出站接口）新增 ”负载均衡“ 以提供更大的出入口带宽（多连接应用），可类比交换机的链路聚合（layer3+4）功能。
@@ -55,7 +55,7 @@
 - No change log.
 
 1.0.28(631)
-- $configuration.sendMessage 增加接口 get_traffic_statistics 以获取当前节点流量使用情况，可参见示例 https://github.com/crossutility/Quantumult-X/blob/master/sample-get-traffic-statistics.js .
+- $configuration.sendMessage 增加接口 get_traffic_statistics 以获取当前节点流量使用情况，可参见示例 https://github.com/crossutility/Quantumult-X/blob/master/sample-get-traffic-statistics.js.
 - 配置文件 [general] 增加 server_check_timeout 参数，具体说明请参见应用内示例配置。
 
 1.0.28(630)
@@ -71,11 +71,11 @@
 - Fixes an issue that incorrectly formatted configuraiton profile might cause Quantumult X to crash on launch.
 
 1.0.27(626)
-- 解析器可获取当前应用版本相关信息 $environment.version .
+- 解析器可获取当前应用版本相关信息 $environment.version.
 - Beta.
 
 1.0.27(625)
-- Rewrite 响应类脚本执行时可获取对应的请求头 $request.headers . R
+- Rewrite 响应类脚本执行时可获取对应的请求头 $request.headers.
 
 1.0.27(624)
 - 增加对 VMess 协议的 UDP 支持 (UDP over TCP)，需配置 udp-relay=true
