@@ -236,7 +236,7 @@
 - 网络活动搜索页面增加常用关键字搜索。
 
 1.0.24(576)
-- 支持自定义 DoH 请求所使用的 User-Agent 字段，默认值为 Quantumult%20X/版本号
+- 支持自定义 DoH 请求所使用的 User-Agent 字段，默认值为 Quantumult%20X/版本号。
   例：
   [general]
   doh_user_agent= Agent/1.0
