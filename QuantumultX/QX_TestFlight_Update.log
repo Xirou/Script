@@ -1,13 +1,30 @@
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 QUANTUMULT(X) TESTFIGHT LOG 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
-𓏴 𓏴 𓏴🎯SEARCH ▲1.0.28 ▼1.0.0 𓏴 𓏴 𓏴
+𓏴 𓏴 𓏴🎯SEARCH ▲1.0.29 ▼1.0.0 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
-𓏴 𓏴 𓏴 𓏴 𓏴 ⏰TIME 03-25-22 𓏴 𓏴 𓏴 𓏴
+𓏴 𓏴 𓏴 𓏴 𓏴 ⏰TIME 03-29-22 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 KYLE 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
                
-▲1.0.28
+▲1.0.29
+
+1.0.29(646)
+- Supports customized TLS verification process for TLS based proxy servers for some user's specific usage by using the option tls-cert-sha256 or tls-pubkey-sha256 (hex style or colon separated hex style).
+- If the option tls-verification is false, these two new options will be ignored; If the tls-pubkey-sha256 is set, the tls-cert-sha256 will be ignored; If any of the new options is set, the standard verification process will be ignored.
+
+Note:
+1. If you have the certificate (pem)
+You can generate the certificate sha256 fingerprint through:
+openssl x509 -noout -fingerprint -sha256 -inform pem -in your-cert.pem
+You can generate the pubkey sha256 (Subject Public Key Information (SPKI) fingerprint) of the certificate through:
+openssl x509 -noout -pubkey -inform pem -in your-cert.pem | openssl pkey -pubin -outform der | openssl dgst -sha256 -hex -c
+2. If you don't have the certificate
+You can generate sha256 using below commands to fetch from the network host:
+openssl s_client -servername example.com -connect example.com:443 | openssl x509 -noout -fingerprint -sha256
+openssl s_client -servername example.com -connect example.com:443 | openssl x509 -noout -pubkey | openssl pkey -pubin -outform der | openssl dgst -sha256 -hex -c
+3. The tls-pubkey-sha256 is usefull when you renew your certificate frequently with the same key or sign different certificates with the same key. If you just have a single long life customized certificate, the tls-cert-sha256 should be enough.
+4. Since the option tls13 has been deprecated since version 1.0.26 and TLS 1.3 is always supported no matter what you set, the UI mark for this option (tls13) also has been removed in this (v1.0.29 build 646) update
 
 1.0.28(645)
 - 可配置 geo_location_checker=disabled 来禁用该功能，禁用后主页顶部将改为显示对应的节点标签与资源标签。
