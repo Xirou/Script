@@ -9,6 +9,12 @@
                
 ▲1.0.29
 
+1.0.29(647)
+- 修复在 iOS 15.4 上当网络切换至 5G 蜂窝网络，且数据模式设置为 “5G 时允许使用更多数据” 时， running_mode_trigger 失效的问题
+
+注：
+未修复前版本可通过设置数据模式为 “标准“ 临时解决该问题
+
 1.0.29(646)
 - Supports customized TLS verification process for TLS based proxy servers for some user's specific usage by using the option tls-cert-sha256 or tls-pubkey-sha256 (hex style or colon separated hex style).
 - If the option tls-verification is false, these two new options will be ignored; If the tls-pubkey-sha256 is set, the tls-cert-sha256 will be ignored; If any of the new options is set, the standard verification process will be ignored.
