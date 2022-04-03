@@ -3,13 +3,33 @@
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴🎯SEARCH ▲1.0.29 ▼1.0.0 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
-𓏴 𓏴 𓏴 𓏴 𓏴 ⏰TIME 03-30-22 𓏴 𓏴 𓏴 𓏴
+𓏴 𓏴 𓏴 𓏴 𓏴 ⏰TIME   4-3-22 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 KYLE 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
                
 ▲1.0.29
 
-1.0.29
+1.0.29(649)
+
+- 在 Quantumult X Tunnel 环境下 $task.fetch 发起的 HTTPS 请求，增加参数 skip-cert-verify 用以跳过 TLS 证书验证；默认不跳过验证。
+- 对于连接重用的请求，以首次请求设置的选项为准（重用的连接后续请求无 TLS 握手）
+例：
+const myRequest = {
+    url: 'https://example.com',
+    opts: {
+        'skip-cert-verify': true
+    }
+}
+
+关于 Quantumult X 中节点参数的一点说明：
+obfs=http 特指 shadowsocks 项目提出的 http 混淆方式（基于部分 WebSocket 协议特征）
+obfs=tls 特指 shadowsocks 项目提出的 tls 混淆方式（基于部分 TLS 协议特征）
+obfs=over-tls 指 TLS 协议本身，可与 tls-verification 等 TLS 相关参数混合使用
+obfs=ws 指 WebSocket 协议本身
+obfs=wss 指 WebSocket TLS 协议本身，可与 tls-verification 等 TLS 相关参数混合使用
+因在 Quantumult X 中以上选项均支持与 shadowsocks 协议搭配，请注意区分（特别是 obfs=tls 与 obfs=over-tls）
+
+1.0.29(648)
 - 网络活动中流量统计将包含与代理节点 TLS 握手所消耗的流量
 - NE 脚本模块增加参数 $environment.executeType ($environment.executor) 以获取对应脚本的触发来源，如下：
 
