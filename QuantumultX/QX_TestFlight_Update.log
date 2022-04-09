@@ -14,7 +14,6 @@
 doh-server=https://doh1.example.com/query, https://doh2.example.com/query
 
 1.0.29(649)
-
 - 在 Quantumult X Tunnel 环境下 $task.fetch 发起的 HTTPS 请求，增加参数 skip-cert-verify 用以跳过 TLS 证书验证；默认不跳过验证。
 - 对于连接重用的请求，以首次请求设置的选项为准（重用的连接后续请求无 TLS 握手）
 例：
