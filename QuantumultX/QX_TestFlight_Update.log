@@ -3,11 +3,18 @@
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴🎯SEARCH ▲1.0.29 ▼1.0.0 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
-𓏴 𓏴 𓏴 𓏴 𓏴 ⏰TIME   4-9-22 𓏴 𓏴 𓏴 𓏴
+𓏴 𓏴 𓏴 𓏴 𓏴 ⏰TIME  4-12-22 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 KYLE 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
                
 ▲1.0.29
+
+1.0.29(652)
+- 支持 SOCKS5（TLS）代理协议，示例如下：
+
+socks5=socks5.example.com:1080, username=name, password=pwd, tag=socks5-sample
+socks5=socks5.example.com:443, username=name, password=pwd, over-tls=true, tag=socks5-tls-sample
+更多示例可参见应用内示例配置中相关内容
 
 1.0.29(651)
 - 支持配置多个 DoH 服务器，样例如下：
