@@ -9,6 +9,13 @@
                
 ▲1.0.29
 
+1.0.29(662)
+- 当 MitM 功能开启时，检查 MitM CA 证书是否过期，并予以明确的提示。
+
+注：
+如 App Store 正式版遇响应体 deflate 解析异常（build 656 已修复），可修改对应请求的请求头字段为 Accept-Encoding: gzip 临时解决。
+例如：原请求头字段 Accept-Encoding: gzip, deflate, br 修改为 Accept-Encoding: gzip 即可。
+662 
 1.0.29(661)
 - 移除对大量重复规则（rewrite 与 filter）的提示。
 - 对不同节点资源使用相同节点标签的节点不再提示重复标签，应用会对该标签进行临时重命名；对 server_local 下可自行编辑的节点保持旧有提示逻辑。
