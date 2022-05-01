@@ -9,6 +9,11 @@
                
 ▲1.0.29
 
+1.0.19(664)
+- 示例（默认）配置文件将 filter_local 项的 LAN 及 GEO CN 相关规则移除（注释），仅保留 final 规则。 示例配置 filter_remote 项增加对应的（LAN 与 GEO CN）本地 snippet（如该 snippet 不存在则自动创建）
+- 关联配置列表增加显示对应配置的 logo（如有）
+- 配置项 general 增加 udp_drop_list 子项。不同于已有的 udp_whitelist 子项机制，udp_drop_list 不会回发 ICMP（port unreachable）消息，以适应某些用户特殊需求
+
 1.0.29(663)
 - 当日志文件过大无法完全显示时，可直接再次点击日志面板加载并显示末尾 1000 条日志，无需再进入日志选择列表中进行该操作。
 
