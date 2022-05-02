@@ -9,6 +9,16 @@
                
 ▲1.0.29
 
+1.0.19(665) 
+- 支持 SS 及 SSR 协议 UDP 代理的 UDP over TCP 传输（目前仅知 SSR Python 版服务端支持）
+
+客户端配置样例如下：
+shadowsocks=example.com:8080, method=chacha20, password=pwd, udp-over-tcp=true, udp-relay=true, tag=ss-udp-over-tcp
+
+注：
+网络活动页面对应 UDP 记录的流量将显示为 0，对应的 TCP 记录会显示 UDP-over-TCP
+节点流量统计会计算到 TCP 协议栏
+
 1.0.19(664)
 - 示例（默认）配置文件将 filter_local 项的 LAN 及 GEO CN 相关规则移除（注释），仅保留 final 规则。 示例配置 filter_remote 项增加对应的（LAN 与 GEO CN）本地 snippet（如该 snippet 不存在则自动创建）
 - 关联配置列表增加显示对应配置的 logo（如有）
