@@ -9,6 +9,12 @@
                
 ▲1.0.29
 
+1.0.29(670)
+- URL Scheme 增加 quantumult-x:///add-resource 参见 https://github.com/crossutility/Quantumult-X/blob/master/url-scheme.md
+
+注：
+添加资源后会自动更新该资源内容，相同资源（URL 相同）不会重复添加但仍会触发该资源内容更新
+
 1.0.29(669)
 - 修复在仅显示 static 类型策略时，更改策略类型会导致应用崩溃的问题
 
