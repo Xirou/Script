@@ -9,6 +9,12 @@
                
 ▲1.0.29
 
+1.0.29(671)
+- 允许为特定域名使用特定 DoH，示例如下：
+doh-server = /example.com/https://doh.pub/dns-query
+doh-server = /*.example1.com/https://doh.pub/dns-query
+doh-server = /*.example2.com/https://doh.pub/dns-query, excluded_ssids=SS
+
 1.0.29(670)
 - URL Scheme 增加 quantumult-x:///add-resource 参见 https://github.com/crossutility/Quantumult-X/blob/master/url-scheme.md
 
