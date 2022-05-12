@@ -9,6 +9,12 @@
                
 ▲1.0.29
 
+1.0.29(672)
+- URL Scheme 增加（跳转对应 gallery 并添加），具体参见 https://github.com/crossutility/Quantumult-X/blob/master/url-scheme.md
+quantumult-x:///ui?module=gallery&type=task&action=add&content=url-encoded-json
+quantumult-x:///ui?module=gallery&type=icon&action=add&content=url-encoded-json
+
+
 1.0.29(671)
 - 允许为特定域名使用特定 DoH，示例如下：
 doh-server = /example.com/https://doh.pub/dns-query
