@@ -9,6 +9,13 @@
                
 ▲1.0.29
 
+1.0.29(673)
+- DNS 配置新增参数 included_ssids，当处于 Wi-Fi 下且 included_ssids 包含当前 Wi-Fi 的 SSID 时该条目生效
+server = /*.example.com/223.5.5.5, included_ssids=SSID
+
+- DNS 新增类型 alias 以映射域名到其他域名
+alias = /example.com/another-example.com
+
 1.0.29(672)
 - URL Scheme 增加（跳转对应 gallery 并添加），具体参见 https://github.com/crossutility/Quantumult-X/blob/master/url-scheme.md
 quantumult-x:///ui?module=gallery&type=task&action=add&content=url-encoded-json
