@@ -9,6 +9,9 @@
                
 ▲1.0.29
 
+1.0.29(674)
+- 允许连接 HTTP 1.0 的节点
+
 1.0.29(673)
 - DNS 配置新增参数 included_ssids，当处于 Wi-Fi 下且 included_ssids 包含当前 Wi-Fi 的 SSID 时该条目生效
 server = /*.example.com/223.5.5.5, included_ssids=SSID
