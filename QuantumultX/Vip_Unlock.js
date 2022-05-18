@@ -3,7 +3,6 @@
 hostname= api.revenuecat.com
 
 # > Revenuecat Pro
-
 ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$) url script-response-body https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/revenuecat.js
 
 # > Filebox Pro
