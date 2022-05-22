@@ -9,6 +9,15 @@
                
 ▲1.0.29
 
+1.0.29(679)
+
+- Now the resource parser can return additional information to take advantage some of the shadowsocks SIP008 features.
+eg:
+$done({content: theContent, info: {bytes_used: 1073741824, bytes_remaining: 2147483648, expire_date: 1653193966}})
+
+Note:
+If the response header (HTTP header) of the resource contains related information, then the info from the parser result will be ignored.
+
 1.0.29(678)
 - Quantumult X Tunnel （VPN） 执行的节点响应测试及网络可用测试的相关请求也会被记录在 TCP 网络活动中，并附有特殊标记；便于在关闭了策略状态通时发现不合适的配置项（例如：配置了极短的 check-interval 与 alive-checking 参数）
 - 完整配置的下载记录可手动清除
