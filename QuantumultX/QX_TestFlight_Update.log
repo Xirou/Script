@@ -9,6 +9,10 @@
                
 ▲1.0.30
 
+1.0.30(681)
+- 修复通过 quantumult-x:///ui?module=gallery&action=add 一次添加多个库时导致 Quantumult X 主应用崩溃的
+
+
 1.0.30(680)
 
 - 网络活动列表 UDP 栏目中 UDP over TCP 的 UDP 流量不再记录为 0，变更为特殊标识，避免部分用户对流量数字产生误解
