@@ -9,6 +9,9 @@
                
 ▲1.0.30
 
+10.0.30(682)
+- 修复大流量上行请求被 MitM 时内存占用过高的问题
+
 1.0.30(681)
 - 修复通过 quantumult-x:///ui?module=gallery&action=add 一次添加多个库时导致 Quantumult X 主应用崩溃的
 
