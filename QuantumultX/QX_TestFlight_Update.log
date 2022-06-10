@@ -9,6 +9,14 @@
                
 ▲1.0.30
 
+1.0.30(691)
+- $configuration.sendMessage 增加接口 get_server_description。参数可参见  https://github.com/crossutility/Quantumult-X/blob/master/sample-configuration-api.js
+
+注：
+1、该接口必须传入节点 tag 才会得到该节点的配置项
+2、该接口仅适用于 event-interaction 类型脚本，其他类型脚本会返回 permission denied 错误
+3、关于普通脚本增加参数的需求说明。Quantumult X v1.0.25 以来都可用 $environment.sourcePath 获取当前运行脚本的路径；可参照资源解析器的使用方式通过 # 来传入参数，例如：「* * * * * https://example.com/sample.js#the-params, tag=Sample, enabled=true」，因此不会再单独增加普通类型脚本的传参功能
+
 1.0.30(689)
 - 每当打开 Quantumult X 以及进行资源批量或自动更新时，如遇被 iCloud 机制清掉的文件不再在主页左上角进行红点标记，且会尝试重新拉取（仅限 Profiles 以 Scripts 目录下的文件）
 - 收藏的 HTTP 抓取记录可一次全部导出
