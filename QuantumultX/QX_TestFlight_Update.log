@@ -9,6 +9,33 @@
                
 ▲1.0.30
 
+1.0.30(694)
+- [general] 增加配置 dns_reject_domain_behavior，可选参数为 loopback、no-error-no-answer、nxdomain，默认为 loopback（之前所有版本的行为）。
+
+注：
+1、纯 TUN 模式的特性及 Quantumult X 的特殊处理，绝大多数 host 类型规则的 reject 行为都发生在第三方请求的 DNS 查询阶段（响应 placeholder/fake IP 的阶段对 reject 域名进行 dns_reject_domain_behavior 操作）
+2、如第三方网络数据请求已发生，则 reject 行为发生在数据传输层（例如有自己 DNS 查询逻辑的那些应用，以 IP 为目标地址的 HTTP 请求中的 header host 字段会被 reject 命中；这也是为什么 Quantumult X 分流规则选择使用关键字 host 而不是 domain 的原因；同时也适用于以 IP 为目标地址的 HTTPS 请求的 SNI 字段）
+  ①、重写及 host 相关类型的 reject 策略是有抗性的（同一域名 reject 越频繁响应越慢，在立即响应与 5 秒之间）
+  ②、重写规则的 reject-(200, img, array, dict) 响应状态码均为 200 的策略是无抗性的，总是会立即响应
+3、此次更新针对的是 1 的行为，另外 no-error-no-answer 也是响应的一种，响应的内容为 NOERROR NOANSWER 并包含 SOA 结果
+ 
+1.0.30(693)
+- 配置文件中远程资源、task 以及 http backend 增加参数 require-devices 用来指定加载该条配置的设备，便于不同设备同步同一份配置且使用不同配置项；具体语法可参见应用内示例配置。例如：「require-devices=ID1, ID2」，Quantumult Device ID 可在「设置 - 其他设置 - 关于」中查看与复制
+1、如无 require-devices 参数，加载该条配置
+2、如有 require-devices 参数，当该参数值包含当前 Quantumult Device ID 则加载该条配置，否则不加载该条配置
+3、当前设备未加载的配置项不会展示在界面上
+
+- 解析器描述文本中的链接支持点击跳转
+
+1.0.30(692)
+
+- 配置文件中远程资源、task 以及 http backend 增加参数 require-devices 用来指定加载该条配置的设备，便于不同设备同步同一份配置且使用不同配置项；具体语法可参见应用内示例配置。例如：「require-devices=ID1, ID2」，Quantumult Device ID 可在「设置 - 其他设置 - 关于」中查看与复制
+1、如无 require-devices 参数，加载该条配置
+2、如有 require-devices 参数，当该参数值包含当前 Quantumult Device ID 则加载该条配置，否则不加载该条配置
+3、当前设备未加载的配置项不会展示在界面上
+
+- 解析器描述文本中的链接支持点击跳转
+
 1.0.30(691)
 - $configuration.sendMessage 增加接口 get_server_description。参数可参见  https://github.com/crossutility/Quantumult-X/blob/master/sample-configuration-api.js
 
