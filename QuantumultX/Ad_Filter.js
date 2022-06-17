@@ -45,7 +45,6 @@ host, sf6-be-pack.pglstatp-toutiao.com, reject
 host, sf3-be-pack.pglstatp-toutiao.com, reject
 host, p.pstatp.com, reject
 host, baichuan-sdk.alicdn.com, reject
-host, m.360buyimg.com, direct
 host, api-access.pangolin-sdk-toutiao-b.com, reject
 host, kepler.jd.com, reject
 host, mmcomm.qpic.cn, reject
@@ -92,14 +91,10 @@ host, jump.9118ads.com, reject
 host, us.l.qq.com, reject
 host, m.app.so.com, reject
 host-suffix, m.so.com, reject
-host, m.360.cn, reject
-host-suffix, 360.cn, reject
-user-agent, 360*, reject
 host, pt-starimg.didistatic.com, reject
 host, img-ys011.didistatic.com, reject
 host, ad.caiyunapp.com, reject
 host, sdk.1rtb.com, reject
-//host, *.360buyimg.com, reject
 host, api-access.pangolin-sdk-toutiao.com, reject
 host, *.ugdtimg.com, reject
 host, iadmat.nosdn.127.net, reject
