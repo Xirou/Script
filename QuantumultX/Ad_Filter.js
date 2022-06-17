@@ -99,7 +99,7 @@ host, pt-starimg.didistatic.com, reject
 host, img-ys011.didistatic.com, reject
 host, ad.caiyunapp.com, reject
 host, sdk.1rtb.com, reject
-host, *.360buyimg.com, reject
+//host, *.360buyimg.com, reject
 host, api-access.pangolin-sdk-toutiao.com, reject
 host, *.ugdtimg.com, reject
 host, iadmat.nosdn.127.net, reject
