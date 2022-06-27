@@ -9,10 +9,23 @@
                
 ▲1.0.30
 
+1.0.30(700)
+- 支持 DNS over QUIC (DoQ)
+例：「doq-server = quic://dns.adguard.com, quic://dns-family.adguard.com」更详细的示例见应用内示例配置
+
+注：
+1、不填写端口时 DoQ 默认使用 853 端口，如使用其他端口可自行配置，例如：quic://dns.example.com:784
+2、当配置了多个 DoQ 时，并发请求取响应最快的结果
+2、当配置了全局 DoQ 时，全局 DoH 以及普通的 DNS 配置项会被忽略（特定域名使用特定 DoH 或特定域名使用特定普通 DNS 的配置项不会被忽略，正常生效）
+3、不同网络环境对于不同目的地的 QUIC 协议数据 QoS 及丢包策略不同，请自行测试你所配置的 DoQ 是否适合你的网络
+
+1.0.30(699)
+- Gallery 支持 iCloud 同步（「设置」-「iCloud」-「Quantumult X」处于开启状态即可）
+
 1.0.30(698)
 - 移除 build 686 增加的选项，新增远程资源配置参数 inserted-resource = true 控制单个资源的加载时机
 
-1.0.30)697)
+1.0.30(697)
 - 当运行中的 Quantumult X Tunnel（VPN）配置被其他应用禁用时会进行通知，可在更多设置中关闭，默认为开启状态。
 
 注：
