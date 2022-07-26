@@ -3,11 +3,47 @@
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴🎯SEARCH ▲1.0.31 ▼1.0.0 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
-𓏴 𓏴 𓏴 𓏴 𓏴 ⏰TIME  7-5-22  𓏴 𓏴 𓏴 𓏴
+𓏴 𓏴 𓏴 𓏴 𓏴 ⏰TIME  7-26-22 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 KYLE 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴 𓏴
-               
-▲1.0.31
+▲ 1.0.31
+
+1.0.31(717)
+- Quantumult X Tunnel 的脚本环境支持读取 iCloud 目录下，Quantumult X/Data 子目录的文件。
+
+需 iOS 13 或以上系统，示例参见：https://github.com/crossutility/Quantumult-X/blob/master/sample-icloud-storage.js
+
+1.0.31(716)
+- 增加选项 「Enhanced Compatibility 兼容性增强」（设置-更多设置）
+- 当前设备与家居中枢设备处于同一局域网下且在 Quantumult X VPN 连接时，如无法正常使用“家庭”应用查看流传输的 HomeKit 实况视频，您可以开启此选项
+
+注：
+如你在关闭 Quantumult X VPN 连接时，本就无法正常查看 HomeKit 实况视频，请自行检查局域网配置
+
+1.0.31(715)
+- 分流规则增加类型 host-wildcard 进行通配符（* 与 ?）匹配，例如「host-wildcard, *.goo?le.com, proxy」
+- 当启用分流匹配优化时，host-wildcard 优先级仅高于 host-keyword
+
+1.0.31(714)
+- 应用内各类型对应的 iCloud 或本地资源选择界面可直接滑动进行分享、查看及删除操作
+- 远程资源可分享为 quantumult-x:///add-resource? 相关的应用 URL 或二维码
+- 二维码扫描支持 scheme 为 quantumult-x: 相关的应用 URL
+- 其他细节调整  
+  
+1.0.31(713)
+- 当为基于 TLS 协议的代理配置了错误的 ALPN 格式的 tls-alpn 参数时，不再允许保存
+
+1.0.31(712)
+- 允许自定义所有基于 TLS 代理协议的 TLS Client Hello ALPN 项，例如：tls-alpn=02:68:32:08:68:74:74:70:2f:31:2e:31 代表 Client Hello 中 ALPN 为 h2 及 http/1.1 即 {2, 'h', '2', 8, 'h', 't', 't', 'p', '/', '1', '.', '1'}
+
+注：
+1、该设置并不会影响客户端上层代理协议（例如：SOCKS5 over TLS 中 ALPN 即使设置为 SPDY/3 并不会影响客户端上层代理协议，依然是 SOCKS5）
+2、假如服务端根据不同 ALPN 来进行流量转发，请勿设置此项，或设定为对应的 ALPN
+3、如输入的 ALPN 格式错误会导致 TLS 握手失败
+
+1.0.31(711)
+- 当同时配置了全局的 DoQ 与 DoH 时，不再忽略全局的 DoH 设置；调整为同时向所有加密的 DNS 服务器发送查询请求
+- 当使用了 HTTP/1.1 协议的 DoH 时，不再强制禁用 DoH 功能；调整为发送通知给予提示
 
 1.0.31(710)
 - 网络活动详情中 rewrite 栏可直接点击跳转到对应的脚本记录页面
