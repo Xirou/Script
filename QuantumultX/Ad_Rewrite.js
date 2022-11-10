@@ -52,8 +52,6 @@ hostname = *.sycdn.kuwo.cn, img.youpin.mi-img.com,userlink.alicdn.com, api.ithom
 # > 10000
 ^https:\/\/www\.189\.cn\/images\/2021 url reject
 
-^http:\/\/mobilead\.kuwo\.cn\/EcomResourceServer\/getIOSIsHideAd url reject
-
 ^https:\/\/map-mobile-lbsapp\.cdn\.bcebos\.com\/wuqingfeng\.gif$ url reject-img
 
 ^https:\/\/dss0\.bdstatic\.com\/-0U0bnSm1A5BphGlnYG url reject
