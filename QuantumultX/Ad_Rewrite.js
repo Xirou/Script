@@ -136,7 +136,6 @@ https:\/\/api\.ithome\.com\/json\/newslist\/news url script-response-body https:
 ^https?:\/\/\w+\.58cdn\.com\.cn\/brandads\/ url reject
 
 #京东历史比价 (by yichahucha)
-^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
 
 
 #Netflix获取评分(by yichahucha)
