@@ -1,0 +1,12 @@
+#!name=Sorted
+#!desc=Sorted
+#!icon=https://raw.githubusercontent.com/Xirou/Script/refs/heads/master/QX_Xirou.jpg
+
+[Script]
+http-response ^https:\/\/api\.sortedapp\.com\/receipts\/verify script-path=https://raw.githubusercontent.com/Xirou/Script/refs/heads/master/QuantumultX/Sorted.js, requires-body=true, timeout=60, tag=Sorted
+
+[MITM]
+hostname = api.sortedapp.com
+
+
+
