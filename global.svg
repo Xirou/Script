@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="512" height="512"><style>
+svg *{transform-box:fill-box;transform-origin:center}
+.sw{animation:sw 4s ease-in-out infinite}@keyframes sw{0%{transform:translateX(0)}45%,100%{transform:translateX(560px)}}
+.mn{animation:fl 3s ease-in-out infinite}@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.bl{animation:bp 1.6s ease-in-out infinite}@keyframes bp{0%,100%{transform:scale(1)}50%{transform:scale(1.22)}}
+.rip{animation:rp 1.6s ease-out infinite}@keyframes rp{0%{transform:scale(1);opacity:.9}100%{transform:scale(1.55);opacity:0}}
+.ma{animation:rot 4s ease-in-out infinite}.mb{animation:rot 4s ease-in-out infinite;animation-delay:-2s}@keyframes rot{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.12)}}
+.cur{animation:cu 2.6s ease-in-out infinite}@keyframes cu{0%,55%,100%{transform:translate(0,0)}68%{transform:translate(6px,8px)}82%{transform:translate(0,0)}}
+.rpl{animation:rl 2.6s ease-out infinite}@keyframes rl{0%,62%{transform:scale(.3);opacity:0}68%{opacity:.9}100%{transform:scale(1.5);opacity:0}}
+.sd{animation:sdp 2.4s ease-in-out infinite}@keyframes sdp{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.ck{stroke-dasharray:1;animation:ck 2.4s ease-in-out infinite}@keyframes ck{0%{stroke-dashoffset:1}40%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:-1}}
+.rg{animation:rg 2.4s ease-out infinite}@keyframes rg{0%{transform:scale(.85);opacity:.7}100%{transform:scale(1.35);opacity:0}}
+</style><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7ad6ff"/><stop offset="1" stop-color="#1c7fe0"/></linearGradient><linearGradient id="gl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".28"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/></linearGradient><clipPath id="tc"><rect width="256" height="256" rx="60"/></clipPath></defs><rect width="256" height="256" rx="60" fill="url(#g)"/><g fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round"><circle cx="128" cy="128" r="64"/><ellipse class="ma" cx="128" cy="128" rx="40" ry="64" stroke-width="10"/><ellipse class="mb" cx="128" cy="128" rx="40" ry="64" stroke-width="10"/><path d="M64 128H192"/><path d="M76 94H180M76 162H180" stroke-width="9"/></g><rect width="256" height="256" rx="60" fill="url(#gl)"/><g clip-path="url(#tc)"><g transform="rotate(20 128 128)"><rect class="sw" x="-90" y="-60" width="46" height="380" fill="#fff" fill-opacity=".38"/></g></g><rect x="1.5" y="1.5" width="253" height="253" rx="58.5" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="3"/></svg>
